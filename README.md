@@ -1,5 +1,5 @@
 ## Сбер Наука
-<a href="https://uldalex.github.io/sber/build/">Смотреть</a>
+<a href="https://uldalex.github.io/sber/build/">Смотреть сборку</a>
 ## Архитектура
 
 ```bash
