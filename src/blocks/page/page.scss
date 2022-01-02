@@ -47,6 +47,7 @@
   }
 }
 
+
 *,
 *:before,
 *:after {
@@ -56,7 +57,48 @@
 * {
   -webkit-tap-highlight-color: transparent;
 }
+@font-face {
+  font-family: 'SBSansText';
+  src: url(/fonts/SBSansText-Regular.woff2)format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: 'SBSansDisplay';
+  src: url(/fonts/SBSansDisplay-Regular.woff2)format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SBSansDisplay';
+  src: url(/fonts/SBSansDisplay-Bold.woff2)format('woff2');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SBSansDisplay';
+  src: url(/fonts/SBSansDisplay-Light.woff2)format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+html {
+  font-size:18px;
+
+  @media(max-width:1920px)and(min-width:1600px){
+    font-size:16px;
+  } 
+  @media(max-width:1600px)and(min-width:1024px){
+    font-size:14px;
+  }
+
+  @media(max-width:1024px){
+    font-size:12px;
+  }
+
+}
 body {
   display: flex;           // Исправляем баг в IE для min-height and flexbox (flex-direction:column)
   flex-direction: column;  // и прижимаем footer в IE 10-11
@@ -64,7 +106,7 @@ body {
   min-height: 100%;
   word-break: break-word;
   font-family: $font-family;
-  font-size: $font-size;
+  font-size: 1rem;
   line-height: $line-height;
   text-align: left;
   color: $text-color;
@@ -223,7 +265,6 @@ figure {
 }
 
 p {
-  // http://clagnut.com/blog/2395
   hyphens: auto;
   hyphenate-limit-chars: 6 3 3;
   hyphenate-limit-lines: 2;
@@ -335,4 +376,317 @@ pre {
     background: transparent;
   }
 }
+.row {
+  @include row(
+    $xs-grid-gutter:  0, 
+    $sm-grid-gutter:  0,  
+    $md-grid-gutter:  20,
+    $xl-grid-gutter:  30, 
+  );
+}
+.container {
+  @include container();
+}
+.col{
+@include col();
+}
+.col-xs-6 {
+  @include col(xs, 6, $grid-columns, 10px);
+}
+.col-sm-6 {
+  @include col(sm, 6, $grid-columns, 10px);
+}
+.col-sm-4 {
+  @include col(sm, 4, $grid-columns, 10px);
+}
+.col-md-12 {
+  @include col(md, 12, $grid-columns, 12px);
+}
+.col-md-11 {
+  @include col(md, 11, $grid-columns, 12px);
+}
+.col-md-10 {
+  @include col(md, 10, $grid-columns, 12px);
+}
+.col-md-9 {
+  @include col(md, 9, $grid-columns, 12px);
+}
+.col-md-8 {
+  @include col(md, 8, $grid-columns, 12px);
+}
+.col-md-7 {
+  @include col(md, 7, $grid-columns, 12px);
+}
+.col-md-6 {
+  @include col(md, 6, $grid-columns, 12px);
+}
+.col-md-5 {
+  @include col(md, 5, $grid-columns, 12px);
+}
+.col-md-4 {
+  @include col(md, 4, $grid-columns, 12px);
+}
+.col-md-3 {
+  @include col(md, 3, $grid-columns, 12px);
+}
+.col-md-2 {
+  @include col(md, 2, $grid-columns, 12px);
+}
+.col-md-1 {
+  @include col(md, 1, $grid-columns, 12px);
+}
+.col-lg-12 {
+  @include col(lg, 12, $grid-columns, 16px);
+}
+.col-lg-11 {
+  @include col(lg, 11, $grid-columns, 16px);
+}
+.col-lg-10 {
+  @include col(lg, 10, $grid-columns, 16px);
+}
+.col-lg-9 {
+  @include col(lg, 9, $grid-columns, 16px);
+}
+.col-lg-8 {
+  @include col(lg, 8, $grid-columns, 16px);
+}
+.col-lg-7 {
+  @include col(lg, 7, $grid-columns, 16px);
+}
+.col-lg-6 {
+  @include col(lg, 6, $grid-columns, 16px);
+}
+.col-lg-5 {
+  @include col(lg, 5, $grid-columns, 16px);
+}
+.col-lg-4 {
+  @include col(lg, 4, $grid-columns, 16px);
+}
+.col-lg-3 {
+  @include col(lg, 3, $grid-columns, 16px);
+}
+.col-lg-2 {
+  @include col(lg, 2, $grid-columns, 16px);
+}
+.col-lg-1 {
+  @include col(lg, 1, $grid-columns, 16px);
+}
+.col-xl-12 {
+  @include col(xl, 12, $grid-columns, 26px);
+}
+.col-xl-11 {
+  @include col(xl, 11, $grid-columns, 26px);
+}
+.col-xl-10 {
+  @include col(xl, 10, $grid-columns, 26px);
+}
+.col-xl-9 {
+  @include col(xl, 9, $grid-columns, 26px);
+}
+.col-xl-8 {
+  @include col(xl, 8, $grid-columns, 26px);
+}
+.col-xl-7 {
+  @include col(xl, 7, $grid-columns, 26px);
+}
+.col-xl-6 {
+  @include col(xl, 6, $grid-columns, 26px);
+}
+.col-xl-5 {
+  @include col(xl, 5, $grid-columns, 26px);
+}
+.col-xl-4 {
+  @include col(xl, 4, $grid-columns, 26px);
+}
+.col-xl-3 {
+  @include col(xxl, 3, $grid-columns, 26px);
+}
+.col-xl-2 {
+  @include col(xxl, 2, $grid-columns, 26px);
+}
+.col-xl-1 {
+  @include col(xl, 1, $grid-columns, 26px);
+}
+.col-xxl-12 {
+  @include col(xxl, 12, $grid-columns, 30px);
+}
+.col-xxl-11 {
+  @include col(xxl, 11, $grid-columns, 30px);
+}
+.col-xxl-10 {
+  @include col(xxl, 10, $grid-columns, 30px);
+}
+.col-xxl-9 {
+  @include col(xxl, 9, $grid-columns, 30px);
+}
+.col-xxl-8 {
+  @include col(xxl, 8, $grid-columns, 30px);
+}
+.col-xxl-7 {
+  @include col(xxl, 7, $grid-columns, 30px);
+}
+.col-xxl-6 {
+  @include col(xxl, 6, $grid-columns, 30px);
+}
+.col-xxl-5 {
+  @include col(xxl, 5, $grid-columns, 30px);
+}
+.col-xxl-4 {
+  @include col(xxl, 4, $grid-columns, 30px);
+}
+.col-xxl-3 {
+  @include col(xxl, 3, $grid-columns, 30px);
+}
+.col-xxl-2 {
+  @include col(xxl, 2, $grid-columns, 30px);
+}
+.col-xxl-1 {
+  @include col(xxl, 1, $grid-columns, 30px);
+}
+.offset-md-2{
+ @include col-offset(md, 2, 12)
+}
+.offset-lg-2{
+  @include col-offset(lg, 2, 12)
+ }
+ .offset-xl-1{
+  @include col-offset(xl, 1, 12)
+ }
+ .offset-xl-2{
+  @include col-offset(xl, 2, 12)
+ }
+ .offset-xxl-1{
+  @include col-offset(xxl, 1, 12)
+ }
+ .offset-xxl-2{
+  @include col-offset(xxl, 2, 12)
+ }
+// first-screen
+.first-screen {
+  position:relative;
+  background-color: #19182A;
+  width:100%;
+  min-height:100vh;
+  display: flex;
+  align-items: center;
+  background-image: url('/img/bg.png');
+  background-repeat:no-repeat;
+  background-position: right center;
+  background-size: contain;
+  z-index:1;
 
+  & h1 {
+    color:#ffffff;
+    font-weight:300;
+    font-family:'SBSansDisplay';
+    font-size:8rem;
+
+    & span {
+      display:block;
+      font-weight:600;
+    }
+
+    @media (max-width:600px){
+      font-size:40px;
+    }
+    @media (max-width:320px){
+      font-size:30px;
+    }
+  }
+  &__lines {
+    fill:none;
+    position:absolute;
+    top:90%;
+    left:0;
+
+    & path {
+    stroke: #16769E;
+    stroke-dashoffset: 1517;
+    stroke-dasharray: 1517;
+
+    }
+
+    &--animate {
+      & path {
+      animation: reveal 2s alternate forwards; 
+      }
+    }
+  }
+
+}
+@keyframes reveal {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+.two-screen {
+  position:relative;
+  z-index: 3; 
+  padding-top:60px;
+  @media (max-width:600px){
+    padding-top:2rem;
+  }
+}
+.block-quote {
+    position:relative;
+  display:flex;
+  flex-wrap:wrap;
+  align-items: flex-end;
+  z-index:5;
+  
+  &__content {
+    @media (max-width:600px){
+      order:3;
+      padding-top:2rem;
+    }
+  }
+
+
+  &__separator {
+    height:3px;
+    background-color:#000;
+    @media (max-width:600px){
+      order:2;
+    }
+  }
+
+  &__img {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 5;
+    @media (max-width:600px){
+      order:1;
+
+      & img {
+        max-width:70%;
+      }
+    }
+  }
+
+  & p {
+    flex-basis: 100%;
+  }
+  &__name {
+    font-weight:600;
+    margin-bottom:0;
+  }
+  &__position {
+    color:#b3adad;
+  }
+}
+.three-screen {
+  background-color:#b3adad;
+  padding:100px 0;
+}
+.info-card {
+  position:relative;
+  background-color:#ffffff;
+  border-radius: 10px;
+  margin-bottom:2rem;
+  padding:2rem 2.2rem;
+
+
+}

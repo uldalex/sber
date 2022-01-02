@@ -6,10 +6,10 @@
   display: inline-block;
   position: relative;
   z-index: 1;
-  width: 30px;
+  width: 25px;
   border: none;
   padding: 0;
-  line-height: 30px;
+  line-height: 15px;
   background: transparent;
   user-select: none;
   cursor: pointer;
@@ -38,11 +38,11 @@
     }
 
     &:before {
-      top: -10px;
+      top: -8px;
     }
 
     &:after {
-      top: 10px;
+      top: 8px;
     }
   }
 

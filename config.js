@@ -24,8 +24,6 @@ let config = {
     // 'somePackage/dist/somePackage.js', // для 'node_modules/somePackage/dist/somePackage.js',
   ],
   'addJsAfter': [
-    './fslightbox.js',
-    './fullpage.js',
     './script.js',
   ],
   'addAssets': {

@@ -6,19 +6,50 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  position: relative;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
   z-index: 10;
+  padding-top:24px;
+
+
+  &__inner {
+    @include container();
+  }
+  & .row {
+    align-items: center;
+  }
+  &__button {
+    width:235px;
+    max-width:235px;
+    display:flex;
+    justify-content: space-between;
+    margin-left:auto;
+    border:1px solid #ffffff;
+    border-radius:6px;
+    padding:10px 50px;
+    color:#ffffff;
+  }
+  &__wrapper {
+    display:flex;
+    justify-content: flex-end;
+  }
+  & .logo {
+    max-width:136px;
+  }
 
   // первый уровень
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
-
-    // мобильный вид списка
-    @media (max-width: ($menu-desktop-width - 1)) {
-
-      // открытие/закрытие меню только в случае работающего JS
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-end;
+    max-width:600px;
+    background-color: #ffffff ;
+    border-radius:6px;
 
       .js & {
         max-height: 0;
@@ -38,25 +69,14 @@
           max-height: none;
         }
       }
-    }
+   
 
-    // настольный вид списка
-    @media (min-width: $menu-desktop-width) {
-      display: flex;
-      flex-wrap: wrap;
 
-      &--lvl-2 {
-        display: block;
-      }
-
-      &--lvl-3 {
-        display: block;
-      }
-    }
   }
 
   &__item {
     position: relative;
+    width: 50%;
 
     &--active {
 
@@ -70,79 +90,17 @@
     display: block;
     padding: 0.5em 1em;
     text-decoration: none;
-    background-color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
 
     &:hover,
     &:focus {
       text-decoration: none;
-      background-color: $gray-lightest;
     }
+}
 
-    &--lvl-2 {
-      min-width: 200px;
 
-      @media (max-width: ($menu-desktop-width - 1)) {
-        padding-left: 2em;
-      }
-    }
-
-    &--lvl-3 {
-      min-width: 200px;
-
-      @media (max-width: ($menu-desktop-width - 1)) {
-        padding-left: 3em;
-      }
-    }
-  }
-
-  &__sublist-wrapper {
-
-    &--lvl-2 {
-
-      @media (min-width: $menu-desktop-width) {
-        position: absolute;
-        z-index: 1;
-        top: 100%;
-        left: 0;
-        height: 0;
-        opacity: 0;
-        overflow: hidden;
-        transition: opacity $transition-time;
-
-        // stylelint-disable
-        #{$block-name}__item--show-child > &,
-        #{$block-name}__item:hover & {
-          height: auto;
-          overflow: visible;
-          opacity: 1;
-        }
-        // stylelint-enable
-      }
-    }
-
-    &--lvl-3 {
-
-      @media (min-width: $menu-desktop-width) {
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 100%;
-        opacity: 0;
-        height: 0;
-        overflow: hidden;
-        transition: opacity $transition-time;
-
-        // stylelint-disable
-        #{$block-name}__item--show-child > &,
-        #{$block-name}__item--lvl-2:hover & {
-          height: auto;
-          overflow: visible;
-          opacity: 1;
-        }
-        // stylelint-enable
-      }
-    }
-  }
 
 
 
@@ -153,11 +111,6 @@
     border: none;
     padding: 0;
     background: none;
-
-    @media (min-width: $menu-desktop-width) {
-      display: none;
-    }
-
     .no-js & {
       display: none;
     }

@@ -3,13 +3,13 @@ $screen-sm:                   480px !default;
 $screen-md:                   768px !default;
 $screen-lg:                   992px !default;
 $screen-xl:                   1200px !default;
-$screen-xxl:                  1800px !default;
+$screen-xxl:                  1920px !default;
 
 $container-sm:                100% !default;
 $container-md:                100% !default;
-$container-lg:                ($screen-lg - 30) !default;
-$container-xl:                ($screen-xl - 30) !default;
-$container-xxl:               ($screen-xxl - 30) !default;
+$container-lg:                calc(100% - 60px) !default;
+$container-xl:                calc(100% - 100px) !default;
+$container-xxl:               calc(100% - 200px) !default;
 
 $grid-columns:                12 !default;
 $grid-gutter-width:           30px !default;
@@ -26,7 +26,7 @@ $grid-gutter-width:           30px !default;
   $md-grid-gutter:  $grid-gutter-width,
   $lg-grid-gutter:  $grid-gutter-width,
   $xl-grid-gutter:  $grid-gutter-width,
-  $xxl-grid-gutter: $grid-gutter-width
+  
 ) {
   display: block;
   width: 100%;
@@ -73,14 +73,10 @@ $grid-gutter-width:           30px !default;
       padding-right: ($xl-grid-gutter / 2);
     }
   }
-
   @media (min-width: $screen-xxl) {
     width: $container-xxl;
 
-    @if ($xxl-grid-gutter != $xl-grid-gutter) {
-      padding-left: ($xxl-grid-gutter / 2);
-      padding-right: ($xxl-grid-gutter / 2);
-    }
+
   }
 }
 
@@ -118,7 +114,6 @@ $grid-gutter-width:           30px !default;
   $md-grid-gutter:  $grid-gutter-width,
   $lg-grid-gutter:  $grid-gutter-width,
   $xl-grid-gutter:  $grid-gutter-width,
-  $xxl-grid-gutter: $grid-gutter-width
 ) {
   display: flex;
   flex-wrap: wrap;
@@ -164,13 +159,6 @@ $grid-gutter-width:           30px !default;
     }
   }
 
-  @if ($xxl-grid-gutter != $xl-grid-gutter) {
-
-    @media (min-width: $screen-xxl) {
-      margin-left: ($xxl-grid-gutter / -2);
-      margin-right: ($xxl-grid-gutter / -2);
-    }
-  }
 }
 
 
@@ -274,6 +262,7 @@ $grid-gutter-width:           30px !default;
       @include make-col($column, $columns, $gutter);
     }
   }
+
 }
 
 
@@ -324,11 +313,11 @@ $grid-gutter-width:           30px !default;
       margin-left: ($column * 100% / $columns);
     }
   }
-
   @if ($screen == xxl) {
 
     @media (min-width: $screen-xxl) {
       margin-left: ($column * 100% / $columns);
     }
   }
+
 }
