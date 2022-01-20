@@ -195,13 +195,13 @@ img {
 }
 
 a {
-  color: $link-color;
+  color: #21BA72;
   background-color: transparent;
   transition: color 0.3s;
 
   &:hover,
   &:focus {
-    color: $link-color--hover;
+    color: #21BA72;
   }
 
   // &:visited {
@@ -241,7 +241,7 @@ h6 {
   font-family: $font-family;
   font-weight: 700;
   line-height: 1.2;
-  color: currentColor;
+  color: #21BA72;
 
   & span {
     font-weight:300;
@@ -250,7 +250,7 @@ h6 {
 
 h1 { font-size: $font-size-h1; }
 h2 { font-size: $font-size-h2; }
-h3 { font-size: $font-size-h3; }
+h3 { font-size: 2.1rem; margin-bottom:2rem;}
 h4 { font-size: $font-size-h4; }
 h5 { font-size: $font-size-h5; }
 h6 { font-size: $font-size-h6; }
@@ -393,9 +393,13 @@ pre {
 }
 .container {
   @include container();
+  max-width:1530px;
 }
 .col{
 @include col();
+}
+.col-xs-2 {
+  @include col(xs, 2, $grid-columns, 10px);
 }
 .col-xs-6 {
   @include col(xs, 6, $grid-columns, 10px);
@@ -479,19 +483,19 @@ pre {
   @include col(lg, 1, $grid-columns, 16px);
 }
 .col-xl-12 {
-  @include col(xl, 12, $grid-columns, 26px);
+  @include col(xl, 12, $grid-columns, 30px);
 }
 .col-xl-11 {
-  @include col(xl, 11, $grid-columns, 26px);
+  @include col(xl, 11, $grid-columns, 30px);
 }
 .col-xl-10 {
-  @include col(xl, 10, $grid-columns, 26px);
+  @include col(xl, 10, $grid-columns, 30px);
 }
 .col-xl-9 {
-  @include col(xl, 9, $grid-columns, 26px);
+  @include col(xl, 9, $grid-columns, 30px);
 }
 .col-xl-8 {
-  @include col(xl, 8, $grid-columns, 26px);
+  @include col(xl, 8, $grid-columns, 30px);
 }
 .col-xl-7 {
   @include col(xl, 7, $grid-columns, 26px);
@@ -500,19 +504,19 @@ pre {
   @include col(xl, 6, $grid-columns, 26px);
 }
 .col-xl-5 {
-  @include col(xl, 5, $grid-columns, 26px);
+  @include col(xl, 5, $grid-columns, 30px);
 }
 .col-xl-4 {
-  @include col(xl, 4, $grid-columns, 26px);
+  @include col(xl, 4, $grid-columns, 30px);
 }
 .col-xl-3 {
   @include col(xxl, 3, $grid-columns, 26px);
 }
 .col-xl-2 {
-  @include col(xxl, 2, $grid-columns, 26px);
+  @include col(xxl, 2, $grid-columns, 30px);
 }
 .col-xl-1 {
-  @include col(xl, 1, $grid-columns, 26px);
+  @include col(xl, 1, $grid-columns, 30px);
 }
 .col-xxl-12 {
   @include col(xxl, 12, $grid-columns, 30px);
@@ -568,10 +572,20 @@ pre {
  .offset-xxl-2{
   @include col-offset(xxl, 2, 12)
  }
+ .sm-hidden {
+  @media(max-width:600px){
+    display:none;
+  }
+ }
+ .md-hidden {
+  @media(max-width:768px){
+    display:none;
+  }
+ }
 // first-screen
 .first-screen {
   position:relative;
-  background-color: #19182A;
+  background-color: #18182A;
   width:100%;
   min-height:100vh;
   display: flex;
@@ -581,24 +595,32 @@ pre {
   background-position: right center;
   background-size: contain;
   z-index:1;
+  @media(max-width:600px){
+    background-size:cover;
+    background-position: center center;
+  }
 
   & h1 {
     color:#ffffff;
     font-weight:300;
     font-family:'SBSansDisplay';
-    font-size:8rem;
+    font-size:7.5rem;
 
     & span {
       display:block;
       font-weight:600;
     }
+    @media (max-width:1920px) and (min-width: 1367px){
+      font-size:6.5rem;
+    }
+    @media (max-width:1367px) and (min-width: 600px){
+      font-size:5.5rem;
+    }
+    @media (max-width: 600px){
+      font-size: 4.5rem;
+    }
+    
 
-    @media (max-width:600px){
-      font-size:40px;
-    }
-    @media (max-width:320px){
-      font-size:30px;
-    }
   }
   &__lines {
     fill:none;
@@ -608,22 +630,25 @@ pre {
 
     & path {
     stroke: #16769E;
-    stroke-dashoffset: 1517;
-    stroke-dasharray: 1517;
+    stroke-dashoffset: 2920;
+    stroke-dasharray: 2920;
 
     }
 
     &--animate {
       & path {
-      animation: reveal 2s alternate forwards; 
+      animation: reveal 6s alternate forwards; 
       }
     }
   }
 
 }
 @keyframes reveal {
+  from {
+    stroke-dashoffset: -1920;
+  }
   to {
-      stroke-dashoffset: 0;
+    stroke-dashoffset: 0;
   }
 }
 .two-screen {
@@ -653,7 +678,7 @@ pre {
 
   &__separator {
     height:3px;
-    background-color:#000;
+    background: linear-gradient(90deg, #C9DA26 -0.8%, #219F38 56.7%, #0FA7DF 100%);
     @media (max-width:600px){
       order:2;
     }
@@ -680,7 +705,7 @@ pre {
   }
   &__name {
     font-weight:600;
-    margin-bottom:0;
+    margin-bottom:5px;
   }
   &__position {
     color:#b3adad;
@@ -700,7 +725,7 @@ pre {
   }
 }
 .three-screen {
-  background-color:#b3adad;
+  background-color: #E8EDEE;
   padding:100px 0;
   @media(max-width:600px){
     padding:30px 0;
@@ -724,7 +749,13 @@ pre {
     font-size:3.87rem;
     line-height:6rem;
     margin-bottom:1.5rem;
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, #C9DA26 -0.8%, #219F38 56.7%, #0FA7DF 100%);
+    border-image-slice: 1;
+    background: linear-gradient(2deg, #F1F44B 6.74%, #9FF175 44.65%, #0FA7DF 81.86%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #219F38;
   }
 }
 .four-screen {
@@ -738,7 +769,7 @@ pre {
  width:100%;
  @media(min-width:1440px){
   width: 1000px;
-  margin:80px auto;
+  margin:80px auto 150px;
 }
  @media(min-width:1024px){
   margin:50px auto;
@@ -807,8 +838,66 @@ pre {
   }
 }
 .six-screen {
+  padding-bottom:100px;
   & img {
     margin-top:1rem;
     border-radius:10px;
+  }
+}
+.seven-screen {
+  background-image:url('/img/seven-screen__bg.jpg');
+  background-position: right center;
+
+  & h2 {
+    padding:180px 0;
+    color:#ffffff;
+          font-weight:600;
+    font-family:'SBSansDisplay';
+    font-size:7.5rem;
+
+    & span {
+      display:block;
+
+      font-weight:300;
+    }
+    @media (max-width:1920px) and (min-width: 1367px){
+      font-size:6.5rem;
+    }
+    @media (max-width:1367px) and (min-width: 600px){
+      font-size:5.5rem;
+    }
+    @media (max-width: 600px){
+      font-size: 4.5rem;
+    }
+  }
+}
+.eight-screen {
+  padding: 100px 0;
+  & .row {
+    align-items: center;
+  }
+  & h3 {
+    margin-bottom:10px;
+  }
+  & .subtitle {
+    color: #21BA72;
+    margin-bottom:10px;
+  }
+  &__btn {
+    margin-top:2rem;
+    @media (max-width:600px){
+      text-align: center;
+      margin-bottom:1rem;
+    }
+  }
+
+  &__img {
+    display:flex;
+    @media (max-width:600px){
+      flex-direction: column;
+      & img {
+        width:100%;
+      }
+    }
   }
 }

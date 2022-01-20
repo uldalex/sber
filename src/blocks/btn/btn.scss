@@ -8,22 +8,22 @@
   max-width: 100%;
   overflow: hidden;
   margin: 0;
-  border-radius: $border-radius;
+  border-radius: 5px;
   // border: 1px solid $gray-lighter;
   border: 0;
-  padding: $field-padding-vertical  $field-padding-horizontal;
+  padding: 15px 25px;
   vertical-align: middle;
   white-space: nowrap;
   text-overflow: ellipsis;
   user-select: none;
   text-align: center;
-  font-size: 1em;
+  font-size: 1rem;
   font-family: inherit;
   line-height: $line-height;
   text-decoration: none;
   text-transform: none;
-  color: $text-color;
-  background-color: $gray-lightest;
+  color: #ffffff;
+  background-color: #21BA72;
   background-image: none;
   cursor: pointer;
 
