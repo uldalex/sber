@@ -21,7 +21,7 @@ const rename = require('gulp-rename');
 const getClassesFromHtml = require('get-classes-from-html');
 const browserSync = require('browser-sync').create();
 const debug = require('gulp-debug');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const webpackStream = require('webpack-stream');
 const buffer = require('vinyl-buffer');
 const postcss = require('gulp-postcss');
@@ -36,7 +36,7 @@ const svgstore = require('gulp-svgstore');
 const svgmin = require('gulp-svgmin');
 const spritesmith = require('gulp.spritesmith');
 const merge = require('merge-stream');
-const imagemin = require('gulp-imagemin');
+const imagemin = import('gulp-imagemin');
 const prettyHtml = require('gulp-pretty-html');
 const replace = require('gulp-replace');
 const ghpages = require('gh-pages');
@@ -327,7 +327,7 @@ function buildJs() {
             test: /\.(js)$/,
             exclude: /(node_modules)/,
             loader: 'babel-loader',
-            query: {
+            options:{
               presets: ['@babel/preset-env']
             }
           }
