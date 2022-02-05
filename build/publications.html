@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html class="page  no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <meta content="notranslate" name="google">
+  <meta property="og:title" content="Научные_публикации-2021">
+  <meta property="og:description" content="Научные_публикации-2021">
+  <meta property="og:image" content="img/preview.jpg">
+  <title>Главная</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+function cth(c){document.documentElement.classList.add(c)}
+'ontouchstart' in window?cth('touch'):cth('no-touch');
+if(typeof InstallTrigger!=='undefined')cth('firefox');
+if(/constructor/i.test(window.HTMLElement)||(function(p){return p.toString()==="[object SafariRemoteNotification]"})(!window['safari']||(typeof safari!=='undefined'&&safari.pushNotification)))cth('safari');
+if(/*@cc_on!@*/false||!!document.documentMode)cth('ie');
+if(!(/*@cc_on!@*/false||!!document.documentMode)&&!!window.StyleMedia)cth('edge');
+if(!!window.chrome&&(!!window.chrome.webstore||!!window.chrome.runtime))cth('chrome');
+if(~navigator.appVersion.indexOf("Win"))cth('windows');
+if(~navigator.appVersion.indexOf("Mac"))cth('osx');
+if(~navigator.appVersion.indexOf("Linux"))cth('linux');
+</script>
+</head>
+
+<body><noscript>У вас отключен JavaScript. Это пугает.</noscript>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header  page-header--inner" role="banner">
+        <div class="page-header__inner">
+          <div class="row">
+            <div class="col-lg-2 col-xs-6"> <a class="logo" href="/"><img src="img/logo-green.svg" alt="Logo" width="132" height="37"></a></div>
+            <div class="col-lg-4 col-xs-4 page-header__right-part"> <a class="page-header__language" href="/">ENG</a>
+              <div class="page-header__button"> Содержание<button class="burger main-nav__toggler" aria-label="Показать содержание" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать содержание</span></button></div>
+            </div>
+            <nav class="main-nav" id="nav">
+              <div class="main-nav__inner">
+                <div class="main-nav__wrapper">
+                  <ul class="main-nav__list">
+                    <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link" href="#nayka_v_sber">Наука в Сбере</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#privetstvie_gref">Ви́дение-2035</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#sifry_i_fakty">Наука и бизнес</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#privetstvie2">Метавселенная</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#privetstvie2">Научные партнеры Сбера</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#vvedenie">Сбер-Космос-Сбер</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#naychnaya_premiya">Наука в Сбере</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#hohlov">Квантовая перспектива</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#ii">Исследовательские центры ИИ</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#glyadya_v_budushee">Научные публикации 2021 года</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="publication.html">Совместные проекты с вузами и исследовательскими центрами</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#nauchnaya_jizn">Работа продолжается</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#nauchnaya_jizn">Взгляд в будущее</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#nauchnaya_jizn">ДНК Инженера</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="row">
+            <ul class="breadcrumbs" aria-label="Breadcrumb" role="navigation">
+              <li class="breadcrumbs__item"><a href="/">Наука в Сбере 2021</a></li>
+              <li class="breadcrumbs__item"><span>Научные публикации 2021 года</span></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="page-title">
+        <div class="container">
+          <div class="row">
+            <h1>Научные публикации <span>2021 года </span></h1>
+          </div>
+        </div>
+      </div>
+      <div class="page-filter" id="page-filter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-lg-4"><label for="publication-input" aria-label="Фильтр по лабораториям">Фильтр по лабораториям</label>
+              <div class="dropdown">
+                <div class="select"> <span>Все лаборатории</span></div>
+                <div class="dropdown-menu" id="publication-list">
+                  <ul>
+                    <li><a class="servise-form__link" href="#lab1" aria-label="Лаборатория по исскуственному интеллекту">Лаборатория по исскуственному интеллекту</a></li>
+                    <li> <a class="servise-form__link" href="" aria-label="Лаборатория геймификации">Лаборатория геймификации</a></li>
+                    <li> <a class="servise-form__link" href="" aria-label="SBERROBOTICS">SBERROBOTICS</a></li>
+                    <li> <a class="servise-form__link" href="" aria-label="SBER AI">SBER AI</a></li>
+                    <li><a class="servise-form__link" href="" aria-label="SBER AI / AIRI">SBER AI / AIRI</a></li>
+                    <li> <a class="servise-form__link" href="" aria-label="SBERDEVICES">SBERDEVICES</a></li>
+                    <li> <a class="servise-form__link" href="" aria-label="УПРАВЛЕНИЕ ИССЛЕДОВАНИЙ И ИННОВАЦИЙ">УПРАВЛЕНИЕ ИССЛЕДОВАНИЙ И ИННОВАЦИЙ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-4"><label for="publication-input" aria-label="Фильтр по лабораториям">Поиск по публикациям</label>
+              <div class="dropdown">
+                <div class="select"> <input class="search-input" id="publication-input" type="text" placeholder="Поиск по публикациям">
+                  <div class="dropdown__close" id="publication-close"> </div>
+                </div>
+                <div class="dropdown-menu" id="publication-list">
+                  <ul>
+                    <li><a class="servise-form__link" href="#publication1" aria-label="Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов">Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов</a></li>
+                    <li> <a class="servise-form__link" href="#publication2" aria-label="NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов">NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов</a></li>
+                    <li> <a class="servise-form__link" href="#publication3" aria-label="Состязательные атаки на глубокие модели финансовых транзакций ">Состязательные атаки на глубокие модели финансовых транзакций </a></li>
+                    <li> <a class="servise-form__link" href="#publication4" aria-label="Одновременная локализация и построение карты на основе случайных признаков Фурье ">Одновременная локализация и построение карты на основе случайных признаков Фурье </a></li>
+                    <li><a class="servise-form__link" href="#publication5" aria-label="Обучение скрытых структур с помощью стохастических инвариантов">Обучение скрытых структур с помощью стохастических инвариантов</a></li>
+                    <li> <a class="servise-form__link" href="#publication6" aria-label="Автоматическая генерация текстовых заключений по изображениям маммограмм с помощью BERT">Автоматическая генерация текстовых заключений по изображениям маммограмм с помощью BERT</a></li>
+                    <li> <a class="servise-form__link" href="#publication7" aria-label="Метрики качества в рекомендательных системах: вычисляем ли мы метрики единообразно?">Метрики качества в рекомендательных системах: вычисляем ли мы метрики единообразно?</a></li>
+                    <li> <a class="servise-form__link" href="#publication8" aria-label="Модель для интерпретации компьютерной томографии пациентов с COVID-19 с использованием глубокого обучения">Модель для интерпретации компьютерной томографии пациентов с COVID-19 с использованием глубокого обучения </a></li>
+                    <li> <a class="servise-form__link" href="#publication9" aria-label="Модели-трансформеры для выявления побочных эффектов лекарственных препаратов на основе Twitter-сообщений">Модели-трансформеры для выявления побочных эффектов лекарственных препаратов на основе Twitter-сообщений</a></li>
+                    <li> <a class="servise-form__link" href="#publication10" aria-label="Генерация текстовых описаний из RDF-триплетов на основе нейронной языковой модели ">Генерация текстовых описаний из RDF-триплетов на основе нейронной языковой модели</a></li>
+                    <li> <a class="servise-form__link" href="#publication11" aria-label="Одомашнивание искусственного интеллекта: умные колонки и трансформация повседневной жизни ">Одомашнивание искусственного интеллекта: умные колонки и трансформация повседневной жизни</a></li>
+                    <li> <a class="servise-form__link" href="#publication12" aria-label="Дисциплинарные практики цифрового селф-трекинга: между эмансипацией и контролем  ">Дисциплинарные практики цифрового селф-трекинга: между эмансипацией и контролем </a></li>
+                    <li> <a class="servise-form__link" href="#publication13" aria-label="Как попрощаться с роботом? Исследование достижения разговорного закрытия ">Как попрощаться с роботом? Исследование достижения разговорного закрытия</a></li>
+                    <li> <a class="servise-form__link" href="#publication14" aria-label="Мультимодальный поворот  в исследованиях взаимодействия  человека и компьютера ">Мультимодальный поворот в исследованиях взаимодействия человека и компьютера</a></li>
+                    <li> <a class="servise-form__link" href="#publication15" aria-label="Игродром. Что нужно знать о видеоиграх и игровой культуре ">Игродром. Что нужно знать о видеоиграх и игровой культуре</a></li>
+                    <li> <a class="servise-form__link" href="#publication16" aria-label="Unreal Mask: определение позы по одному снимку для нескольких классов объектов в задачах роботизированных манипуляций с использованием ключевых точек и синтетического набора данных">Unreal Mask: определение позы по одному снимку для нескольких классов объектов в задачах роботизированных манипуляций с использованием ключевых точек и синтетического набора данных</a></li>
+                    <li> <a class="servise-form__link" href="#publication17" aria-label="Двойной адаптивный контроллер на основе нейронных сетей для малоприводных систем ">Двойной адаптивный контроллер на основе нейронных сетей для малоприводных систем</a></li>
+                    <li> <a class="servise-form__link" href="#publication18" aria-label="Нелинейный решатель на основе адаптивной нейронной сети и его применение для расчетов потоков в пористых средах ">Нелинейный решатель на основе адаптивной нейронной сети и его применение для расчетов потоков в пористых средах</a></li>
+                    <li> <a class="servise-form__link" href="#publication19" aria-label="Coinbot: интеллектуальные роботизированные манипуляции с мешками для монет с использованием искусственного интеллекта ">Coinbot: интеллектуальные роботизированные манипуляции с мешками для монет с использованием искусственного интеллекта</a></li>
+                    <li> <a class="servise-form__link" href="#publication20" aria-label="Сравнение современных подходов к визуальному SLAM с открытым исходным кодом">Сравнение современных подходов к визуальному SLAM с открытым исходным кодом</a></li>
+                    <li> <a class="servise-form__link" href="#publication21" aria-label="CovarianceNet: условная генеративная модель для правильного прогнозирования неопределенности при движении человека">CovarianceNet: условная генеративная модель для правильного прогнозирования неопределенности при движении человека</a></li>
+                    <li> <a class="servise-form__link" href="#publication22" aria-label="Предсказание траекторий движения на основе трансформерной архитектуры ">Предсказание траекторий движения на основе трансформерной архитектуры</a></li>
+                    <li> <a class="servise-form__link" href="#publication23" aria-label="Приложения графа цитирований в научной рекомендательной системе">Приложения графа цитирований в научной рекомендательной системе</a></li>
+                    <li> <a class="servise-form__link" href="#publication24" aria-label="Методы компьютерного зрения для оценки запасов древесины на примере бореальных лесов северо-запада России">Методы компьютерного зрения для оценки запасов древесины на примере бореальных лесов северо-запада России</a></li>
+                    <li> <a class="servise-form__link" href="#publication25" aria-label="Digital Peter: новый датасет, соревнование и методы распознавания рукописного текста">Digital Peter: новый датасет, соревнование и методы распознавания рукописного текста</a></li>
+                    <li> <a class="servise-form__link" href="#publication26" aria-label="StackMix и Blot Augmentations для распознавания рукописного текста">StackMix и Blot Augmentations для распознавания рукописного текста</a></li>
+                    <li> <a class="servise-form__link" href="#publication27" aria-label="Основанная на объектах аугментация для семантической сегментации зданий на примере местности Вентура и Санта-Роза">Основанная на объектах аугментация для семантической сегментации зданий на примере местности Вентура и Санта-Роза</a></li>
+                    <li> <a class="servise-form__link" href="#publication28" aria-label="Сильный искусственный интеллект: на подступах к сверхразуму">Сильный искусственный интеллект: на подступах к сверхразуму</a></li>
+                    <li> <a class="servise-form__link" href="#publication29" aria-label="Сжатие изображений и классификация растений методами машинного обучения в контролируемой среде для задач сельского хозяйства на примере Антарктической станции ">Сжатие изображений и классификация растений методами машинного обучения в контролируемой среде для задач сельского хозяйства на примере Антарктической станции</a></li>
+                    <li> <a class="servise-form__link" href="#publication30" aria-label="MixChannel: совершенствование аугментации для мультиспектральных спутниковых снимков">MixChannel: совершенствование аугментации для мультиспектральных спутниковых снимков</a></li>
+                    <li> <a class="servise-form__link" href="#publication31" aria-label="Статистическое оценивание дивергенции Кульбака-Лейблера">Статистическое оценивание дивергенции Кульбака-Лейблера</a></li>
+                    <li> <a class="servise-form__link" href="#publication32" aria-label="Интеллектуальный анализ данных обзоров практически без обучения модели и с минимальной помощью WordNet">Интеллектуальный анализ данных обзоров практически без обучения модели и с минимальной помощью WordNet</a></li>
+                    <li> <a class="servise-form__link" href="#publication33" aria-label="Выбор псевдоаннотированных текстов для выявления неблагоприятных лекарственных реакций по группам препаратов">Выбор псевдоаннотированных текстов для выявления неблагоприятных лекарственных реакций по группам препаратов</a></li>
+                    <li> <a class="servise-form__link" href="#publication34" aria-label="NEREL: русскоязычный датасет с вложенными именованными сущностями, отношениями и событиями">NEREL: русскоязычный датасет с вложенными именованными сущностями, отношениями и событиями</a></li>
+                    <li> <a class="servise-form__link" href="#publication35" aria-label="DetIE: многоязычное извлечение открытой информации на основе обнаружения объектов ">DetIE: многоязычное извлечение открытой информации на основе обнаружения объектов</a></li>
+                    <li> <a class="servise-form__link" href="#publication36" aria-label="Кросс-доменные ограничения нейросетевых моделей для классификации биомедицинских отношений">Кросс-доменные ограничения нейросетевых моделей для классификации биомедицинских отношений</a></li>
+                    <li> <a class="servise-form__link" href="#publication37" aria-label="Применение гибридных графовых моделей для оценки времени в пути">Применение гибридных графовых моделей для оценки времени в пути</a></li>
+                    <li> <a class="servise-form__link" href="#publication38" aria-label="Оптимизация структуры сетей глубокого обучения ">Оптимизация структуры сетей глубокого обучения </a></li>
+                    <li> <a class="servise-form__link" href="#publication39" aria-label="Russian SuperGLUE 1.1: пересмотр уроков, не усвоенных русскими NLP-моделями">Russian SuperGLUE 1.1: пересмотр уроков, не усвоенных русскими NLP-моделями</a></li>
+                    <li> <a class="servise-form__link" href="#publication40" aria-label="Выявление текстов, сгенерированных ИИ, на основе анализа топологических данных">Выявление текстов, сгенерированных ИИ, на основе анализа топологических данных</a></li>
+                    <li> <a class="servise-form__link" href="#publication41" aria-label="Трясем деревья на улице Сезам: наборы данных для многоязычного пробинга с контролируемыми перестановками">Трясем деревья на улице Сезам: наборы данных для многоязычного пробинга с контролируемыми перестановками</a></li>
+                    <li> <a class="servise-form__link" href="#publication42" aria-label="О методах компьютерной лингвистики в оценке систем искусственного интеллекта">О методах компьютерной лингвистики в оценке систем искусственного интеллекта</a></li>
+                    <li> <a class="servise-form__link" href="#publication43" aria-label="Как не солгать с бенчмарком: переоценка лидерства в NLP ">Как не солгать с бенчмарком: переоценка лидерства в NLP</a></li>
+                    <li> <a class="servise-form__link" href="#publication44" aria-label="Упрощение текста с помощью авторегрессионных моделей">Упрощение текста с помощью авторегрессионных моделей</a></li>
+                    <li> <a class="servise-form__link" href="#publication45" aria-label="Критерий качества кластеризации на основе отбора признаков размеченной выборки с приложением в области разработки интерфейсов мозг-компьютер">Критерий качества кластеризации на основе отбора признаков размеченной выборки с приложением в области разработки интерфейсов мозг-компьютер</a></li>
+                    <li> <a class="servise-form__link" href="#publication46" aria-label="Перефразирования в русском языке: перефразирования на основе трансформаторов">Перефразирования в русском языке: перефразирования на основе трансформаторов</a></li>
+                    <li> <a class="servise-form__link" href="#publication47" aria-label="Нейросетевой классификатор ЭЭГ людей, перенесших и не перенесших COVID-19 ">Нейросетевой классификатор ЭЭГ людей, перенесших и не перенесших COVID-19</a></li>
+                    <li> <a class="servise-form__link" href="#publication48" aria-label="Распознавание немой ЭЭГ-речи с использованием сверточной и рекуррентной нейронной сети с точностью 85% классификации для 9 слов ">Распознавание немой ЭЭГ-речи с использованием сверточной и рекуррентной нейронной сети с точностью 85% классификации для 9 слов</a></li>
+                    <li> <a class="servise-form__link" href="#publication49" aria-label="Morph Call: исследование морфосинтаксического содержания многоязычных трансформеров">Morph Call: исследование морфосинтаксического содержания многоязычных трансформеров</a></li>
+                    <li> <a class="servise-form__link" href="#publication50" aria-label="RuSentEval: лингвистический источник, кодирующая сила!">RuSentEval: лингвистический источник, кодирующая сила!</a></li>
+                    <li> <a class="servise-form__link" href="#publication51" aria-label="Использование модели ruGPT-3 XL в соревновании RuNormAS ">Использование модели ruGPT-3 XL в соревновании RuNormAS</a></li>
+                    <li> <a class="servise-form__link" href="#publication52" aria-label="Строим билингвальную вопросно-ответную систему на базе ruGPT-3">Строим билингвальную вопросно-ответную систему на базе ruGPT-3</a></li>
+                    <li> <a class="servise-form__link" href="#publication53" aria-label="Применение модели  Generative Pretrained Transformer-3 (ruGPT-3) для решения задач кластеризации новостных текстов и генерации заголовков ">Применение модели Generative Pretrained Transformer-3 (ruGPT-3) для решения задач кластеризации новостных текстов и генерации заголовков</a></li>
+                    <li> <a class="servise-form__link" href="#publication54" aria-label="Как предсказывать будущее технологий на 30 лет вперед так, чтобы это было полезно уже сегодня?">Как предсказывать будущее технологий на 30 лет вперед так, чтобы это было полезно уже сегодня?</a></li>
+                    <li> <a class="servise-form__link" href="#publication55" aria-label="Наука и искусство в цифровую эпоху: проблема синергии ">Наука и искусство в цифровую эпоху: проблема синергии</a></li>
+                    <li> <a class="servise-form__link" href="#publication56" aria-label="Новый Космос и Новейший Космос ">Новый Космос и Новейший Космос</a></li>
+                    <li> <a class="servise-form__link" href="#publication57" aria-label="Пройти сквозь стену Тьюринга ">Пройти сквозь стену Тьюринга</a></li>
+                    <li> <a class="servise-form__link" href="#publication58" aria-label="Искусственный интеллект для науки и наука для искусственного интеллекта ">Искусственный интеллект для науки и наука для искусственного интеллекта</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-list">
+        <div class="container">
+          <div class="row">
+            <div class="lab" id="lab1">
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" alt="Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов</h3>
+                    <div class="card__labiratory">Лаборатория по исскуственному интеллекту</div>
+                    <div class="card__descr">Text Augmentation Techniques in Drug Adverse E ect Detection Task / Pavel Blinov // Proceedings of the ixth Social Media Mining for Health Workshop. 2021. PP. 95–97. DOI: 10.18653/v1/2021.smm4h-1.17</div>
+                    <div class="card__anons">В статье описана система для анализа сообщений Twitter на русском языке на предмет выявления побочных эффектов лекарственных препаратов в текстовых постах из социальных сетей. Для увеличения набора обучающих данных применены методы построения дополнительных примеров из исходного множества размеченных данных. Выполнена оценка эффективности предлагаемой системы по сравнению с аналогичными.</div><a class="btn" href="https://aclanthology.org/2021.smm4h-1.17.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/blinov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Блинов Павел&lt;br&gt; Дмитриевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Блинов Павел<br> Дмитриевич</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/NB-MLM-17.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/NB-MLM-17.jpg" alt="NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">NB-MLM: E cient Domain Adaptation of Masked Language Models for Sentiment Analysis / Nikolay Arefyev, Dmitrii Kharchev, Artem Shelmanov // Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. 2021. PP. 9114–9124.</div>
+                    <div class="card__anons">Авторы предлагают новый метод более эффективной доменной адаптации, в котором маскированная языковая модель учится восстанавливать слова с высоким весом в наивном байесовском классификаторе, обученном на целевой задаче. Предлагаемый метод обеспечивает более быструю адаптацию и более высокое качество итоговой модели для анализа тональности по сравнению со стандартным подходом.</div><a class="btn" href="https://aclanthology.org/2021.emnlp-main.717/" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/shelmanov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Шелманов Артем &lt;br&gt; Олегович" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Шелманов Артем <br> Олегович</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Adversarial-Attacks-on-Deep-Models-18.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Adversarial-Attacks-on-Deep-Models-18.jpg" alt="Состязательные атаки на глубокие модели финансовых транзакций " decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">Состязательные атаки на глубокие модели финансовых транзакций </h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">Adversarial Attacks on Deep Models for Financial Transaction Records / Ivan Fursov, Matvey Morozov, Nina Kaploukhaya, Elizaveta Kovtun, Rodrigo Rivera-Castro, Gleb Gusev, Dmitry Babaev, Ivan Kireev, Alexey Zaytsev, Evgeny Burnaev // KDD 21: Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining, August 2021. PP. 2868–2878. DOI: 10.1145/3447548.3467145</div>
+                    <div class="card__anons">В статье представлено всеобъемлющее исследование уязвимости финансовых моделей глубокого обучения для состязательных атак в приближенных к жизни сценариях «черного ящика» (когда отсутствует непосредственный доступ к модели — цели атаки), а также возможности защиты от подобных атак. Авторы приходят к выводу, что небольшие изменения данных о транзакциях способны ввести финансовые модели в заблуждение.</div><a class="btn" href="https://arxiv.org/pdf/2106.08361.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/gusev.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Гусев Глеб &lt;br&gt; Геннадьевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Гусев Глеб <br> Геннадьевич</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/babayev-min.jpg" decoding="async" loading="lazy" width="100" height="100" alt=" Бабаев Дмитрий &lt;br&gt; Леонидович" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name"> Бабаев Дмитрий <br> Леонидович</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/kireev.jpg" decoding="async" loading="lazy" width="100" height="100" alt=" Киреев Иван &lt;br&gt; Александрович" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name"> Киреев Иван <br> Александрович</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Random-Fourier-Features-based-SLAM-19.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Random-Fourier-Features-based-SLAM-19.jpg" alt="Одновременная локализация и построение карты на основе случайных признаков Фурье" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">Одновременная локализация и построение карты на основе случайных признаков Фурье</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">Random Fourier Features based SLAM / Yermek Kapushev, Anastasia Kishkun, Gonzalo Ferrer, Evgeny Burnaev // IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). 2021.</div>
+                    <div class="card__anons">Авторы разработали метод на основе гауссовских процессов и случайных признаков Фурье для одновременной локализации и построения карты. Переход в пространство признаков Фурье позволяет работать с достаточно широким классом функций ядра, сохраняя при этом низкую вычислительную сложность. На наборе синтетических и реальных задач показано, что подход лучше всего работает в случаях очень шумных данных.</div><a class="btn" href="https://arxiv.org/abs/2011.00594" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/kapushev.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Капушев Ермек &lt;br&gt; Рахатович" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Капушев Ермек <br> Рахатович</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Leveraging-Recursive-Gumbel-Max-Trick-20.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Leveraging-Recursive-Gumbel-Max-Trick-20.jpg" alt="Обучение скрытых структур с помощью стохастических инвариантов " decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">Обучение скрытых структур с помощью стохастических инвариантов </h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">Leveraging Recursive Gumbel-Max Trick for Approximate Inference in Combinatorial Spaces / Kirill Struminsky, Artyom Gadetsky, Denis Rakitin, Danil Karpushkin, Dmitry Vetrov // Advances in Neural Information Processing Systems 34 (NeurIPS 2021). December 6–14, 2021, virtual. 2021.</div>
+                    <div class="card__anons">Авторы рассматривают различные модели структурированных скрытых переменных, которые позволяют включать важные предварительные знания в модели глубокого обучения, и приходят к выводу, что суррогат накладывает дополнительные ограничения на модель и неизбежно приводит к смещению градиентов. Эти недостатки устраняются за счет модификации выборки Gumbel-Max trick.</div><a class="btn" href="https://arxiv.org/pdf/2110.15072.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/karpushin.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Карпушкин Данил &lt;br&gt; Дмитриевич " />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Карпушкин Данил <br> Дмитриевич </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Generating-Mammography-Reports-21.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Generating-Mammography-Reports-21.jpg" alt="Автоматическая генерация текстовых заключений по изображениям маммограмм с помощью BERT" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">Автоматическая генерация текстовых заключений по изображениям маммограмм с помощью BERT</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">Generating Mammography Reports from Multi-view Mammograms with BERT / Alexander Yalunin, Elena Sokolova, Ilya Burenko, Alexander Ponomarchuk, Olga Puchkova, Dmitriy Umerenkov // Findings of the Association for Computational Linguistics: EMNLP. 2021. PP. 153–162.</div>
+                    <div class="card__anons">Авторы предприняли первую в своем роде попытку создать текстовое заключение по маммограммам с использованием глубокого обучения. Для этого используется модель, включающая энкодер на основе E?cientNet и декодер на основе трансформера. В технологии комбинируются визуальная и семантическая информация для локализации патологичных областей на снимках и создания визуально интерпретируемого описания.</div><a class="btn" href="https://aclanthology.org/2021.findings-emnlp.15.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/yalunin.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Ялунин Александр &lt;br&gt; Александрович" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Ялунин Александр <br> Александрович</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/sokolovaE.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Соколова Елена &lt;br&gt; Владимировна" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Соколова Елена <br> Владимировна</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/burenko-min.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Буренко Илья &lt;br&gt; Михайлович" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Буренко Илья <br> Михайлович</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/ponomarchuk.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Пономарчук Александр &lt;br&gt; Васильевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Пономарчук Александр <br> Васильевич</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/umerenkov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Умеренков Дмитрий &lt;br&gt; Евгеньевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Умеренков Дмитрий <br> Евгеньевич</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" alt="Метрики качества в рекомендательных системах: вычисляем ли мы метрики единообразно?" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">Метрики качества в рекомендательных системах: вычисляем ли мы метрики единообразно?</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">Quality Metrics in Recommender Systems: Do We Calculate Metrics Consistently? / Yan-Martin Tamm, Rinchin Damdinov, Alexey Vasilev // Fifteenth ACM Conference on Recommender Systems. 2021. PP. 708–713. DOI: 10.1145/3460231.3478848</div>
+                    <div class="card__anons"> В статье исследуются метрики качества, используемые для оценки рекомендательных систем. Авторы рассматривают как практический аспект реализаций, найденных в современных библиотеках, так и теоретический аспект определений в научных статьях, и делают вывод, что точность является единственной одинаково понимаемой для них метрикой, в то время как другие метрики могут иметь различные интерпретации.</div><a class="btn" href="https://aclanthology.org/2021.smm4h-1.17.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/blinov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Тамм Ян-Мартин &lt;br&gt; Юривич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Тамм Ян-Мартин <br> Юривич</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/undefined" decoding="async" loading="lazy" width="100" height="100" alt="Дамдинов Ринчин Гармаевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Дамдинов Ринчин Гармаевич</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/undefined" decoding="async" loading="lazy" width="100" height="100" alt=" Тамм Ян-Мартин &lt;br&gt; Юривич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name"> Тамм Ян-Мартин <br> Юривич</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" alt="NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">NB-MLM: E cient Domain Adaptation of Masked Language Models for Sentiment Analysis / Nikolay Arefyev, Dmitrii Kharchev, Artem Shelmanov // Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. 2021. PP. 9114–9124.</div>
+                    <div class="card__anons">Авторы предлагают новый метод более эффективной доменной адаптации, в котором маскированная языковая модель учится восстанавливать слова с высоким весом в наивном байесовском классификаторе, обученном на целевой задаче. Предлагаемый метод обеспечивает более быструю адаптацию и более высокое качество итоговой модели для анализа тональности по сравнению со стандартным подходом.</div><a class="btn" href="https://aclanthology.org/2021.smm4h-1.17.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/blinov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Блинов Павел&lt;br&gt; Дмитриевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Блинов Павел<br> Дмитриевич</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" alt="Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">Text Augmentation Techniques in Drug Adverse E ect Detection Task / Pavel Blinov // Proceedings of the ixth Social Media Mining for Health Workshop. 2021. PP. 95–97. DOI: 10.18653/v1/2021.smm4h-1.17</div>
+                    <div class="card__anons">В статье описана система для анализа сообщений Twitter на русском языке на предмет выявления побочных эффектов лекарственных препаратов в текстовых постах из социальных сетей. Для увеличения набора обучающих данных применены методы построения дополнительных примеров из исходного множества размеченных данных. Выполнена оценка эффективности предлагаемой системы по сравнению с аналогичными.</div><a class="btn" href="https://aclanthology.org/2021.smm4h-1.17.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/blinov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Блинов Павел&lt;br&gt; Дмитриевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Блинов Павел<br> Дмитриевич</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" alt="NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">NB-MLM: E cient Domain Adaptation of Masked Language Models for Sentiment Analysis / Nikolay Arefyev, Dmitrii Kharchev, Artem Shelmanov // Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. 2021. PP. 9114–9124.</div>
+                    <div class="card__anons">Авторы предлагают новый метод более эффективной доменной адаптации, в котором маскированная языковая модель учится восстанавливать слова с высоким весом в наивном байесовском классификаторе, обученном на целевой задаче. Предлагаемый метод обеспечивает более быструю адаптацию и более высокое качество итоговой модели для анализа тональности по сравнению со стандартным подходом.</div><a class="btn" href="https://aclanthology.org/2021.smm4h-1.17.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/blinov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Блинов Павел&lt;br&gt; Дмитриевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Блинов Павел<br> Дмитриевич</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" alt="Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">Text Augmentation Techniques in Drug Adverse E ect Detection Task / Pavel Blinov // Proceedings of the ixth Social Media Mining for Health Workshop. 2021. PP. 95–97. DOI: 10.18653/v1/2021.smm4h-1.17</div>
+                    <div class="card__anons">В статье описана система для анализа сообщений Twitter на русском языке на предмет выявления побочных эффектов лекарственных препаратов в текстовых постах из социальных сетей. Для увеличения набора обучающих данных применены методы построения дополнительных примеров из исходного множества размеченных данных. Выполнена оценка эффективности предлагаемой системы по сравнению с аналогичными.</div><a class="btn" href="https://aclanthology.org/2021.smm4h-1.17.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/blinov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Блинов Павел&lt;br&gt; Дмитриевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Блинов Павел<br> Дмитриевич</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" alt="NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">NB-MLM: E cient Domain Adaptation of Masked Language Models for Sentiment Analysis / Nikolay Arefyev, Dmitrii Kharchev, Artem Shelmanov // Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. 2021. PP. 9114–9124.</div>
+                    <div class="card__anons">Авторы предлагают новый метод более эффективной доменной адаптации, в котором маскированная языковая модель учится восстанавливать слова с высоким весом в наивном байесовском классификаторе, обученном на целевой задаче. Предлагаемый метод обеспечивает более быструю адаптацию и более высокое качество итоговой модели для анализа тональности по сравнению со стандартным подходом.</div><a class="btn" href="https://aclanthology.org/2021.smm4h-1.17.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/blinov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Блинов Павел&lt;br&gt; Дмитриевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Блинов Павел<br> Дмитриевич</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" alt="Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">Text Augmentation Techniques in Drug Adverse E ect Detection Task / Pavel Blinov // Proceedings of the ixth Social Media Mining for Health Workshop. 2021. PP. 95–97. DOI: 10.18653/v1/2021.smm4h-1.17</div>
+                    <div class="card__anons">В статье описана система для анализа сообщений Twitter на русском языке на предмет выявления побочных эффектов лекарственных препаратов в текстовых постах из социальных сетей. Для увеличения набора обучающих данных применены методы построения дополнительных примеров из исходного множества размеченных данных. Выполнена оценка эффективности предлагаемой системы по сравнению с аналогичными.</div><a class="btn" href="https://aclanthology.org/2021.smm4h-1.17.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/blinov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Блинов Павел&lt;br&gt; Дмитриевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Блинов Павел<br> Дмитриевич</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" alt="NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">NB-MLM: E cient Domain Adaptation of Masked Language Models for Sentiment Analysis / Nikolay Arefyev, Dmitrii Kharchev, Artem Shelmanov // Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. 2021. PP. 9114–9124.</div>
+                    <div class="card__anons">Авторы предлагают новый метод более эффективной доменной адаптации, в котором маскированная языковая модель учится восстанавливать слова с высоким весом в наивном байесовском классификаторе, обученном на целевой задаче. Предлагаемый метод обеспечивает более быструю адаптацию и более высокое качество итоговой модели для анализа тональности по сравнению со стандартным подходом.</div><a class="btn" href="https://aclanthology.org/2021.smm4h-1.17.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/blinov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Блинов Павел&lt;br&gt; Дмитриевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Блинов Павел<br> Дмитриевич</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" alt="Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">Text Augmentation Techniques in Drug Adverse E ect Detection Task / Pavel Blinov // Proceedings of the ixth Social Media Mining for Health Workshop. 2021. PP. 95–97. DOI: 10.18653/v1/2021.smm4h-1.17</div>
+                    <div class="card__anons">В статье описана система для анализа сообщений Twitter на русском языке на предмет выявления побочных эффектов лекарственных препаратов в текстовых постах из социальных сетей. Для увеличения набора обучающих данных применены методы построения дополнительных примеров из исходного множества размеченных данных. Выполнена оценка эффективности предлагаемой системы по сравнению с аналогичными.</div><a class="btn" href="https://aclanthology.org/2021.smm4h-1.17.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/blinov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Блинов Павел&lt;br&gt; Дмитриевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Блинов Павел<br> Дмитриевич</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" alt="NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">NB-MLM: E cient Domain Adaptation of Masked Language Models for Sentiment Analysis / Nikolay Arefyev, Dmitrii Kharchev, Artem Shelmanov // Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. 2021. PP. 9114–9124.</div>
+                    <div class="card__anons">Авторы предлагают новый метод более эффективной доменной адаптации, в котором маскированная языковая модель учится восстанавливать слова с высоким весом в наивном байесовском классификаторе, обученном на целевой задаче. Предлагаемый метод обеспечивает более быструю адаптацию и более высокое качество итоговой модели для анализа тональности по сравнению со стандартным подходом.</div><a class="btn" href="https://aclanthology.org/2021.smm4h-1.17.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/blinov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Блинов Павел&lt;br&gt; Дмитриевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Блинов Павел<br> Дмитриевич</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" alt="Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">Text Augmentation Techniques in Drug Adverse E ect Detection Task / Pavel Blinov // Proceedings of the ixth Social Media Mining for Health Workshop. 2021. PP. 95–97. DOI: 10.18653/v1/2021.smm4h-1.17</div>
+                    <div class="card__anons">В статье описана система для анализа сообщений Twitter на русском языке на предмет выявления побочных эффектов лекарственных препаратов в текстовых постах из социальных сетей. Для увеличения набора обучающих данных применены методы построения дополнительных примеров из исходного множества размеченных данных. Выполнена оценка эффективности предлагаемой системы по сравнению с аналогичными.</div><a class="btn" href="https://aclanthology.org/2021.smm4h-1.17.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/blinov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Блинов Павел&lt;br&gt; Дмитриевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Блинов Павел<br> Дмитриевич</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" alt="NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">NB-MLM: E cient Domain Adaptation of Masked Language Models for Sentiment Analysis / Nikolay Arefyev, Dmitrii Kharchev, Artem Shelmanov // Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. 2021. PP. 9114–9124.</div>
+                    <div class="card__anons">Авторы предлагают новый метод более эффективной доменной адаптации, в котором маскированная языковая модель учится восстанавливать слова с высоким весом в наивном байесовском классификаторе, обученном на целевой задаче. Предлагаемый метод обеспечивает более быструю адаптацию и более высокое качество итоговой модели для анализа тональности по сравнению со стандартным подходом.</div><a class="btn" href="https://aclanthology.org/2021.smm4h-1.17.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/blinov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Блинов Павел&lt;br&gt; Дмитриевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Блинов Павел<br> Дмитриевич</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" alt="Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">Text Augmentation Techniques in Drug Adverse E ect Detection Task / Pavel Blinov // Proceedings of the ixth Social Media Mining for Health Workshop. 2021. PP. 95–97. DOI: 10.18653/v1/2021.smm4h-1.17</div>
+                    <div class="card__anons">В статье описана система для анализа сообщений Twitter на русском языке на предмет выявления побочных эффектов лекарственных препаратов в текстовых постах из социальных сетей. Для увеличения набора обучающих данных применены методы построения дополнительных примеров из исходного множества размеченных данных. Выполнена оценка эффективности предлагаемой системы по сравнению с аналогичными.</div><a class="btn" href="https://aclanthology.org/2021.smm4h-1.17.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/blinov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Блинов Павел&lt;br&gt; Дмитриевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Блинов Павел<br> Дмитриевич</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card  card--mod">
+                <div class="card__row"><a class="card__img-wrap" href="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" alt="NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов" decoding="async" loading="lazy" /></a>
+                  <div class="card__content">
+                    <h3 class="card__title">NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов</h3>
+                    <div class="card__labiratory"></div>
+                    <div class="card__descr">NB-MLM: E cient Domain Adaptation of Masked Language Models for Sentiment Analysis / Nikolay Arefyev, Dmitrii Kharchev, Artem Shelmanov // Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. 2021. PP. 9114–9124.</div>
+                    <div class="card__anons">Авторы предлагают новый метод более эффективной доменной адаптации, в котором маскированная языковая модель учится восстанавливать слова с высоким весом в наивном байесовском классификаторе, обученном на целевой задаче. Предлагаемый метод обеспечивает более быструю адаптацию и более высокое качество итоговой модели для анализа тональности по сравнению со стандартным подходом.</div><a class="btn" href="https://aclanthology.org/2021.smm4h-1.17.pdf" target="blank" aria-label="Читать работу">Читать</a>
+                    <div class="card__authors authors">
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/blinov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Блинов Павел&lt;br&gt; Дмитриевич" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Блинов Павел<br> Дмитриевич</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="container">
+          <div class="page-footer__row">
+            <div class="page-footer__col-1">
+              <div class="page-footer__logo"><img class="logo-mobile" src="img/logo-green.svg" alt="Logo" width="230" height="64" /></div>
+              <div class="page-footer__content">
+                <p>Россия, Москва, 117997, ул. Вавилова, 19 <br>© 1997—2022 ПАО Сбербанк.</p>
+              </div>
+              <div class="page-footer__info">
+                <p>Генеральная лицензия Банка России на осуществление банковских операций №1481 от 11.08.2015 г.</p>
+                <p>Информация, обязательная к размещению</p>
+                <p>Раскрытие информации о банке как о профессиональном участнике рынка ценных бумаг</p>
+              </div>
+            </div>
+            <div class="page-footer__col-2">
+              <ul class="stores-list">
+                <li class="stores-list__item"> <a class="app-store" href="https://apps.apple.com/RU/app/id492224193?mt=8" target="_blank" aria-label="app store"> </a></li>
+                <li class="stores-list__item"> <a class="play-market" href="https://play.google.com/store/apps/details?id=ru.sberbankmobile&amp;hl=ru" target="_blank" aria-label="play market"></a></li>
+              </ul>
+              <ul class="sotials-list">
+                <li class="sotials-list__item"><a class="fb" href="https://www.facebook.com/sberbank" target="_blank" aria-label="Фейсбук"> </a></li>
+                <li class="sotials-list__item"><a class="insta" href="https://www.instagram.com/sberbank/" target="_blank" aria-label="Инстаграмм"></a></li>
+                <li class="sotials-list__item"> <a class="twitter" href="https://twitter.com/sberbank/" target="_blank" aria-label="Твиттер"> </a></li>
+                <li class="sotials-list__item"><a class="youtube" href="https://www.youtube.com/user/Sberbank" target="_blank" aria-label="Ютубе"> </a></li>
+                <li class="sotials-list__item"> <a class="wk" href="https://vk.com/sberbank" target="_blank" aria-label="Вконтакте"> </a></li>
+                <li class="sotials-list__item"><a class="ok" href="https://ok.ru/sberbank" target="_blank" aria-label="Одноклассники"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/fslightbox.js"></script><script src="js/bundle.js"></script>
+
+</body>
+
+</html>

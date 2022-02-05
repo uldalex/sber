@@ -6,49 +6,23 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  z-index: 10;
-  padding-top:24px;
 
 
   &__inner {
-    @include container();
+  
   }
   & .row {
     align-items: center;
-  }
-  &__button {
-    width:235px;
-    display:flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    margin-left:auto;
-    border:1px solid #ffffff;
-    border-radius:10px;
-    padding:14px 50px;
-    line-height:0.8rem;
-    color:#ffffff;
-    font-family: 'SBSansDisplay';
-    @media(max-width:600px){
-      text-indent: -9999px;
-      width: auto;
-      padding:10px;
-      border:0px;
-    }
   }
   &__wrapper {
     display:flex;
     justify-content: flex-end;
   }
-  & .logo {
-    max-width:136px;
-  }
+ 
 
   // первый уровень
   &__list {
+    position: absolute;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -58,6 +32,7 @@
     max-width:600px;
     background-color: #ffffff ;
     border-radius:10px;
+    margin-top:20px;
   
 
 
@@ -74,9 +49,15 @@
       .js #{$block-name}--open & {
         max-height: 1000px;
         transition: max-height 0.6s;
-        padding:10px;
+        padding:10px; 
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
         @media(max-width:600px){
-          padding:10px 5px;
+          padding:30px 5px;
+          right: 15px;
+          left: 15px;
+          top: 15px;
+          padding-top: 60px;
+    
         }
 
         &--lvl-2 {
@@ -129,6 +110,10 @@
     border: none;
     padding: 0;
     background: none;
+    margin-left:15px;
+    @media(max-width:600px){
+      margin-left:0;
+    }
     .no-js & {
       display: none;
     }

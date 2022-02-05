@@ -18,5 +18,33 @@ mixin page-footer(mods)
     }
 
   footer.page-footer(class=allMods, role='contentinfo')&attributes(attributes)
-    .page-footer__inner
-      block
+          .container
+            .page-footer__row
+              .page-footer__col-1
+                .page-footer__logo
+                  img.logo-mobile(src='img/logo-green.svg', alt='Logo', width='230', height='64') 
+                .page-footer__content
+                  p Россия, Москва, 117997, ул. Вавилова, 19 <br>© 1997—2022 ПАО Сбербанк.
+                .page-footer__info 
+                  p Генеральная лицензия Банка России на осуществление банковских операций №1481 от 11.08.2015 г.
+                  p Информация, обязательная к размещению
+                  p Раскрытие информации о банке как о профессиональном участнике рынка ценных бумаг
+              .page-footer__col-2
+               ul.stores-list
+                li.stores-list__item 
+                  a.app-store(href="https://apps.apple.com/RU/app/id492224193?mt=8" target="_blank" aria-label="app store")  
+                li.stores-list__item 
+                  a.play-market(href="https://play.google.com/store/apps/details?id=ru.sberbankmobile&hl=ru" target="_blank" aria-label="play market")
+               ul.sotials-list
+                li.sotials-list__item
+                 a.fb(href="https://www.facebook.com/sberbank" target="_blank" aria-label="Фейсбук") 
+                li.sotials-list__item
+                  a.insta(href="https://www.instagram.com/sberbank/" target="_blank" aria-label="Инстаграмм")
+                li.sotials-list__item 
+                  a.twitter(href="https://twitter.com/sberbank/" target="_blank" aria-label="Твиттер") 
+                li.sotials-list__item
+                  a.youtube(href="https://www.youtube.com/user/Sberbank" target="_blank" aria-label="Ютубе")  
+                li.sotials-list__item 
+                  a.wk(href="https://vk.com/sberbank" target="_blank" aria-label="Вконтакте") 
+                li.sotials-list__item
+                  a.ok(href="https://ok.ru/sberbank" target="_blank" aria-label="Одноклассники")

@@ -2,4 +2,96 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.page-header {}
+.page-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding-top: 24px;
+    background-color: #18182a;
+    &__inner {
+        @include container;
+    }
+    & .row {
+        align-items: center;
+      }
+      &__button {
+        width:235px;
+        display:flex;
+        justify-content: center;
+        align-items: flex-end;
+        border:1px solid #ffffff;
+        border-radius:100px;
+        padding:14px;
+        line-height:0.8rem;
+        color:#ffffff;
+        font-family: 'SBSansDisplay';
+        @media(max-width:600px){
+          text-indent: -9999px;
+          width: auto;
+          padding:10px;
+          border:0px;
+        }
+      }
+      &__right-part {
+        margin-left:auto;
+        display:flex;
+        align-items:center;
+        justify-content:flex-end;
+    }
+      &__language {
+        color: #ffffff;
+          margin-right: 45px;
+          text-decoration:none;
+          font-size: 1.15rem;
+          font-weight:600;
+          font-family:$font-family--alt;
+          @media(max-width:600px){
+            margin-right: 25px;
+          }
+      }
+      & .logo {
+        max-width:136px;
+
+        @media(max-width:600px){
+          max-width:71px;
+        }
+      }
+&--inner {
+    position:relative;
+    background-color:#ffffff;
+
+    & .page-header__button {
+        border:1px solid #2F2F2F;
+        color:#2F2F2F;
+        @media(max-width:600px){
+          border:0px;
+        }
+      }
+
+      & .burger>span, .burger>span:before, .burger>span:after {
+        background: #2F2F2F;
+    }
+    & .burger--close>span {
+        background:transparent;
+    }
+    & .page-header__language {
+      color: #333f48;
+    }
+  }
+&.fixed {
+  position:fixed;
+  top:-100px;
+  right:0;
+  left:0;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition:top 0.5s ease-out;
+
+    & .breadcrumbs {
+      display:none;
+    }
+  }
+}

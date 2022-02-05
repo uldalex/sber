@@ -43,7 +43,16 @@ html(class='page  no-js', lang='ru')
         //- первый экран
         .first-screen 
           +page-header()
-            block nav
+            .row 
+              .col-lg-2.col-xs-6 
+                +logo('/')
+                    img(src='img/logo.svg', alt='Logo', width='132', height='37')
+              .col-lg-4.col-xs-4.page-header__right-part 
+                a(href="/").page-header__language ENG
+                .page-header__button  Содержание
+                    +burger('Показать содержание', 'nav', 'main-nav--open')(class='main-nav__toggler')
+              block nav
+                +main-nav('10')
           .container.first-screen__background 
             .row 
               .col-lg-7.col 
@@ -199,7 +208,7 @@ html(class='page  no-js', lang='ru')
                   .eight-screen__card-header 
                     p Сколтех
                     img(src="img/logos/skolteh.svg" decoding="async" loading="lazy"   width="150" height="80" alt="Сколтех")
-        block content
+      block content
           p содержимое
 
       .page__footer-wrapper

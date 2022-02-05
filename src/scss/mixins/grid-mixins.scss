@@ -119,7 +119,7 @@ $grid-gutter-width:           30px !default;
   flex-wrap: wrap;
 
   & > * { // stylelint-disable-line  selector-combinator-blacklist, plugin/selector-bem-pattern
-    flex-basis: 100%;
+   // flex-basis: 100%;
   }
 
   @if ($xs-grid-gutter != 0) {

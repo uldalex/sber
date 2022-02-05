@@ -36,11 +36,13 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
       <div class="first-screen">
         <header class="page-header" role="banner">
           <div class="page-header__inner">
-            <nav class="main-nav" id="nav">
-              <div class="main-nav__inner">
-                <div class="row">
-                  <div class="col-lg-2 col-xs-6"> <a class="logo" href="/"><img src="img/logo.svg" alt="Logo" width="132" height="37" /></a></div>
-                  <div class="main-nav__button col-lg-2 col-xs-2"> Содержание<button class="burger main-nav__toggler" aria-label="Показать содержание" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать содержание</span></button></div>
+            <div class="row">
+              <div class="col-lg-2 col-xs-6"> <a class="logo" href="/"><img src="img/logo.svg" alt="Logo" width="132" height="37"></a></div>
+              <div class="col-lg-4 col-xs-4 page-header__right-part"> <a class="page-header__language" href="/">ENG</a>
+                <div class="page-header__button"> Содержание<button class="burger main-nav__toggler" aria-label="Показать содержание" data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать содержание</span></button></div>
+              </div>
+              <nav class="main-nav" id="nav">
+                <div class="main-nav__inner">
                   <div class="main-nav__wrapper">
                     <ul class="main-nav__list">
                       <li class="main-nav__item"><a class="main-nav__link" href="#nayka_v_sber">Наука в Сбере</a></li>
@@ -60,8 +62,8 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                     </ul>
                   </div>
                 </div>
-              </div>
-            </nav>
+              </nav>
+            </div>
           </div>
         </header>
         <div class="container first-screen__background">
@@ -249,13 +251,38 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
           </div>
         </div>
       </div>
-      <p>содержимое</p>
     </div>
+    <p>содержимое</p>
     <div class="page__footer-wrapper">
       <footer class="page-footer" role="contentinfo">
-        <div class="page-footer__inner">
-          <p>«Подвал»</p>
-          <p>Контактный телефон: <a href="tel:+70000000000">+7 000 000 00 00</a></p>
+        <div class="container">
+          <div class="page-footer__row">
+            <div class="page-footer__col-1">
+              <div class="page-footer__logo"><img class="logo-mobile" src="img/logo-green.svg" alt="Logo" width="230" height="64" /></div>
+              <div class="page-footer__content">
+                <p>Россия, Москва, 117997, ул. Вавилова, 19 <br>© 1997—2022 ПАО Сбербанк.</p>
+              </div>
+              <div class="page-footer__info">
+                <p>Генеральная лицензия Банка России на осуществление банковских операций №1481 от 11.08.2015 г.</p>
+                <p>Информация, обязательная к размещению</p>
+                <p>Раскрытие информации о банке как о профессиональном участнике рынка ценных бумаг</p>
+              </div>
+            </div>
+            <div class="page-footer__col-2">
+              <ul class="stores-list">
+                <li class="stores-list__item"> <a class="app-store" href="https://apps.apple.com/RU/app/id492224193?mt=8" target="_blank" aria-label="app store"> </a></li>
+                <li class="stores-list__item"> <a class="play-market" href="https://play.google.com/store/apps/details?id=ru.sberbankmobile&amp;hl=ru" target="_blank" aria-label="play market"></a></li>
+              </ul>
+              <ul class="sotials-list">
+                <li class="sotials-list__item"><a class="fb" href="https://www.facebook.com/sberbank" target="_blank" aria-label="Фейсбук"> </a></li>
+                <li class="sotials-list__item"><a class="insta" href="https://www.instagram.com/sberbank/" target="_blank" aria-label="Инстаграмм"></a></li>
+                <li class="sotials-list__item"> <a class="twitter" href="https://twitter.com/sberbank/" target="_blank" aria-label="Твиттер"> </a></li>
+                <li class="sotials-list__item"><a class="youtube" href="https://www.youtube.com/user/Sberbank" target="_blank" aria-label="Ютубе"> </a></li>
+                <li class="sotials-list__item"> <a class="wk" href="https://vk.com/sberbank" target="_blank" aria-label="Вконтакте"> </a></li>
+                <li class="sotials-list__item"><a class="ok" href="https://ok.ru/sberbank" target="_blank" aria-label="Одноклассники"></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

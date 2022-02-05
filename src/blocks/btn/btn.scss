@@ -8,10 +8,10 @@
   max-width: 100%;
   overflow: hidden;
   margin: 0;
-  border-radius: 5px;
+  border-radius: 100px;
   // border: 1px solid $gray-lighter;
   border: 0;
-  padding: 15px 25px;
+  padding: 10px 87px;
   vertical-align: middle;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -23,18 +23,25 @@
   text-decoration: none;
   text-transform: none;
   color: #ffffff;
-  background-color: #21BA72;
+  background-color: #21A038;;
   background-image: none;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
+  &:hover {
+    outline:none;
+    box-shadow: 0;
     text-decoration: none;
-    color: $text-color;
-    background-color: darken($gray-lightest, 10%);
+    color: #ffffff;
+    background-color: #0F8024;
     // border-color: darken($gray-lighter, 12%);
   }
-
+  &:focus, &:active {
+    outline:none;
+    box-shadow: 0;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #116B21;
+  }
   // &:visited {
   //   color: $text-color;
   // }

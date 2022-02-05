@@ -39,25 +39,97 @@ mixin card(data, mods)
     var newLabel = (data.new !== 'undefined' && data.new) ? '<div class="card__new">Новинка!</div>' : '';
     var price = '' + data.price;
     var price = price.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1&thinsp;') + ' ₽';
-
   article.card(class=allMods)&attributes(attributes)
-    != newLabel
-    if (data.url !== 'undefined' && data.url)
-      .card__inner
-        a.card__img-wrap(href=data.url)
-          img.card__img(src=data.img, alt=data.name)
-        h3.card__title
-          a(href=data.url)!= data.name
-        if (data.descr !== 'undefined' && data.descr)
-          p.card__descr!= data.descr
-        p.card__price!= price
-    else
-      .card__inner
-        span.card__img-wrap
-          img.card__img(src=data.img, alt=data.name)
-        h3.card__title!= data.name
-        if (data.descr !== 'undefined' && data.descr)
-          p.card__descr!= data.descr
-        p.card__price!= price
-
-    +btn('Купить', '')(class='card__buy')
+      .card__row
+        a.card__img-wrap(href='img/docs/'+data.urlimg data-fslightbox="gallery" )
+          img.card__img(src='img/docs/'+data.img, alt=data.name  decoding="async" loading="lazy" )
+        .card__content 
+          h3.card__title!= data.name
+          .card__labiratory!= data.lab
+          if (data.descr !== 'undefined' && data.descr)
+            .card__descr!= data.descr
+          if (data.anons !== 'undefined' && data.anons)
+            .card__anons!= data.anons
+          a.btn(href=data.url target="blank" aria-label="Читать работу") Читать
+          .card__authors.authors
+            .authors__wrap 
+              if (data.autor1 !== 'undefined' && data.autor1)
+                .authors__card
+                  .author
+                    .author__img
+                      .author__gradient
+                      img(src='img/authors/'+data.autorimg1  decoding="async" loading="lazy"   width="100" height="100" alt=data.autor1)
+                    .author__content
+                      .author__name!= data.autor1
+              if (data.autor2 !== 'undefined' && data.autor2)
+                .authors__card
+                  .author
+                    .author__img
+                      .author__gradient
+                      img(src='img/authors/'+data.autorimg2  decoding="async" loading="lazy"   width="100" height="100" alt=data.autor2)
+                    .author__content
+                      .author__name!= data.autor2
+              if (data.autor3 !== 'undefined' && data.autor3)
+                .authors__card
+                  .author
+                    .author__img
+                      .author__gradient
+                      img(src='img/authors/'+data.autorimg3  decoding="async" loading="lazy"   width="100" height="100" alt=data.autor3)
+                    .author__content
+                      .author__name!= data.autor3
+              if (data.autor4 !== 'undefined' && data.autor4)
+                .authors__card
+                  .author
+                    .author__img
+                      .author__gradient
+                      img(src='img/authors/'+data.autorimg4  decoding="async" loading="lazy"   width="100" height="100" alt=data.autor4)
+                    .author__content
+                      .author__name!= data.autor4
+              if (data.autor5 !== 'undefined' && data.autor5)
+                .authors__card
+                  .author
+                    .author__img
+                      .author__gradient
+                      img(src='img/authors/'+data.autorimg5  decoding="async" loading="lazy"   width="100" height="100" alt=data.autor5)
+                    .author__content
+                      .author__name!= data.autor5
+              if (data.autor6 !== 'undefined' && data.autor6)
+                .authors__card
+                  .author
+                    .author__img
+                      .author__gradient
+                      img(src='img/authors/'+data.autorimg6  decoding="async" loading="lazy"   width="100" height="100" alt=data.autor6)
+                    .author__content
+                      .author__name!= data.autor6
+              if (data.autor7 !== 'undefined' && data.autor7)
+                .authors__card
+                  .author
+                    .author__img
+                      .author__gradient
+                      img(src='img/authors/'+data.autorimg7  decoding="async" loading="lazy"   width="100" height="100" alt=data.autor7)
+                    .author__content
+                      .author__name!= data.autor7
+              if (data.autor8 !== 'undefined' && data.autor8)
+                .authors__card
+                  .author
+                    .author__img
+                      .author__gradient
+                      img(src='img/authors/'+data.autorimg8  decoding="async" loading="lazy"   width="100" height="100" alt=data.autor8)
+                    .author__content
+                      .author__name!= data.autor8
+              if (data.autor9 !== 'undefined' && data.autor9)
+                .authors__card
+                  .author
+                    .author__img
+                      .author__gradient
+                      img(src='img/authors/'+data.autorimg9  decoding="async" loading="lazy"   width="100" height="100" alt=data.autor9)
+                    .author__content
+                      .author__name!= data.autor9
+              if (data.autor10 !== 'undefined' && data.autor10)
+                .authors__card
+                  .author
+                    .author__img
+                      .author__gradient
+                      img(src='img/authors/'+data.autorimg10  decoding="async" loading="lazy"   width="100" height="100" alt=data.autor10)
+                    .author__content
+                      .author__name!= data.autor10
