@@ -38,6 +38,7 @@ $('.dropdown .dropdown-menu li').click(function () {
 });
 $("#publication-input").on("click", function() {
   $(this).addClass('active');
+  $(this).parents('.dropdown').addClass('active');
   $(this).parents('.dropdown').find('.dropdown-menu').slideDown(300); 
   var close = $('#publication-close');
   $(close).addClass('active');
@@ -52,10 +53,8 @@ $("#publication-input").on("click", function() {
       $(this).toggle(item);
     });
   })
-  $("#publication-list li a").on('click', function(){
-    $(this).parents('.dropdown').find('.dropdown-menu').slideUp(300);
-  })
 });
+
 
 $("#publication-input").on("keyup", function() {
   var value = $(this).val().toLowerCase();
@@ -142,7 +141,7 @@ var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем вс�
     V = 1;  
 for (var i = 0; i < linkNav.length; i++) {
     linkNav[i].addEventListener('click', function(e) { 
-      var toUrl = $(this).data('anchor'); 
+      var Url = $(this).data('anchor'); 
       var toUrl = Url.split(' ').join('_'); 
         // e.preventDefault(); 
 
