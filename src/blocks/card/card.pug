@@ -39,7 +39,7 @@ mixin card(data, mods, id)
     var newLabel = (data.new !== 'undefined' && data.new) ? '<div class="card__new">Новинка!</div>' : '';
     var price = '' + data.price;
     var price = price.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1&thinsp;') + ' ₽';
-  article.card(id!= data.id)(class=allMods)&attributes(attributes)
+  article.card(id!= data.id class=allMods)&attributes(attributes)
       .card__row
         a.card__img-wrap(href='img/docs/'+data.urlimg data-fslightbox="gallery" )
           img.card__img(src='img/docs/'+data.img, alt=data.name  decoding="async" loading="lazy" )

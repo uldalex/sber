@@ -99,6 +99,9 @@ html {
   }
 
 }
+body, html {
+  overflow-x: hidden;
+}
 body {
   display: flex;           // Исправляем баг в IE для min-height and flexbox (flex-direction:column)
   flex-direction: column;  // и прижимаем footer в IE 10-11
@@ -111,7 +114,6 @@ body {
   text-align: left;
   color: $text-color;
   background-color: $body-bg;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
 }
@@ -195,13 +197,15 @@ img {
 }
 
 a {
-  color: #21BA72;
+  color: #21A038;
   background-color: transparent;
   transition: color 0.3s;
 
-  &:hover,
-  &:focus {
-    color: #21BA72;
+  &:hover {
+     color: #0F8024;
+  }
+  &:focus, &:active {
+    color:#116B21;
   }
 
   // &:visited {
@@ -409,7 +413,7 @@ pre {
   @include col(sm, 6, $grid-columns, 10px);
 }
 .col-sm-4 {
-  @include col(sm, 4, $grid-columns, 10px);
+  @include col(sm, 4, $grid-columns, 12px);
 }
 .col-md-12 {
   @include col(md, 12, $grid-columns, 12px);
@@ -436,7 +440,7 @@ pre {
   @include col(md, 5, $grid-columns, 12px);
 }
 .col-md-4 {
-  @include col(md, 4, $grid-columns, 12px);
+  @include col(md, 4, $grid-columns, 40px);
 }
 .col-md-3 {
   @include col(md, 3, $grid-columns, 12px);
@@ -451,7 +455,7 @@ pre {
   @include col(lg, 12, $grid-columns, 16px);
 }
 .col-lg-11 {
-  @include col(lg, 11, $grid-columns, 16px);
+  @include col(lg, 11, $grid-columns, 40px);
 }
 .col-lg-10 {
   @include col(lg, 10, $grid-columns, 16px);
@@ -460,28 +464,28 @@ pre {
   @include col(lg, 9, $grid-columns, 16px);
 }
 .col-lg-8 {
-  @include col(lg, 8, $grid-columns, 16px);
+  @include col(lg, 8, $grid-columns, 40px);
 }
 .col-lg-7 {
-  @include col(lg, 7, $grid-columns, 16px);
+  @include col(lg, 7, $grid-columns, 40px);
 }
 .col-lg-6 {
-  @include col(lg, 6, $grid-columns, 16px);
+  @include col(lg, 6, $grid-columns, 40px);
 }
 .col-lg-5 {
-  @include col(lg, 5, $grid-columns, 16px);
+  @include col(lg, 5, $grid-columns, 40px);
 }
 .col-lg-4 {
-  @include col(lg, 4, $grid-columns, 16px);
+  @include col(lg, 4, $grid-columns, 40px);
 }
 .col-lg-3 {
-  @include col(lg, 3, $grid-columns, 16px);
+  @include col(lg, 3, $grid-columns, 40px);
 }
 .col-lg-2 {
-  @include col(lg, 2, $grid-columns, 16px);
+  @include col(lg, 2, $grid-columns, 40px);
 }
 .col-lg-1 {
-  @include col(lg, 1, $grid-columns, 16px);
+  @include col(lg, 1, $grid-columns, 40px);
 }
 .col-xl-12 {
   @include col(xl, 12, $grid-columns, 30px);
@@ -597,8 +601,10 @@ pre {
   background-size: contain;
 
   @media(max-width:600px){
-    background-size:cover;
-    background-position: center center;
+    background-size:contain;
+    background-position: center bottom;
+    align-items: flex-start;
+    padding-top:92px;
   }
 
   & h1 {
@@ -618,7 +624,7 @@ pre {
       font-size:5.5rem;
     }
     @media (max-width: 600px){
-      font-size: 4.5rem;
+      font-size: 6rem;
     }
     
 
@@ -642,6 +648,7 @@ pre {
   flex-wrap:wrap;
   align-items: flex-end;
   width:80%;
+  max-width: 1270px;
   margin: 0 auto;
   padding:50px 80px 0 80px;
   background: rgba(239, 239, 238, 0.4);
@@ -649,10 +656,12 @@ pre {
   @media(min-width:1920px){
     padding:80px 130px 0 130px;
   }
-  @media(max-width:600px){
-    padding:30px 10px 0 10px;
-    width:100%;
+  @media(max-width:768px){
+   width:100%;
+   padding: 30px 20px 0 30px;
+   flex-direction: column-reverse;
   }
+
   &:before {
     content:'';
     position: absolute;
@@ -682,6 +691,9 @@ pre {
     align-items: center;
     justify-content: flex-end;
     z-index: 5;
+    & img {
+      min-width:100%;
+    }
     @media (max-width:600px){
       order:1;
 
@@ -719,8 +731,8 @@ pre {
 }
 .three-screen {
   padding:100px 0;
-  @media(max-width:600px){
-    padding:30px 0;
+  @media(max-width:768px){
+    padding:40px 0;
   }
 }
 .info-card {
@@ -763,10 +775,19 @@ pre {
 }
 .four-screen {
   padding:100px 0;
+ 
+  @media(max-width:768px){
+      padding:40px 0;
+  }
   &__content {
-    width:60%;
+    width:80%;
     margin:0 auto;
     margin-bottom:100px;
+    @media(max-width:768px){
+      width:100%;
+      margin-bottom:40px;
+    }
+  
   }
   & h3 {
     display: block;
@@ -781,6 +802,13 @@ pre {
     margin-bottom:55px;
     & span {
       display:block;
+    }
+    @media(max-width:768px) and(min-width:600px){
+      font-size: 52px;
+      margin-bottom:30px;
+    }
+    @media(max-width:600px){
+      font-size: 30px;
     }
   }
 }
@@ -809,17 +837,26 @@ pre {
   background-image: url('/img/six-screen-bg.jpg');
   background-repeat:no-repeat;
   background-position:top 200px right;
+  @media(max-width:768px){
+    padding:40px 0;
+  }
   &__content { 
     position:relative;
-    width:60%;
+    width:80%;
     margin:0 auto;
     margin-bottom:100px; 
-
+    @media(max-width:768px){
+      width:100%;
+      margin-bottom:40px;
+    }
 
     & img {
+      display:block;
+      margin:0 auto;
       border-radius: 20px;
       margin-bottom:45px;
       position:relative;
+      
  
     }
   }
@@ -837,11 +874,21 @@ pre {
     & span {
       display:block;
     }
+    @media(max-width:768px) and(min-width:600px){
+      font-size: 52px;
+    }
+    @media(max-width:600px){
+      font-size: 30px;
+    }
   }
   &__readmore {
     position:absolute;
     right:0;
     bottom:0;
+    @media(max-width:600px) {
+     position:relative;
+     margin-top:30px;
+    }
   }
   &__more {
     height:0;
@@ -860,6 +907,8 @@ pre {
   background-image: url('/img/scientific_prize.png');
   background-size: cover;
   color:#ffffff;
+  padding-bottom:120px;
+  background-position: top center;
 
   & h3 {
     padding:180px 0;
@@ -869,6 +918,9 @@ pre {
     font-size:7.5rem;
     display:block;
     text-align: center;
+    @media(max-width:768px){
+      padding: 100px 0;
+    }
 
     & span {
       display:block;
@@ -888,26 +940,64 @@ pre {
   &__content {
     width:60%;
     margin:0 auto;
+    @media(max-width:768px){
+      width:100%;
+      text-align: center;
+    }
+    & p {
+      margin-bottom:40px;
+    }
+    & .btn {
+      background-color:#ffffff;
+      color: #333F48;
+      margin-bottom:45px;
+      &:hover {
+        background-color: #EDEDED;
+      }
+      &:focus, &:active {
+        background-color: #D7D7D7;
+      }
+    }
   }
   &__subtitle {
     display:block;
     font-family: $font-family--alt;
     font-size: 3.9rem;
     margin-bottom:45px;
+    @media(max-width:1440px) and (min-width:768px){
+      font-size: 3rem;
+    }
+  }
+  &__img {
+    @media(max-width:600px){
+    display:flex;
+    flex-direction:column;
+    & img {
+      width:100%;
+    }
+    }
   }
 }
 .eight-screen {
   padding: 100px 0;
 
-  & .row {
-    align-items: center;
-  }
   & h3 {
-    margin-bottom:10px;
+   font-size:72px;
+   line-height:72px;
+   background: radial-gradient(79.25% 112.57% at 70% 20%,#2a72f8 0,rgba(25,209,59,0) 80% 50%),#333f48;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #333f48;
+   text-align: center;
+   margin-bottom: 0;
   }
-  & .subtitle {
-    color: #21BA72;
-    margin-bottom:10px;
+  &__subtitle {
+    color: #333f48;
+    font-size:30px;
+    text-align: center;
+    font-weight:300;
+    font-family: $font-family--alt;
+    margin-bottom:50px;
   }
   &__btn {
     margin-top:2rem;
@@ -918,7 +1008,8 @@ pre {
   }
 
   &__img {
-    display:flex;
+    margin-bottom:40px;
+    height: 64px;
     @media (max-width:600px){
       flex-direction: column;
       & img {
@@ -926,14 +1017,55 @@ pre {
       }
     }
   }
+
 }
 .nine-screen {
-  background-color: #E8EDEE;
   padding:100px 0;
   & h3 {
-    font-size:1.8rem;
-  }
+    font-size:72px;
+    background: radial-gradient(79.25% 112.57% at 70% 20%,#2a72f8 0,rgba(25,209,59,0) 80% 50%),#333f48;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #333f48;
+    text-align: center;
+    margin-bottom: 0;
+   }
+   &__subtitle {
+     color: #333f48;
+     font-size:30px;
+     text-align: center;
+     font-weight:300;
+     font-family: $font-family--alt;
+     margin-bottom:50px;
+   }
+   &__card {
+     margin-top:45px;
+     background: rgba(239, 238, 238, 0.4);
+     padding:25px;
+     border-radius:20px;
+   }
+   &__card-title {
+     position:relative;
+     padding-bottom:20px;
+     margin-bottom:20px;
+     font-size:20px;
+     &:after {
+       content:'';
+       position:absolute;
+       width: 100%;
+       height:2px;
+       background: radial-gradient(79.25% 112.57% at 50% 0%, #2A72F8 0%, rgba(25, 209, 59, 0) 100%), #24282B;
+       left:0;
+       bottom:0;
+
+     }
+   }
 }
+
+
+
+
+
 .page-title {
   background: linear-gradient(271.72deg, rgba(255, 246, 24, 0.53) 2.08%, rgba(255, 246, 24, 0) 40.16%), linear-gradient(324.56deg, rgba(66, 226, 180, 0.87) 23.99%, rgba(66, 226, 180, 0) 46.43%), linear-gradient(55.49deg, #83C5DD 14.14%, rgba(131, 197, 221, 0.08) 38.86%), linear-gradient(277.02deg, rgba(168, 237, 133, 0) 50.13%, rgba(86, 255, 0, 0.42) 73.08%);
 
@@ -970,6 +1102,8 @@ pre {
   & a {
     text-decoration:none;
     color:#2d3032;
+    width: 100%;
+    display: block;
   }
   & input {
     display: block;
