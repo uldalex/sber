@@ -59,7 +59,6 @@
   }
   &__laboratory {
     margin: 0 0 20px;
-    font-weight: 600;
     color: #c4c4c4;
   }
   &__descr {
@@ -138,6 +137,9 @@
         position:relative;
         z-index: 5;
         border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
       }
     
     } 

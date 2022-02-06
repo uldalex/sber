@@ -6,6 +6,7 @@
 
  const $ = require('jquery');
  $( document ).ready(function() {
+
     $(window).scroll(function(){
   if($(this).scrollTop()>=100){
      $('.first-screen__lines').addClass ('first-screen__lines--animate')
@@ -30,7 +31,6 @@ $('.dropdown').on('click', function () {
 }
 }).on('click','.search-input, .dropdown__close', function(e) { 
   e.stopPropagation();
-   
 });
 $('.dropdown .dropdown-menu li').click(function () {
   $(this).parents('.dropdown').find('span').text($(this).text());
@@ -51,6 +51,9 @@ $("#publication-input").on("click", function() {
       let item = $(this).text().toLowerCase().indexOf(value) > -1;
       $(this).toggle(item);
     });
+  })
+  $("#publication-list li a").on('click', function(){
+    $(this).parents('.dropdown').find('.dropdown-menu').slideUp(300);
   })
 });
 
@@ -75,6 +78,15 @@ if ($(".authors__wrap").length){
      }
   }); 
   }
+
+  $('.servise-form__link--lab').on('click', function(){
+    var link = $(this).attr('href')
+    $('.lab').css({'display':'none'});
+    $(link).css({'display':'block'});
+  })
+  $('.servise-form__link--all').on('click', function(){
+    $('.lab').css({'display':'block'});
+  })
 }); 
  // листалка авторов 
  if ($(".authors__wrap").length){
@@ -88,10 +100,6 @@ if ($(".authors__wrap").length){
   }
 var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
     var cancelAnimationFrame = window.cancelAnimationFrame || window.mozCancelAnimationFrame;
-
-
-  
-
     function InitVars(){
         $MainMenu = $('.authors__wrap');
         $Speed = $Scroll = 0;
@@ -113,10 +121,6 @@ var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAni
 // header
 var header = $('.page-header'),
 	scrollPrev = 0;
-
-  let menuElem = $('.page-header'), // Элемент который будет прилепать
-  menuFixed = 300, // кол-во пикселей от границы, когда меню "прилипнет" к краю экрана.
-  menuStatus = false; // Некая оптимизация.
 $(window).scroll(function() {
 	var scrolled = $(window).scrollTop();
   if ( scrolled > 300 && scrolled < scrollPrev ) {
@@ -131,3 +135,60 @@ $(window).scroll(function() {
   }
 	scrollPrev = scrolled;
 });;
+
+//плавная прокрутка
+var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
+
+    V = 1;  
+for (var i = 0; i < linkNav.length; i++) {
+    linkNav[i].addEventListener('click', function(e) { 
+      var toUrl = $(this).data('anchor'); 
+      var toUrl = Url.split(' ').join('_'); 
+        // e.preventDefault(); 
+
+        var w = window.pageYOffset,  
+            hash = this.href.replace(/[^#]*(.*)/, '$1');  
+        t = document.querySelector(hash).getBoundingClientRect().top,  
+            start = null;
+        requestAnimationFrame(step);  
+        function step(time) {
+            if (start === null) start = time;
+            var progress = time - start,
+                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+            window.scrollTo(0,r);
+            if (r != w + t) {
+                requestAnimationFrame(step)
+            } else {
+            window.location.hash = toUrl;
+            }
+        }
+    }, false);
+}
+
+
+document.addEventListener( 'DOMContentLoaded', function() {
+  if(document.getElementById("partners__splide")) {
+  var banner =  document.getElementById('partners__splide') 
+  var splide = new Splide( banner, {
+    type   : 'loop',
+    perPage:6,
+    perMove: 1,
+    autoplay:true,
+    pauseOnHover:true,
+    pauseOnFocus: true,
+    arrows: false,
+  }); 
+  splide.mount();
+  }
+});
+
+  var readMoreBtn = document.querySelector(".six-screen__readmore"),
+      readMoreContent = document.querySelector(".six-screen__more");
+      if (typeof(readMoreBtn) != 'undefined' && readMoreBtn != null) {
+  readMoreBtn.addEventListener("click", function(event) {
+      event.preventDefault();
+      readMoreContent.classList.toggle("six-screen__more--open");
+      this.textContent = this.textContent === 'Читать полностью' ? 'Свернуть' : 'Читать полностью';
+    });
+  }
+

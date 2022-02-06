@@ -21,7 +21,7 @@ let config = {
     // 'src/scss/print.scss',
   ],
   'addJsBefore': [
-    // 'somePackage/dist/somePackage.js', // для 'node_modules/somePackage/dist/somePackage.js',
+    './splide.min.js',
   ],
   'addJsAfter': [
     './script.js',

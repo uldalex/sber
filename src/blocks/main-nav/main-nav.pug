@@ -42,7 +42,7 @@ mixin main-nav-item(selectedID, item, level)
     }
 
   li(class= thisItemClass)
-    a(class= thisLinkClass, href=item.url)= item.name
+    a(class= thisLinkClass, href=item.url data-anchor=item.name )= item.name
     block
 
 mixin main-nav-sublist-wrapper(level)

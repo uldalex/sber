@@ -1,6 +1,6 @@
 //- Все примеси в этом файле должны начинаться c имени блока (card)
 
-mixin card(data, mods)
+mixin card(data, mods, id)
 
   //- Принимает:
   //- data {
@@ -39,13 +39,13 @@ mixin card(data, mods)
     var newLabel = (data.new !== 'undefined' && data.new) ? '<div class="card__new">Новинка!</div>' : '';
     var price = '' + data.price;
     var price = price.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1&thinsp;') + ' ₽';
-  article.card(class=allMods)&attributes(attributes)
+  article.card(id!= data.id)(class=allMods)&attributes(attributes)
       .card__row
         a.card__img-wrap(href='img/docs/'+data.urlimg data-fslightbox="gallery" )
           img.card__img(src='img/docs/'+data.img, alt=data.name  decoding="async" loading="lazy" )
         .card__content 
           h3.card__title!= data.name
-          .card__labiratory!= data.lab
+          .card__laboratory!= data.lab
           if (data.descr !== 'undefined' && data.descr)
             .card__descr!= data.descr
           if (data.anons !== 'undefined' && data.anons)
