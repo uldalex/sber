@@ -669,7 +669,7 @@ pre {
     top: 0px;
     width: 150%;
     height: 150%;
-    background-image: url(/img/block-quote-gradient.png);
+    background-image: url(../img/block-quote-gradient.png);
     background-repeat: no-repeat;
     z-index: 0;
   }
@@ -834,7 +834,7 @@ pre {
 }
 .six-screen {
   padding:100px 0;
-  background-image: url('/img/six-screen-bg.jpg');
+  background-image: url('../img/six-screen-bg.jpg');
   background-repeat:no-repeat;
   background-position:top 200px right;
   @media(max-width:768px){
@@ -904,7 +904,7 @@ pre {
   }
 }
 .seven-screen {
-  background-image: url('/img/scientific_prize.png');
+  background-image: url('../img/scientific_prize.png');
   background-size: cover;
   color:#ffffff;
   padding-bottom:120px;
