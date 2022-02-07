@@ -984,7 +984,7 @@ pre {
   & h3 {
    font-size:72px;
    line-height:72px;
-   background: radial-gradient(79.25% 112.57% at 70% 20%,#2a72f8 0,rgba(25,209,59,0) 80% 50%),#333f48;
+   background: radial-gradient(79.25% 112.57% at 80% -10%,#2a72f8 0,rgba(25,209,59,0.2) 80% 50%),#333f48;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    color: #333f48;
@@ -1023,7 +1023,7 @@ pre {
   padding:100px 0;
   & h3 {
     font-size:72px;
-    background: radial-gradient(79.25% 112.57% at 70% 20%,#2a72f8 0,rgba(25,209,59,0) 80% 50%),#333f48;
+    background: radial-gradient(79.25% 112.57% at 70% -30%,#2a72f8 0,rgba(25,209,59,0.2) 80% 50%),#333f48;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #333f48;
@@ -1088,6 +1088,7 @@ pre {
 .sixteen-screen {
   & .page-title {
     padding:195px 0;
+    margin-bottom:100px;
   }
 }
 .eleven-screen {
@@ -1119,7 +1120,7 @@ pre {
     font-size: 72px;
     text-align: center;
     font-weight:400;
-    background: radial-gradient(79.25% 112.57% at 70% -20%,#2a72f8 0,rgba(25,209,59,0) 80% 50%),#333f48;
+    background: radial-gradient(79.25% 112.57% at 70% -0%,rgb(42 114 248 / 50%) 0,rgba(25,209,59,0.1) 30% 60%),#333f48;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #333f48;
@@ -1168,6 +1169,7 @@ pre {
     background: rgba(239, 239, 238, 0.4);
     border-radius:20px;
     padding:25px;
+    margin-bottom:40px;
     &:before {
       content: "";
       position: absolute;
@@ -1184,9 +1186,130 @@ pre {
       position: relative;
     }
   }
+  &__bordered {
+    position:relative;
+    height:100%;
+    padding-right:20px;
+    &:after {
+      content:'';
+      position:absolute;
+      top:0;
+      right:0;
+      bottom:0;
+      width:2px;
+      height:100%;
+      background: linear-gradient(271.72deg,rgba(255,246,24,.53) 2.08%,rgba(255,246,24,0) 40.16%),linear-gradient(324.56deg
+        ,rgba(66,226,180,.87) 23.99%,rgba(66,226,180,0) 46.43%),linear-gradient(55.49deg ,#357288 14.14%,rgb(255 235 59 / 41%) 38.86%),linear-gradient(277.02deg ,rgba(168,237,133,0) 50.13%,rgba(86,255,0,.42) 73.08%);
+
+    }
+  }
+}
+.twelve-screen {
+  margin:60px 0;
+  padding: 45px 0;
+  background-color: rgba(239,239,238,0.4);
+  
+  &__card {
+    margin-top:30px;
+    margin-bottom:30px;
+    padding-top:70px;
+    position:relative;
+
+    &:before {
+      content:'?';
+      position:absolute;
+      background: linear-gradient(41.63deg, #E0E521 10.94%, #6BD728 47.37%, #149CD1 96.24%);
+      color:#ffffff;
+      font-weight:600;
+      border-radius:15px;
+      width:50px;
+      height:50px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      font-size:20px;
+      top:0;
+      left:0;
+    }
+  }
+
+}
+.thirteen-screen {
+  padding:100px 0;
+& h4 {
+  color: #0C8688;
+  font-size:30px;
+  font-weight:600;
+  margin-top:0;
+  margin-bottom:40px;
+}
+&__list {
+   margin:30px 0; 
+   position:relative;
+   &:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    width: 100%;
+    height: 200%;
+    background-image: url(../img/block-quote-gradient.png);
+    background-repeat: no-repeat;
+    z-index: 0;
+    background-size: 50%;
+   }
+}
+&__card {
+  position:relative;
+  background: rgba(239, 238, 238, 0.4);
+
+  border-radius: 20px;
+  padding:25px;
+  height:100%;
+}
+&__btn {
+  display:flex;
+  align-items: center;
+  & .btn {
+    padding:10px 57px;
+  }
 }
 
-
+}
+.fourteen-screen {
+  padding-bottom:100px;
+  & h4 {
+    color: #0C8688;
+    font-size:30px;
+    font-weight:600;
+    margin-top:0;
+    margin-bottom:40px;
+  }
+  & .btn {
+    margin-top:30px;
+  }
+}
+.fifteen-screen{
+  padding:100px 0;
+  & h3 {
+    font-size: 72px;
+    font-weight: 600;
+    background: radial-gradient(79.25% 112.57% at 50% 30%,rgba(42,114,248,.5) 0,rgba(25,209,59,.1) 30% 60%),#333f48;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #333f48;
+  }
+  &__list {
+    display:flex;
+    margin-top:40px;
+  }
+  &__card {
+    font-weight:600;
+    &:first-child {
+    margin-right:30px;
+    }
+  }
+}
 
 .page-title {
   background: linear-gradient(271.72deg, rgba(255, 246, 24, 0.53) 2.08%, rgba(255, 246, 24, 0) 40.16%), linear-gradient(324.56deg, rgba(66, 226, 180, 0.87) 23.99%, rgba(66, 226, 180, 0) 46.43%), linear-gradient(55.49deg, #83C5DD 14.14%, rgba(131, 197, 221, 0.08) 38.86%), linear-gradient(277.02deg, rgba(168, 237, 133, 0) 50.13%, rgba(86, 255, 0, 0.42) 73.08%);
