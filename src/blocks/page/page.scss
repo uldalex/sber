@@ -452,7 +452,7 @@ pre {
   @include col(md, 1, $grid-columns, 12px);
 }
 .col-lg-12 {
-  @include col(lg, 12, $grid-columns, 16px);
+  @include col(lg, 12, $grid-columns, 40px);
 }
 .col-lg-11 {
   @include col(lg, 11, $grid-columns, 40px);
@@ -1054,15 +1054,137 @@ pre {
        position:absolute;
        width: 100%;
        height:2px;
-       background: radial-gradient(79.25% 112.57% at 50% 0%, #2A72F8 0%, rgba(25, 209, 59, 0) 100%), #24282B;
+       background: linear-gradient(271.72deg,rgba(255,246,24,.53) 2.08%,rgba(255,246,24,0) 40.16%),linear-gradient(324.56deg
+,rgba(66,226,180,.87) 23.99%,rgba(66,226,180,0) 46.43%),linear-gradient(55.49deg,#83c5dd 14.14%,rgba(131,197,221,.08) 38.86%),linear-gradient(277.02deg,rgba(168,237,133,0) 50.13%,rgba(86,255,0,.42) 73.08%);
        left:0;
        bottom:0;
 
      }
    }
+   & .block-quote{
+      &:before {
+        left:auto;
+        right: -50%;
+        top: -50%;
+        width: 100%;
+        height: 150%;
+      }
+    }
+  }
+.ten-screen {
+  & .page-title {
+    padding:195px 0;
+  
+    & h1 {
+   font-weight:600;
+    }
+  }
+  &__subtitle {
+    width:490px;
+    margin:0 auto;
+
+  }
 }
+.sixteen-screen {
+  & .page-title {
+    padding:195px 0;
+  }
+}
+.eleven-screen {
+  padding:100px 0;
+  
+  &__row {
+    position:relative;
+    background: rgba(239, 239, 238, 0.4);
+    border-radius:20px;
+    padding:25px 35px;
+    margin-bottom:100px;
+      &:before {
+      content: "";
+      position: absolute;
+      right: -40%;
+      top: -60%;
+      width: 80%;
+      height: 200%;
+      background-image: url(../img/block-quote-gradient.png);
+      background-repeat: no-repeat;
+      z-index: 0;
+      }
+   & div {
+    position: relative;
+    z-index: 2;
+   } 
+  }
+  & h3 {
+    font-size: 72px;
+    text-align: center;
+    font-weight:400;
+    background: radial-gradient(79.25% 112.57% at 70% -20%,#2a72f8 0,rgba(25,209,59,0) 80% 50%),#333f48;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #333f48;
+  }
+  &__card {
+    height: 100%;
+   padding:30px;
+   position:relative;
 
+   &:before {
+     content:'';
+     position:absolute;
+     width:120%;
+     height:150%;
+     left:-10%;
+     top:-25%;
+     border-radius: 50%; 
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='530' height='531' viewBox='0 0 530 531' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='265.001' cy='265.004' r='264.5' stroke='url(%23paint0_linear_172_354)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_172_354' x1='94.1763' y1='549.998' x2='232.598' y2='-1.28836' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.07' stop-color='%23F1F44B'/%3E%3Cstop offset='0.498943' stop-color='%239FF175'/%3E%3Cstop offset='0.92' stop-color='%230FA7DF'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+     background-size: 100%;
+    }
+  
+  }
+  &__card-title {
+    color: #0E5944;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom:30px;
+  }
 
+  &__block {
+    margin-top: 200px;
+    margin-bottom:100px;
+    & img {
+      border-radius:20px;
+    }
+  }
+  & h4 {
+    color: #0C8688;
+    font-size:30px;
+    font-weight:600;
+    margin-top:0;
+    margin-bottom:40px;
+  }
+  & .meta {
+    position:relative;
+    background: rgba(239, 239, 238, 0.4);
+    border-radius:20px;
+    padding:25px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: -40%;
+      top: 0%;
+      width: 130%;
+      height: 150%;
+      background-image: url(../img/block-quote-gradient.png);
+      background-repeat: no-repeat;
+      z-index: 0;
+      background-size: 80%;
+    }
+    & p {
+      position: relative;
+    }
+  }
+}
 
 
 
