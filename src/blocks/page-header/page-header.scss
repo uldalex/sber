@@ -27,11 +27,15 @@
         line-height:0.8rem;
         color:#ffffff;
         font-family: 'SBSansDisplay';
+        @media(max-width:1024px)and(min-width:600px){
+            width:185px;
+        }
         @media(max-width:600px){
           text-indent: -9999px;
           width: auto;
           padding:10px;
           border:0px;
+          width:auto;
         }
       }
       &__right-part {
@@ -47,7 +51,7 @@
           font-size: 1.15rem;
           font-weight:600;
           font-family:$font-family--alt;
-          @media(max-width:600px){
+          @media(max-width:1024px){
             margin-right: 25px;
           }
       }
@@ -73,6 +77,9 @@
             display:none;
           }
         }
+ & .burger--close>span:before, .burger--close>span:after{
+  background: #2F2F2F;
+ }
 &--inner {
     position:relative;
     background-color:#ffffff;

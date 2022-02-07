@@ -176,6 +176,11 @@ document.addEventListener( 'DOMContentLoaded', function() {
     pauseOnHover:true,
     pauseOnFocus: true,
     arrows: false,
+    breakpoints: {
+		640: {
+			perPage: 2,
+		},
+  }
   }); 
   splide.mount();
   }
