@@ -243,7 +243,7 @@ h6 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   font-family: $font-family--alt;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.2;
   color: #21A038;
 
@@ -801,7 +801,7 @@ pre {
     text-align: center;
     font-family: $font-family--alt;
     font-size: 72px;
-    background: radial-gradient(79.25% 112.57% at 70% 20%,#2a72f8 0,rgba(25,209,59,0) 80% 50%),#333f48;
+    background: linear-gradient(to right,#09a552 0,#333f48 61%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #333f48;
@@ -872,7 +872,7 @@ pre {
     text-align: center;
     font-family: $font-family--alt;
     font-size: 72px;
-    background: radial-gradient(79.25% 112.57% at 70% 20%,#2a72f8 0,rgba(25,209,59,0) 80% 50%),#333f48;
+    background: linear-gradient(to right,#09a552 0,#333f48 61%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #333f48;
@@ -892,9 +892,8 @@ pre {
     right:0;
     bottom:0;
     @media(max-width:600px) {
-     position:relative;
-     margin-top:30px;
      display:block;
+     position:relative
     }
   }
   &__more {
@@ -958,6 +957,9 @@ pre {
       background-color:#ffffff;
       color: #333F48;
       margin-bottom:45px;
+      @media(max-width:600px){
+        display:block;
+      }
       &:hover {
         background-color: #EDEDED;
       }
@@ -993,14 +995,17 @@ pre {
   & h3 {
    font-size:72px;
    line-height:72px;
-   background: radial-gradient(79.25% 112.57% at 80% -10%,#2a72f8 0,rgba(25,209,59,0.2) 80% 50%),#333f48;
+   background: linear-gradient(to right,#09a552 0,#333f48 61%);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    color: #333f48;
    text-align: center;
    margin-bottom: 0;
-   @media(max-width:768px){
+   @media(max-width:768px) and(min-width:600px){
     font-size: 52px;
+  }
+  @media(max-width:600px){
+    font-size: 30px;
   }
   }
   &__subtitle {
@@ -1010,6 +1015,9 @@ pre {
     font-weight:300;
     font-family: $font-family--alt;
     margin-bottom:50px;
+    @media(max-width:600px){
+      font-size: 24px;
+    }
   }
   &__btn {
     margin-top:2rem;
@@ -1022,8 +1030,13 @@ pre {
   &__img {
     margin-bottom:40px;
     height: 64px;
-    @media (max-width:768px){
+    @media (max-width:768px) and (min-width:600px){
       height: 34px;
+      margin-top:20px;
+      margin-bottom:20px;
+    }
+    @media (max-width:600px){
+      height: auto;
       margin-top:20px;
       margin-bottom:20px;
     }
@@ -1038,14 +1051,17 @@ pre {
   }
   & h3 {
     font-size:72px;
-    background: radial-gradient(79.25% 112.57% at 70% -30%,#2a72f8 0,rgba(25,209,59,0.2) 80% 50%),#333f48;
+    background: linear-gradient(to right,#09a552 0,#333f48 61%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #333f48;
     text-align: center;
     margin-bottom: 0;
-    @media(max-width:768px){
+    @media(max-width:768px) and(min-width:600px){
       font-size: 52px;
+    }
+    @media (max-width:600px){
+      font-size: 30px;
     }
    }
    &__subtitle {
@@ -1055,6 +1071,9 @@ pre {
      font-weight:300;
      font-family: $font-family--alt;
      margin-bottom:50px;
+     @media(max-width:600px){
+      font-size: 24px;
+    }
    }
    &__card {
      margin-top:45px;
@@ -1100,7 +1119,9 @@ pre {
 .ten-screen {
   & .page-title {
     padding:195px 0;
-  
+    @media(max-width:600px){
+      padding:90px 0;
+    }
     & h1 {
    font-weight:600;
    @media(max-width:768px){
@@ -1208,12 +1229,15 @@ pre {
     font-size: 72px;
     text-align: center;
     font-weight:400;
-    background: radial-gradient(79.25% 112.57% at 70% -0%,rgb(42 114 248 / 50%) 0,rgba(25,209,59,0.1) 30% 60%),#333f48;
+    background: linear-gradient(to right,#09a552 0,#333f48 61%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #333f48;
-    @media(max-width:768px){
+    @media(max-width:768px) and (min-width:600px){
       font-size: 52px;
+    }
+    @media (max-width:600px){
+      font-size: 30px;
     }
   }
   &__card {
@@ -1277,6 +1301,9 @@ pre {
     font-weight:600;
     margin-top:0;
     margin-bottom:40px;
+    @media(max-width:600px){
+      font-size:24px;
+    }
   }
   & .meta {
     position:relative;
@@ -1363,6 +1390,9 @@ pre {
   font-weight:600;
   margin-top:0;
   margin-bottom:40px;
+  @media(max-width:600px){
+    font-size:24px;
+  }
 }
 &__list {
    margin:30px 0; 
@@ -1378,6 +1408,13 @@ pre {
     background-repeat: no-repeat;
     z-index: 0;
     background-size: 50%;
+    @media(max-width:600px){
+      left: 0%;
+      top: 0%;
+      width: 200%;
+      height: 200%;
+      background-size: 100%;
+    }
    }
 }
 &__card {
@@ -1395,8 +1432,18 @@ pre {
 &__btn {
   display:flex;
   align-items: center;
+  position: relative;
+  z-index: 10;
+  @media(max-width:600px){
+    width:100%;
+    margin-top:35px;
+  }
   & .btn {
     padding:10px 57px;
+    @media(max-width:600px){
+      display:block;
+      width: 100%;
+    }
   }
 }
 
@@ -1412,6 +1459,9 @@ pre {
     font-weight:600;
     margin-top:0;
     margin-bottom:40px;
+    @media(max-width:600px){
+      font-size:24px;
+    }
   }
   & .btn {
     margin-top:30px;
@@ -1423,27 +1473,36 @@ pre {
     padding:40px 0;
   }
   &__img {
-    @media(max-width:768px){
+    @media(max-width:768px)and(min-width:600px){
       display:none;
     } 
   }
   & h3 {
     font-size: 72px;
-    font-weight: 600;
-    background: radial-gradient(79.25% 112.57% at 50% 30%,rgba(42,114,248,.5) 0,rgba(25,209,59,.1) 30% 60%),#333f48;
+    font-weight: 400;
+    background: linear-gradient(to right,#09a552 0,#333f48 61%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #333f48;
-    @media(max-width:768px){
+    @media(max-width:768px) and(min-width:600px){
       font-size: 52px;
     } 
+    @media (max-width:600px){
+      font-size: 30px;
+    }
   }
   &__list {
     display:flex;
     margin-top:40px;
+    @media (max-width:600px){
+     flex-direction: column;
+    }
   }
   &__card {
     font-weight:600;
+    @media (max-width:600px){
+      margin-bottom:25px;
+    }
     &:first-child {
     margin-right:30px;
     }
@@ -1463,6 +1522,9 @@ pre {
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 40px;
+    @media(max-width:600px){
+      font-size:24px;
+    }
   }
   &__card {
     background: rgba(239, 238, 238, 0.4);
@@ -1490,11 +1552,17 @@ pre {
     color:#ffffff;
     font-size:72px;
     line-height:76px;
+    @media(max-width:600px){
+      font-size: 45px;
+    }
   }
   &__link {
     font-weight: 600;
     font-size:72px;
     line-height:72px;
+    @media(max-width:600px){
+      font-size: 45px;
+    }
   }
   & a.btn {
     color:#080808;
@@ -1507,16 +1575,31 @@ pre {
     &:focus, &:active {
       background-color: #d7d7d7;
     }
+    @media(max-width:600px){
+      display:block;
+    }
   }
   & img {
     position:absolute;
     right:0;
     top:-100px;
-    @media(max-width:768px){
+    @media(max-width:768px)and(min-width:600px){
       top: 0;
     width: 200px;
     }
+    @media(max-width:600px){
+    top: 150px;
+    left: 0;
+    right: 0;
+    width: 200px;
+    margin: 0 auto;
+    }
   }
+  & .col-lg-6{
+     @media(max-width:600px){
+    margin-top:350px;
+  }
+}
 }
 .page-title {
   background: linear-gradient(271.72deg, rgba(255, 246, 24, 0.53) 2.08%, rgba(255, 246, 24, 0) 40.16%), linear-gradient(324.56deg, rgba(66, 226, 180, 0.87) 23.99%, rgba(66, 226, 180, 0) 46.43%), linear-gradient(55.49deg, #83C5DD 14.14%, rgba(131, 197, 221, 0.08) 38.86%), linear-gradient(277.02deg, rgba(168, 237, 133, 0) 50.13%, rgba(86, 255, 0, 0.42) 73.08%);
