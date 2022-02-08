@@ -139,14 +139,14 @@ $(window).scroll(function() {
 });;
 
 //плавная прокрутка
-var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
+var linkNav = document.querySelectorAll('.main-nav__link'), //выбираем все ссылки к якорю на странице
 
-    V = 1;  
+    V = 0.5;  
 for (var i = 0; i < linkNav.length; i++) {
     linkNav[i].addEventListener('click', function(e) { 
-      var Url = $(this).data('anchor'); 
+      var Url = $(this).data("anchor"); 
       var toUrl = Url.split(' ').join('_'); 
-        // e.preventDefault(); 
+         e.preventDefault(); 
 
         var w = window.pageYOffset,  
             hash = this.href.replace(/[^#]*(.*)/, '$1');  
