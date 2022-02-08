@@ -58,6 +58,14 @@ $("#publication-input").on("keyup", function() {
    $(this).toggle(item);
  });
 });
+
+$(".main-nav__link").on('click', function(){
+      var  Url = $(this).data("anchor"); 
+      var  toUrl = Url.split(' ').join('_');
+      window.location.hash = toUrl;
+  $('.main-nav').removeClass('main-nav--open');
+  $('.burger').removeClass('burger--close');
+});
 // развернуть блок
 $(".six-screen__readmore").on('click', function(){
   $(".six-screen__more").toggleClass("six-screen__more--open");
@@ -138,34 +146,6 @@ $(window).scroll(function() {
 	scrollPrev = scrolled;
 });;
 
-//плавная прокрутка
-var linkNav = document.querySelectorAll('.main-nav__link'), 
-
-    V = 0.1;  
-for (var i = 0; i < linkNav.length; i++) {
-    linkNav[i].addEventListener('click', function(e) { 
-      var Url = $(this).data("anchor"); 
-      var toUrl = Url.split(' ').join('_'); 
-         e.preventDefault(); 
-
-        var w = window.pageYOffset,  
-            hash = this.href.replace(/[^#]*(.*)/, '$1');  
-        t = document.querySelector(hash).getBoundingClientRect().top,  
-            start = null;
-        requestAnimationFrame(step);  
-        function step(time) {
-            if (start === null) start = time;
-            var progress = time - start,
-                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
-            window.scrollTo(0,r);
-            if (r != w + t) {
-                requestAnimationFrame(step)
-            } else {
-            window.location.hash = toUrl;
-            }
-        }
-    }, false);
-}
 
 
 document.addEventListener( 'DOMContentLoaded', function() {
@@ -178,7 +158,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
     autoplay:true,
     pauseOnHover:true,
     pauseOnFocus: true,
-    arrows: false,
+    arrows: true,
     breakpoints: {
 		640: {
 			perPage: 2,
