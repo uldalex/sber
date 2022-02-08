@@ -706,7 +706,7 @@ pre {
     & img {
       min-width:100%;
     }
-    @media (max-width:1024px){
+    @media (max-width:1180px){
       order:1;
       min-width:100%;
       & img {
@@ -1100,7 +1100,7 @@ pre {
      background: rgba(239, 238, 238, 0.4);
      padding:25px;
      border-radius:20px;
-     height:100%;
+     min-height:100%;
      @media(max-width:768px){
        height:auto;
        margin-bottom:10px;
@@ -1472,7 +1472,7 @@ pre {
 
   border-radius: 20px;
   padding:25px;
-  height:100%;
+  min-height:100%;
   @media(max-width:1000px){
     height:auto;
     margin-bottom:10px;
