@@ -1295,6 +1295,10 @@ pre {
     font-size: 18px;
     font-weight: 500;
     margin-bottom:30px;
+    @media(max-width:1440px){
+      font-size: 14px;
+      letter-spacing: -1px;
+    }
   }
 
   &__block {
@@ -1344,6 +1348,14 @@ pre {
     }
     & p {
       position: relative;
+    }
+
+    &--right {
+      background-color: transparent;
+      &:before {
+        width:0;
+        height:0;
+      }
     }
   }
   &__bordered {
@@ -1484,7 +1496,7 @@ pre {
     }
   }
   & .btn {
-    margin-top:30px;
+    margin-top:10px;
   }
 }
 .fifteen-screen{
@@ -1558,7 +1570,7 @@ pre {
   color:#ffffff;
   padding:100px 0;
   position:relative;
-  z-index: 60;
+  z-index: 2;
   & .container {
     position:relative;
   }
