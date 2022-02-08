@@ -5,7 +5,8 @@
 .main-nav {
 
   $block-name:                &; // #{$block-name}__element
-
+width:100%;
+position:relative;
 
 
   &__inner {
