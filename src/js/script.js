@@ -122,7 +122,7 @@ var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAni
     }
 // header
 var header = $('.page-header'),
-	scrollPrev = 0;
+	scrollPrev = 50;
 $(window).scroll(function() {
 	var scrolled = $(window).scrollTop();
   if ( scrolled > 100 && scrolled < scrollPrev ) {
