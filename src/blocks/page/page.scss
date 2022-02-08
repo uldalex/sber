@@ -651,6 +651,7 @@ pre {
 .block-quote {
   position:relative;
   display:flex;
+  display: -webkit-flex;
   flex-wrap:wrap;
   align-items: flex-end;
   width:80%;
@@ -665,6 +666,7 @@ pre {
   @media(max-width:768px){
    width:100%;
    padding: 30px 20px 0 30px;
+   flex-wrap: wrap-reverse;
    flex-direction: column-reverse;
    flex: 1;
   }
