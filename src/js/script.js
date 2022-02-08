@@ -7,11 +7,6 @@
  const $ = require('jquery');
  $( document ).ready(function() {
 
-    $(window).scroll(function(){
-  if($(this).scrollTop()>=100){
-     $('.first-screen__lines').addClass ('first-screen__lines--animate')
-  }
-});
 
 $('.dropdown').on('click', function () {
   if ($(this).hasClass("active")) {
@@ -63,7 +58,15 @@ $("#publication-input").on("keyup", function() {
    $(this).toggle(item);
  });
 });
- 
+// развернуть блок
+$(".six-screen__readmore").on('click', function(){
+  $(".six-screen__more").toggleClass("six-screen__more--open");
+  var text = $(".six-screen__readmore").text();
+  $(".six-screen__readmore").text(
+    text == "Свернуть" ? "Читать полностью" : "Свернуть");
+
+  });
+
 
 // меняем класс у обертки  для курсора
 if ($(".authors__wrap").length){
@@ -186,13 +189,4 @@ document.addEventListener( 'DOMContentLoaded', function() {
   }
 });
 
-  var readMoreBtn = document.querySelector(".six-screen__readmore"),
-      readMoreContent = document.querySelector(".six-screen__more");
-      if (typeof(readMoreBtn) != 'undefined' && readMoreBtn != null) {
-  readMoreBtn.addEventListener("click", function(event) {
-      event.preventDefault();
-      readMoreContent.classList.toggle("six-screen__more--open");
-      this.textContent = this.textContent === 'Читать полностью' ? 'Свернуть' : 'Читать полностью';
-    });
-  }
-
+ 
