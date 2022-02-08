@@ -139,9 +139,9 @@ $(window).scroll(function() {
 });;
 
 //плавная прокрутка
-var linkNav = document.querySelectorAll('.main-nav__link'), //выбираем все ссылки к якорю на странице
+var linkNav = document.querySelectorAll('.main-nav__link'), 
 
-    V = 0.5;  
+    V = 0.1;  
 for (var i = 0; i < linkNav.length; i++) {
     linkNav[i].addEventListener('click', function(e) { 
       var Url = $(this).data("anchor"); 
