@@ -45,7 +45,7 @@ html(class='page  no-js', lang='ru')
           +page-header()
             .row 
               .col-lg-2.col-xs-4 
-                +logo('/')
+                +logo(' ')
                     img(src='img/logo.svg', alt='Logo', width='132', height='37')
               .col-lg-4.col-xs-4.page-header__right-part 
                 a(href="/").page-header__language ENG
@@ -467,6 +467,7 @@ html(class='page  no-js', lang='ru')
             img(src="img/dnk.png" decoding="async" loading="lazy" width="467" height="772" alt="ДНК Инженера")
       .page__footer-wrapper
         +page-footer()
+    +to-top()    
       block content
           span
     block page-bottom
