@@ -905,6 +905,7 @@ pre {
     position:absolute;
     right:0;
     bottom:0;
+    padding:10px 40px;
     @media(max-width:600px) {
      display:block;
      position:relative
@@ -1525,6 +1526,7 @@ pre {
   }
   & .btn {
     margin-top:10px;
+    padding:10px 40px;
   }
 }
 .fifteen-screen{
@@ -1752,7 +1754,7 @@ pre {
       margin: 0;
       height:100%;
       width: 100%;
-      line-height:0;
+
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='13.0607' y1='13' x2='17' y2='16.9393' stroke='%232D3032' stroke-width='1.5' stroke-linecap='round'/%3E%3Ccircle cx='7.5' cy='7.5' r='6.75' stroke='%232D3032' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
       background-repeat:no-repeat;
       background-position: right 15px center;
