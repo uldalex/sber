@@ -32,6 +32,8 @@ $('.dropdown .dropdown-menu li').click(function () {
 
 });
 $("#publication-input").on("click", function() {
+  $('.lab').css({'display':'block'});
+  $('.select-filter').find('span').text('Все лаборатории');
   $(this).addClass('active');
   $(this).parents('.dropdown').addClass('active');
   $(this).parents('.dropdown').find('.dropdown-menu').slideDown(300); 
@@ -49,24 +51,7 @@ $("#publication-input").on("click", function() {
     });
   })
 });
-$(function() {
-  $('.servise-form__link--lab, .servise-form__link--all').on('click', function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);  
-      var  Url = $(this).data("anchor"); 
-      var  toUrl = Url.split(' ').join('_');
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top-150
-        }, 1000);  
-         window.location.hash = toUrl; 
-        return false;
-      }
-      
-    }
-  });
-});
+
 
 
 $("#publication-input").on("keyup", function() {
@@ -119,11 +104,15 @@ if ($(".authors__wrap").length){
     var link = $(this).attr('href')
     $('.lab').css({'display':'none'});
     $(link).css({'display':'block'});
+    
   })
-  $('.servise-form__link--all').on('click', function(){
+  $('.servise-form__link--all ').on('click', function(){
     $('.lab').css({'display':'block'});
-  })
+  });
+
 }); 
+
+
  // листалка авторов 
  if ($(".authors__wrap").length){
   InitVars();
