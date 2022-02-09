@@ -33,6 +33,10 @@
     @media(max-width:600px) {
       width: 100%
     }
+     & a {
+       color:#787F85;
+       text-decoration: none;
+     }
   }
 
   &__col-2 {
