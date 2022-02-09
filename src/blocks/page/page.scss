@@ -790,7 +790,7 @@ pre {
   padding:100px 0;
  
   @media(max-width:768px){
-      padding:40px 0;
+      padding:0 0 40px 0;
   }
   &__content {
     width:80%;
@@ -847,7 +847,7 @@ pre {
   }
 }
 .six-screen {
-  padding:100px 0;
+  padding:120px 0;
   background-image: url('../img/six-screen-bg.jpg');
   background-repeat:no-repeat;
   background-position:top 200px right;
@@ -866,6 +866,7 @@ pre {
     @media(max-width:768px){
       width:100%;
       margin-bottom:40px;
+      margin-top:40px;
     }
 
     & img {
@@ -1244,6 +1245,9 @@ pre {
     margin-bottom:100px;
     @media(max-width:768px){
       margin-bottom:30px;
+      & p {
+        margin-bottom:0;
+      }
     }
       &:before {
       content: "";
