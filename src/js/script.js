@@ -56,7 +56,7 @@ $("#publication-input").on("click", function() {
   $("#autors-input").removeClass('active');
   $("#autors-close").removeClass('active');
   $('.lab').css({'display':'block'});
-  $('.select-filter').find('span').text('Все исследовательские группы');
+  $('.select-filter').find('span').text('Все группы');
   $("#autors-input").attr('placeholder' , 'Поиск по авторам');
   $(this).addClass('active');
   $(this).parents('.dropdown').addClass('active');
@@ -83,7 +83,7 @@ $("#autors-input").on("click", function() {
   $("#publication-close").removeClass('active');
   $('.lab').css({'display':'block'});
   $("#publication-input").attr('placeholder' , 'Поиск по публикациям');
-  $('.select-filter').find('span').text('Все исследовательские группы');
+  $('.select-filter').find('span').text('Все группы');
   $(this).addClass('active');
   $(this).parents('.dropdown').addClass('active');
   $(this).parents('.dropdown').find('.dropdown-menu').slideDown(300); 
