@@ -83,8 +83,8 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
       <div class="page-filter" id="page-filter">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-lg-4"><label for="publication-input" aria-label="Фильтр по лабораториям">Фильтр по лабораториям</label>
-              <div class="dropdown">
+            <div class="col-md-4 col-lg-4"><label for="publication-input" aria-label="Фильтр по исследовательским группам">Фильтр по исследовательским группам</label>
+              <div class="dropdown dropdown--lab">
                 <div class="select select-filter"> <span>Все лаборатории</span></div>
                 <div class="dropdown-menu" id="publication-list">
                   <ul>
@@ -100,8 +100,8 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4"><label for="publication-input" aria-label="Фильтр по лабораториям">Поиск по публикациям</label>
-              <div class="dropdown">
+            <div class="col-md-4 col-lg-4"><label for="publication-input" aria-label="Фильтр по лабораториям">Поиск по публикациям</label>
+              <div class="dropdown dropdown--publication">
                 <div class="select"> <input class="search-input" id="publication-input" type="text" placeholder="Поиск по публикациям">
                   <div class="dropdown__close" id="publication-close"> </div>
                 </div>
@@ -169,6 +169,90 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                 </div>
               </div>
             </div>
+            <div class="col-md-4 col-lg-4"><label for="autors-input" aria-label="Фильтр по авторам">Поиск по авторам</label>
+              <div class="dropdown dropdown--autors">
+                <div class="select"> <input class="search-input" id="autors-input" type="text" placeholder="Поиск по авторам">
+                  <div class="dropdown__close" id="autors-close"> </div>
+                </div>
+                <div class="dropdown-menu" id="autors-list">
+                  <ul>
+                    <li class="autor-all" id="all">Все авторы</li>
+                    <li class="autor-select" id="blinov">Блинов Павел Дмитриевич</li>
+                    <li class="autor-select" id="shelmanov">Шелманов Артем Олегович</li>
+                    <li class="autor-select" id="gusev"> Гусев Глеб Геннадьевич</li>
+                    <li class="autor-select" id="babayev">Бабаев Дмитрий Леонидович</li>
+                    <li class="autor-select" id="kireev">Киреев Иван Александрович</li>
+                    <li class="autor-select" id="kapushev">Капушев Ермек Рахатович</li>
+                    <li class="autor-select" id="karpushin">Карпушкин Данил Дмитриевич</li>
+                    <li class="autor-select" id="yalunin">Ялунин Александр Александрович</li>
+                    <li class="autor-select" id="sokolovaE">Соколова Елена Владимировна</li>
+                    <li class="autor-select" id="burenko">Буренко Илья Михайлович</li>
+                    <li class="autor-select" id="ponomarchuk">Пономарчук Александр Васильевич</li>
+                    <li class="autor-select" id="umerenkov">Умеренков Дмитрий Евгеньевич</li>
+                    <li class="autor-select" id="tamm-yan">Тамм Ян-Мартин Юривич</li>
+                    <li class="autor-select" id="damdinov">Дамдинов Ринчин Гармаевич</li>
+                    <li class="autor-select" id="vasiliev_a">Васильев Алексей Валерьевич</li>
+                    <li class="autor-select" id="avetisyan">Аветисян Манвел Согомонович</li>
+                    <li class="autor-select" id="koh">Кох Владимир Николаевич</li>
+                    <li class="autor-select" id="nesterov_a">Нестеров Александр Игоревич</li>
+                    <li class="autor-select" id="egorov_k">Егоров Константин Сергеевич</li>
+                    <li class="autor-select" id="korbut">Корбут Андрей Михайлович</li>
+                    <li class="autor-select" id="davidova">Давыдова Александра Михайловна</li>
+                    <li class="autor-select" id="solyanova">Солянова Мария Алексеевна</li>
+                    <li class="autor-select" id="sorensen">Соренсен Кристина</li>
+                    <li class="autor-select" id="klowait">Кловайт Нильс</li>
+                    <li class="autor-select" id="erofeeva">Ерофеева Мария Александровна</li>
+                    <li class="autor-select" id="vetushinsky">Ветушинский Александр Сергеевич</li>
+                    <li class="autor-select" id="semachkin">Семочкин Александр Николаевич</li>
+                    <li class="autor-select" id="seydehassen">Сейедхассан Забихифар</li>
+                    <li class="autor-select" id="gonnochenko">Гонноченко Алексей Сергеевич</li>
+                    <li class="autor-select" id="egorov_d">Егоров Дмитрий Александрович</li>
+                    <li class="autor-select" id="statovoy">Статовой Дмитрий Александрович</li>
+                    <li class="autor-select" id="postnikov">Постников Алексей Леонидович</li>
+                    <li class="autor-select" id="Burkov">Бурков Алексей Михайлович</li>
+                    <li class="autor-select" id="gamayunov">Гамаюнов Александр Русланович</li>
+                    <li class="autor-select" id="Sosedka">Соседка Артем Валерьевич</li>
+                    <li class="autor-select" id="Tishin">Тишин Владислав Викторович</li>
+                    <li class="autor-select" id="porvatov">Порватов Вадим Андреевич</li>
+                    <li class="autor-select" id="nesteruk">Нестерук Сергей Валентинович</li>
+                    <li class="autor-select" id="potaninm">Потанин Марк Станиславович</li>
+                    <li class="autor-select" id="dimitrov">Димитров Денис Валерьевич</li>
+                    <li class="autor-select" id="shonenkov">Шоненков Алексей Владимирович</li>
+                    <li class="autor-select" id="karachev">Карачев Денис Константинович</li>
+                    <li class="autor-select" id="novopoltsev">Новопольцев Максим Юрьевич</li>
+                    <li class="autor-select" id="chertok">Черток Андрей Викторович</li>
+                    <li class="autor-select" id="vedahin">Ведяхин Александр Александрович</li>
+                    <li class="autor-select" id="tutubalina">Тутубалина Елена Викторовна</li>
+                    <li class="autor-select" id="salikhov">Салихов Дмитрий Рифович</li>
+                    <li class="autor-select" id="stepnov_m">Степнов Михаил Игоревич</li>
+                    <li class="autor-select" id="semenova">Семенова Наталья Александровна</li>
+                    <li class="autor-select" id="fenogenova">Феногенова Алена Сергеевна</li>
+                    <li class="autor-select" id="mikhailov">Михайлов Владислав Николаевич</li>
+                    <li class="autor-select" id="emelyanov">Емельянов Антон Александрович</li>
+                    <li class="autor-select" id="tikhonova">Тихонова Мария Ивановна</li>
+                    <li class="autor-select" id="shavrina">Шаврина Татьяна Олеговна</li>
+                    <li class="autor-select" id="shevelev">Шевелев Денис Михайлович</li>
+                    <li class="autor-select" id="mazurin">Мазурин Александр Дмитриевич</li>
+                    <li class="autor-select" id="bernadott">Бернадотт Александра Карл</li>
+                    <li class="autor-select" id="zubov">Зубов Александр Игоревич</li>
+                    <li class="autor-select" id="isaeva">Исаева Марина Владимировна</li>
+                    <li class="autor-select" id="voronzova">Воронцова Дарья Васильевна</li>
+                    <li class="autor-select" id="rikunov">Рикунов Петр Викторович</li>
+                    <li class="autor-select" id="zvereva">Зверева Екатерина Сергеевна</li>
+                    <li class="autor-select" id="flitman">Флитман Лев Евгеньевич</li>
+                    <li class="autor-select" id="lanikin">Ланикин Антон Борисович</li>
+                    <li class="autor-select" id="sokolova">Соколова Анна Александровна</li>
+                    <li class="autor-select" id="markov">Марков Сергей Сергеевич</li>
+                    <li class="autor-select" id="shlyazhko">Шляжко Олег Михайлович</li>
+                    <li class="autor-select" id="katricheva">Катричева Надежда Сергеевна</li>
+                    <li class="autor-select" id="pisarevskaya">Писаревская Дина Борисовна</li>
+                    <li class="autor-select" id="tikhonova">Тихонова Мария Ивановна</li>
+                    <li class="autor-select" id="efimov">Ефимов Альберт Рувимович</li>
+                    <li class="autor-select" id="paison">Пайсон Дмитрий Борисович</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -176,7 +260,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
         <div class="container">
           <div class="row">
             <div class="lab" id="lab1">
-              <article class="card  card--mod" id="publication1">
+              <article class="card  card--mod blinov" id="publication1">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg" alt="Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Методы текстовой аугментации в задаче выявления побочных эффектов лекарственных препаратов</h3>
@@ -200,7 +284,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication2">
+              <article class="card  card--mod shelmanov" id="publication2">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/NB-MLM-17.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/NB-MLM-17.jpg" alt="NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">NB-MLM: эффективная доменная адаптация маскированных языковых моделей для анализа тональности текстов</h3>
@@ -224,7 +308,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication3">
+              <article class="card  card--mod gusev babayev kireev" id="publication3">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Adversarial-Attacks-on-Deep-Models-18.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Adversarial-Attacks-on-Deep-Models-18.jpg" alt="Состязательные атаки на глубокие модели финансовых транзакций " decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Состязательные атаки на глубокие модели финансовых транзакций </h3>
@@ -268,7 +352,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication4">
+              <article class="card  card--mod kapushev" id="publication4">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Random-Fourier-Features-based-SLAM-19.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Random-Fourier-Features-based-SLAM-19.jpg" alt="Одновременная локализация и построение карты на основе случайных признаков Фурье" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Одновременная локализация и построение карты на основе случайных признаков Фурье</h3>
@@ -292,7 +376,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication5">
+              <article class="card  card--mod karpushin" id="publication5">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Leveraging-Recursive-Gumbel-Max-Trick-20.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Leveraging-Recursive-Gumbel-Max-Trick-20.jpg" alt="Обучение скрытых структур с помощью стохастических инвариантов" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Обучение скрытых структур с помощью стохастических инвариантов</h3>
@@ -316,7 +400,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication6">
+              <article class="card  card--mod yalunin sokolovaE burenko ponomarchuk umerenkov" id="publication6">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Generating-Mammography-Reports-21.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Generating-Mammography-Reports-21.jpg" alt="Автоматическая генерация текстовых заключений по изображениям маммограмм с помощью BERT" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Автоматическая генерация текстовых заключений по изображениям маммограмм с помощью BERT</h3>
@@ -380,7 +464,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication7">
+              <article class="card  card--mod tamm-yan damdinov vasiliev_a" id="publication7">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Quality-Metrics-22.jpeg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Quality-Metrics-22.jpeg" alt="Метрики качества в рекомендательных системах: вычисляем ли мы метрики единообразно?" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Метрики качества в рекомендательных системах: вычисляем ли мы метрики единообразно?</h3>
@@ -424,7 +508,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication8">
+              <article class="card  card--mod avetisyan umerenkov koh sokolovaE nesterov_a burenko egorov_k ponomarchuk" id="publication8">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/CoRSAI_A-System-for-Robust-23.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/CoRSAI_A-System-for-Robust-23.jpg" alt="Модель для интерпретации компьютерной томографии пациентов с COVID-19 с использованием глубокого обучения" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Модель для интерпретации компьютерной томографии пациентов с COVID-19 с использованием глубокого обучения</h3>
@@ -518,7 +602,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication9">
+              <article class="card  card--mod avetisyan" id="publication9">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Transformer-Models-for-Drug-Adverse-Effects-Detection-from-Tweets-14.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Transformer-Models-for-Drug-Adverse-Effects-Detection-from-Tweets-14.jpg" alt="Модели-трансформеры для выявления побочных эффектов лекарственных препаратов на основе Twitter-сообщений" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Модели-трансформеры для выявления побочных эффектов лекарственных препаратов на основе Twitter-сообщений</h3>
@@ -552,7 +636,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication10">
+              <article class="card  card--mod blinov" id="publication10">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/SemanticTriplesVerbalization-15.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/SemanticTriplesVerbalization-15.jpg" alt="Генерация текстовых описаний из RDF-триплетов на основе нейронной языковой модели" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Генерация текстовых описаний из RDF-триплетов на основе нейронной языковой модели</h3>
@@ -578,7 +662,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
               </article>
             </div>
             <div class="lab" id="lab2">
-              <article class="card  card--mod" id="publication11">
+              <article class="card  card--mod korbut" id="publication11">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Artificial-intelligence-24.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Artificial-intelligence-24.jpg" alt="Одомашнивание искусственного интеллекта: умные колонки и трансформация повседневной жизни" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Одомашнивание искусственного интеллекта: умные колонки и трансформация повседневной жизни</h3>
@@ -602,7 +686,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication12">
+              <article class="card  card--mod davidova solyanova sorensen" id="publication12">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Disciplinary-Digital-Self-Tracking-Practices-25.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Disciplinary-Digital-Self-Tracking-Practices-25.jpg" alt="Дисциплинарные практики цифрового селф-трекинга: между эмансипацией и контролем" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Дисциплинарные практики цифрового селф-трекинга: между эмансипацией и контролем</h3>
@@ -646,7 +730,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication13">
+              <article class="card  card--mod klowait" id="publication13">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/goodbye-to-a-robot-26.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/goodbye-to-a-robot-26.jpg" alt="Как попрощаться с роботом? Исследование достижения разговорного закрытия" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Как попрощаться с роботом? Исследование достижения разговорного закрытия</h3>
@@ -670,7 +754,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication14">
+              <article class="card  card--mod klowait erofeeva" id="publication14">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/The-Rise-of-Interactional-Multimodality-27.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/The-Rise-of-Interactional-Multimodality-27.jpg" alt="Мультимодальный поворот  в исследованиях взаимодействия  человека и компьютера" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Мультимодальный поворот в исследованиях взаимодействия человека и компьютера</h3>
@@ -704,7 +788,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication15">
+              <article class="card  card--mod vetushinsky" id="publication15">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Igrodrom-28.JPG" data-fslightbox="gallery"><img class="card__img" src="img/docs/Igrodrom-28.JPG" alt="Игродром. Что нужно знать о видеоиграх и игровой культуре" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Игродром. Что нужно знать о видеоиграх и игровой культуре</h3>
@@ -730,7 +814,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
               </article>
             </div>
             <div class="lab" id="lab3">
-              <article class="card  card--mod" id="publication16">
+              <article class="card  card--mod efimov semachkin seydehassen" id="publication16">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Unreal_Mask-29.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Unreal_Mask-29.jpg" alt="Unreal Mask: определение позы по одному снимку для нескольких классов объектов в задачах роботизированных манипуляций с использованием ключевых точек и синтетического набора данных" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Unreal Mask: определение позы по одному снимку для нескольких классов объектов в задачах роботизированных манипуляций с использованием ключевых точек и синтетического набора данных</h3>
@@ -774,7 +858,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication17">
+              <article class="card  card--mod seydehassen" id="publication17">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/dual-adaptive-30.JPG" data-fslightbox="gallery"><img class="card__img" src="img/docs/dual-adaptive-30.JPG" alt="Двойной адаптивный контроллер на основе нейронных сетей для малоприводных систем" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Двойной адаптивный контроллер на основе нейронных сетей для малоприводных систем</h3>
@@ -798,7 +882,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication18">
+              <article class="card  card--mod seydehassen" id="publication18">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/nonlinear-solver-31.JPG" data-fslightbox="gallery"><img class="card__img" src="img/docs/nonlinear-solver-31.JPG" alt="Нелинейный решатель на основе адаптивной нейронной сети и его применение для расчетов потоков в пористых средах" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Нелинейный решатель на основе адаптивной нейронной сети и его применение для расчетов потоков в пористых средах</h3>
@@ -822,7 +906,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication19">
+              <article class="card  card--mod gonnochenko egorov_d seydehassen semachkin statovoy postnikov" id="publication19">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/coinbot-32.JPG" data-fslightbox="gallery"><img class="card__img" src="img/docs/coinbot-32.JPG" alt="Coinbot: интеллектуальные роботизированные манипуляции с мешками для монет с использованием искусственного интеллекта" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Coinbot: интеллектуальные роботизированные манипуляции с мешками для монет с использованием искусственного интеллекта</h3>
@@ -896,7 +980,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication20">
+              <article class="card  card--mod Burkov gonnochenko" id="publication20">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Comparison-of-modern-open-source-visual-SLAM-33.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Comparison-of-modern-open-source-visual-SLAM-33.jpg" alt="Сравнение современных подходов к визуальному SLAM с открытым исходным кодом" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Сравнение современных подходов к визуальному SLAM с открытым исходным кодом</h3>
@@ -930,7 +1014,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication21">
+              <article class="card  card--mod postnikov gamayunov" id="publication21">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/screen_CovarianceNet.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/screen_CovarianceNet.jpg" alt="CovarianceNet: условная генеративная модель для правильного прогнозирования неопределенности при движении человека" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">CovarianceNet: условная генеративная модель для правильного прогнозирования неопределенности при движении человека</h3>
@@ -964,7 +1048,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication22">
+              <article class="card  card--mod postnikov gamayunov" id="publication22">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/screen_Transformer_based_trajectory.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/screen_Transformer_based_trajectory.jpg" alt="Предсказание траекторий движения на основе трансформерной архитектуры" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Предсказание траекторий движения на основе трансформерной архитектуры</h3>
@@ -1000,7 +1084,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
               </article>
             </div>
             <div class="lab" id="lab4">
-              <article class="card  card--mod" id="publication23">
+              <article class="card  card--mod Sosedka Tishin porvatov" id="publication23">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Citation-Network-46.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Citation-Network-46.jpg" alt="Приложения графа цитирований в научной рекомендательной системе" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Приложения графа цитирований в научной рекомендательной системе</h3>
@@ -1044,7 +1128,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication24">
+              <article class="card  card--mod nesteruk" id="publication24">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/ComputerVisionApproachesforVolumeStockEstimation-35.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/ComputerVisionApproachesforVolumeStockEstimation-35.jpg" alt="Методы компьютерного зрения для оценки запасов древесины на примере бореальных лесов северо-запада России" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Методы компьютерного зрения для оценки запасов древесины на примере бореальных лесов северо-запада России</h3>
@@ -1068,7 +1152,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication25">
+              <article class="card  card--mod potaninm dimitrov shonenkov karachev novopoltsev chertok" id="publication25">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Digital-Peter-36.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Digital-Peter-36.jpg" alt="Digital Peter: новый датасет, соревнование и методы распознавания рукописного текста" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Digital Peter: новый датасет, соревнование и методы распознавания рукописного текста</h3>
@@ -1142,7 +1226,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication26">
+              <article class="card  card--mod shonenkov karachev novopoltsev potaninm dimitrov chertok" id="publication26">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/stackmix-37.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/stackmix-37.jpg" alt="StackMix и Blot Augmentations для распознавания рукописного текста" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">StackMix и Blot Augmentations для распознавания рукописного текста</h3>
@@ -1216,7 +1300,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication27">
+              <article class="card  card--mod nesteruk" id="publication27">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Object-Based-Augmentation-for-Building-Semantic-Segmentation-38.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Object-Based-Augmentation-for-Building-Semantic-Segmentation-38.jpg" alt="Основанная на объектах аугментация для семантической сегментации зданий на примере местности Вентура и Санта-Роза" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Основанная на объектах аугментация для семантической сегментации зданий на примере местности Вентура и Санта-Роза</h3>
@@ -1242,7 +1326,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
               </article>
             </div>
             <div class="lab" id="lab5">
-              <article class="card  card--mod" id="publication28">
+              <article class="card  card--mod efimov vedahin" id="publication28">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/strongAI-47.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/strongAI-47.jpg" alt="Сильный искусственный интеллект: на подступах к сверхразуму" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Сильный искусственный интеллект: на подступах к сверхразуму</h3>
@@ -1250,12 +1334,33 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                     <div class="card__descr">Artificial General Intelligence: approaching the supermind / A. Vedyakhin, M. Burtsev, O. Bukhvalov, E. Vityaev, A. Efimov, M. Eryomenko, L. Kolonin, A. Kurpatov, V. Mazin, S. Markov, A. Molchanov, S. Nikolenko, L. Ocheretniy, L. Panov, D. Ponomarev, D. Potapov, D. Salikhov, G. Sarapulov, D. Sviridenko, A. Chertok, S. Shalyapin, V. Shelekhov, A. Franz — M.: Alpina PRO, 2021. — 216 p. ISBN 978-5-907470-11-8</div>
                     <div class="card__anons">Книга, основанная на исследовании лучших российских специалистов по ИИ, посвящена научным подходам к созданию общего ИИ, а также областям и потенциалу его применения. Авторы впервые обобщили и систематизировали накопленные знания в области общего ИИ  от компьютерных наук и машинного обучения до нейронаук и психологии. Эта книга — самый полный и глубокий обзор подходов к созданию общего ИИ, вышедший в России.</div><a class="btn" href="https://alpinabook.ru/catalog/book-silnyy-iskusstvennyy-intellekt/" target="blank" aria-label="Читать работу">Читать</a>
                     <div class="card__authors authors">
-                      <div class="authors__wrap"> </div>
+                      <div class="authors__wrap">
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/efimov.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Ефимов Альберт&lt;br&gt;Рувимович" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Ефимов Альберт<br>Рувимович</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="authors__card">
+                          <div class="author">
+                            <div class="author__img">
+                              <div class="author__gradient"></div><img src="img/authors/vedahin.jpg" decoding="async" loading="lazy" width="100" height="100" alt="Ведяхин Александр&lt;br&gt; Александрович" />
+                            </div>
+                            <div class="author__content">
+                              <div class="author__name">Ведяхин Александр<br> Александрович</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication29">
+              <article class="card  card--mod nesteruk" id="publication29">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Image Compression and Plants Classification-7.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Image Compression and Plants Classification-7.jpg" alt="Сжатие изображений и классификация растений методами машинного обучения в контролируемой среде для задач сельского хозяйства на примере Антарктической станции" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Сжатие изображений и классификация растений методами машинного обучения в контролируемой среде для задач сельского хозяйства на примере Антарктической станции</h3>
@@ -1279,7 +1384,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication30">
+              <article class="card  card--mod nesteruk" id="publication30">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/MixChannel-41.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/MixChannel-41.jpg" alt="MixChannel: совершенствование аугментации для мультиспектральных спутниковых снимков" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">MixChannel: совершенствование аугментации для мультиспектральных спутниковых снимков</h3>
@@ -1303,7 +1408,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication31 ">
+              <article class="card  card--mod dimitrov" id="publication31 ">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Statistical-Estimation-of-the-Kullback–Leibler-Divergence-42.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Statistical-Estimation-of-the-Kullback–Leibler-Divergence-42.jpg" alt="Статистическое оценивание дивергенции Кульбака-Лейблера" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Статистическое оценивание дивергенции Кульбака-Лейблера</h3>
@@ -1327,7 +1432,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication32">
+              <article class="card  card--mod tutubalina" id="publication32">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Near-Zero-43.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Near-Zero-43.jpg" alt="Интеллектуальный анализ данных обзоров практически без обучения модели и с минимальной помощью WordNet" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Интеллектуальный анализ данных обзоров практически без обучения модели и с минимальной помощью WordNet</h3>
@@ -1351,7 +1456,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication33">
+              <article class="card  card--mod tutubalina" id="publication33">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Selection-of-pseudo-annotated-data-44.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Selection-of-pseudo-annotated-data-44.jpg" alt="Выбор псевдоаннотированных текстов для выявления неблагоприятных лекарственных реакций по группам препаратов" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Выбор псевдоаннотированных текстов для выявления неблагоприятных лекарственных реакций по группам препаратов</h3>
@@ -1375,7 +1480,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication34">
+              <article class="card  card--mod tutubalina" id="publication34">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/nerel-45.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/nerel-45.jpg" alt="NEREL: русскоязычный датасет с вложенными именованными сущностями, отношениями и событиями" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">NEREL: русскоязычный датасет с вложенными именованными сущностями, отношениями и событиями</h3>
@@ -1399,7 +1504,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication35">
+              <article class="card  card--mod tutubalina chertok salikhov stepnov_m" id="publication35">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/DetIE.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/DetIE.jpg" alt="DetIE: многоязычное извлечение открытой информации на основе обнаружения объектов" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">DetIE: многоязычное извлечение открытой информации на основе обнаружения объектов</h3>
@@ -1453,7 +1558,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication36">
+              <article class="card  card--mod tutubalina" id="publication36">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Cross-Domain_Limitations.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Cross-Domain_Limitations.jpg" alt="Кросс-доменные ограничения нейросетевых моделей для классификации биомедицинских отношений" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Кросс-доменные ограничения нейросетевых моделей для классификации биомедицинских отношений</h3>
@@ -1477,7 +1582,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication37">
+              <article class="card  card--mod chertok semenova porvatov" id="publication37">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Hybrid-Graph-Embedding-Techniques-34.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Hybrid-Graph-Embedding-Techniques-34.jpg" alt="Применение гибридных графовых моделей для оценки времени в пути" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Применение гибридных графовых моделей для оценки времени в пути</h3>
@@ -1523,7 +1628,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
               </article>
             </div>
             <div class="lab" id="lab6">
-              <article class="card  card--mod" id="publication38">
+              <article class="card  card--mod potaninm" id="publication38">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Optimizing-the-structure-of-deep-learning-networks-39.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Optimizing-the-structure-of-deep-learning-networks-39.jpg" alt="Оптимизация структуры сетей глубокого обучения " decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Оптимизация структуры сетей глубокого обучения </h3>
@@ -1547,7 +1652,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication39">
+              <article class="card  card--mod fenogenova mikhailov emelyanov tikhonova shavrina shevelev" id="publication39">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Russian SuperGLUE-1.png" data-fslightbox="gallery"><img class="card__img" src="img/docs/Russian SuperGLUE-1.png" alt="Russian SuperGLUE 1.1: пересмотр уроков, не усвоенных русскими NLP-моделями" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Russian SuperGLUE 1.1: пересмотр уроков, не усвоенных русскими NLP-моделями</h3>
@@ -1621,7 +1726,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication40">
+              <article class="card  card--mod mikhailov" id="publication40">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/ArtificialText-2.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/ArtificialText-2.jpg" alt="Выявление текстов, сгенерированных ИИ, на основе анализа топологических данных" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Выявление текстов, сгенерированных ИИ, на основе анализа топологических данных</h3>
@@ -1645,7 +1750,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication41">
+              <article class="card  card--mod mikhailov" id="publication41">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/ShakingSyntacticTrees-3.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/ShakingSyntacticTrees-3.jpg" alt="Трясем деревья на улице Сезам: наборы данных для многоязычного пробинга с контролируемыми перестановками" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Трясем деревья на улице Сезам: наборы данных для многоязычного пробинга с контролируемыми перестановками</h3>
@@ -1669,7 +1774,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication42">
+              <article class="card  card--mod shavrina" id="publication42">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/computational- linguistics-4.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/computational- linguistics-4.jpg" alt="О методах компьютерной лингвистики в оценке систем искусственного интеллекта" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">О методах компьютерной лингвистики в оценке систем искусственного интеллекта</h3>
@@ -1693,7 +1798,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication43">
+              <article class="card  card--mod shavrina" id="publication43">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/How not to Lie with a Benchmark-48.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/How not to Lie with a Benchmark-48.jpg" alt="Как не солгать с бенчмарком: переоценка лидерства в NLP" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Как не солгать с бенчмарком: переоценка лидерства в NLP</h3>
@@ -1717,7 +1822,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication44">
+              <article class="card  card--mod fenogenova" id="publication44">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Text-Simplification.JPG" data-fslightbox="gallery"><img class="card__img" src="img/docs/Text-Simplification.JPG" alt="Упрощение текста с помощью авторегрессионных моделей" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Упрощение текста с помощью авторегрессионных моделей</h3>
@@ -1741,7 +1846,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication45">
+              <article class="card  card--mod mazurin bernadott" id="publication45">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Clustering Quality Criterion-50.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Clustering Quality Criterion-50.jpg" alt="Критерий качества кластеризации на основе отбора признаков размеченной выборки с приложением в области разработки интерфейсов мозг-компьютер" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Критерий качества кластеризации на основе отбора признаков размеченной выборки с приложением в области разработки интерфейсов мозг-компьютер</h3>
@@ -1775,7 +1880,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication46">
+              <article class="card  card--mod fenogenova" id="publication46">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Russian Paraphrasers-30.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Russian Paraphrasers-30.jpg" alt="Перефразирования в русском языке: перефразирования на основе трансформаторов" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Перефразирования в русском языке: перефразирования на основе трансформаторов</h3>
@@ -1799,7 +1904,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication47">
+              <article class="card  card--mod zubov isaeva bernadott" id="publication47">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/neural-network-classifier-9.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/neural-network-classifier-9.jpg" alt="Нейросетевой классификатор ЭЭГ людей, перенесших и не перенесших COVID-19" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Нейросетевой классификатор ЭЭГ людей, перенесших и не перенесших COVID-19</h3>
@@ -1843,7 +1948,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication48">
+              <article class="card  card--mod voronzova zubov rikunov zvereva flitman lanikin sokolova markov bernadott" id="publication48">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Silent-EEG-Speech-Recognition-10.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Silent-EEG-Speech-Recognition-10.jpg" alt="Распознавание немой ЭЭГ-речи с использованием сверточной и рекуррентной нейронной сети с точностью 85% классификации для 9 слов" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Распознавание немой ЭЭГ-речи с использованием сверточной и рекуррентной нейронной сети с точностью 85% классификации для 9 слов</h3>
@@ -1947,7 +2052,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication49">
+              <article class="card  card--mod mikhailov" id="publication49">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Morph-Call-11.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Morph-Call-11.jpg" alt="Morph Call: исследование морфосинтаксического содержания многоязычных трансформеров" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Morph Call: исследование морфосинтаксического содержания многоязычных трансформеров</h3>
@@ -1971,7 +2076,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication50">
+              <article class="card  card--mod mikhailov" id="publication50">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/RuSentEval-12.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/RuSentEval-12.jpg" alt="RuSentEval: лингвистический источник, кодирующая сила!" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">RuSentEval: лингвистический источник, кодирующая сила!</h3>
@@ -1995,7 +2100,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication51">
+              <article class="card  card--mod emelyanov shlyazhko shavrina katricheva" id="publication51">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Using-RuGPT3-XL-Model-for-RuNormAS-competition-13.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Using-RuGPT3-XL-Model-for-RuNormAS-competition-13.jpg" alt="Использование модели ruGPT-3 XL в соревновании RuNormAS" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Использование модели ruGPT-3 XL в соревновании RuNormAS</h3>
@@ -2049,7 +2154,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication52">
+              <article class="card  card--mod shavrina pisarevskaya" id="publication52">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Screen_Building_a_Bilingual _A-system.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Screen_Building_a_Bilingual _A-system.jpg" alt="Строим билингвальную вопросно-ответную систему на базе ruGPT-3" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Строим билингвальную вопросно-ответную систему на базе ruGPT-3</h3>
@@ -2083,7 +2188,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication53">
+              <article class="card  card--mod tikhonova pisarevskaya shavrina shlyazhko" id="publication53">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Using-RuGPT3-XL-Model-for-RuNormAS-competition-13.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Using-RuGPT3-XL-Model-for-RuNormAS-competition-13.jpg" alt="Применение модели  Generative Pretrained Transformer-3 (ruGPT-3) для решения задач кластеризации новостных текстов и генерации заголовков" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Применение модели Generative Pretrained Transformer-3 (ruGPT-3) для решения задач кластеризации новостных текстов и генерации заголовков</h3>
@@ -2139,7 +2244,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
               </article>
             </div>
             <div class="lab" id="lab7">
-              <article class="card  card--mod" id="publication54">
+              <article class="card  card--mod efimov" id="publication54">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Genplan_Article-81.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Genplan_Article-81.jpg" alt="Как предсказывать будущее технологий на 30 лет вперед так, чтобы это было полезно уже сегодня?" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Как предсказывать будущее технологий на 30 лет вперед так, чтобы это было полезно уже сегодня?</h3>
@@ -2163,7 +2268,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication55">
+              <article class="card  card--mod efimov" id="publication55">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Science-and-art-48.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Science-and-art-48.jpg" alt="Наука и искусство в цифровую эпоху: проблема синергии" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Наука и искусство в цифровую эпоху: проблема синергии</h3>
@@ -2187,7 +2292,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication56">
+              <article class="card  card--mod paison" id="publication56">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/New-Space-and-Newest-Space-49.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/New-Space-and-Newest-Space-49.jpg" alt="Новый Космос и Новейший Космос" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Новый Космос и Новейший Космос</h3>
@@ -2211,7 +2316,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication57">
+              <article class="card  card--mod efimov" id="publication57">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/Walking-Through-the-Turing-Wall-50.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/Walking-Through-the-Turing-Wall-50.jpg" alt="Пройти сквозь стену Тьюринга" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Пройти сквозь стену Тьюринга</h3>
@@ -2235,7 +2340,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   </div>
                 </div>
               </article>
-              <article class="card  card--mod" id="publication58">
+              <article class="card  card--mod efimov" id="publication58">
                 <div class="card__row"><a class="card__img-wrap" href="img/docs/AI_Science-81.jpg" data-fslightbox="gallery"><img class="card__img" src="img/docs/AI_Science-81.jpg" alt="Искусственный интеллект для науки и наука для искусственного интеллекта" decoding="async" loading="lazy" /></a>
                   <div class="card__content">
                     <h3 class="card__title">Искусственный интеллект для науки и наука для искусственного интеллекта</h3>
@@ -2299,7 +2404,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
     </div><a class="to-top" id="to-top" data-anchor=" " href="#top">↑</a>
   </div>
   <script src="js/fslightbox.js"></script><script src="js/bundle.js"></script>
-
+<span></span>
 </body>
 
 </html>

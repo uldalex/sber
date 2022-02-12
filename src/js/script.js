@@ -9,17 +9,25 @@
 
 
 $('.dropdown').on('click', function () {
+  
   if ($(this).hasClass("active")) {
   $(this).removeClass('active');
   $(this).find('.dropdown-menu').slideUp(300);
   $("#publication-input").val('');
+  $("#autors-input").val('');
   $("#publication-close").removeClass('active');
+  $("#autors-close").removeClass('active');
   var value = '';
   $("#publication-list li").filter(function() {
     let item = $(this).text().toLowerCase().indexOf(value) > -1;
     $(this).toggle(item);
   });
+  $("#autors-list li").filter(function() {
+    let item = $(this).text().toLowerCase().indexOf(value) > -1;
+    $(this).toggle(item);
+  });
   $("#publication-input").removeClass('active');
+  $("#autors-input").removeClass('active');
 } else {
  $(this).addClass('active');
   $(this).find('.dropdown-menu').slideDown(300); 
@@ -27,13 +35,29 @@ $('.dropdown').on('click', function () {
 }).on('click','.search-input, .dropdown__close', function(e) { 
   e.stopPropagation();
 });
-$('.dropdown .dropdown-menu li').click(function () {
+$('.dropdown .dropdown-menu li').on('click', function () {
+  var text = $(this).text();
   $(this).parents('.dropdown').find('span').text($(this).text());
-
+  $(this).parents('.dropdown').find("#publication-input").attr('placeholder' , text);
+  $(this).parents('.dropdown').find("#autors-input").attr('placeholder' , text);
+  
 });
+$('.dropdown--lab').on('click', function(){
+  $('.card').css({'display':'block'});
+  $("#autors-input").attr('placeholder' , 'Поиск по авторам');
+  $("#publication-input").attr('placeholder' , 'Поиск по публикациям');
+  $('.dropdown--publication, #publication-input,  #autors-input,#publication-close, #autors-close, .dropdown--autors').removeClass('active')
+  $('.dropdown--publication .dropdown-menu , .dropdown--autors .dropdown-menu').slideUp(300);
+})
 $("#publication-input").on("click", function() {
+  $('.card').css({'display':'block'});
+  $('.dropdown').removeClass('active');
+  $('.dropdown-menu').slideUp(300); 
+  $("#autors-input").removeClass('active');
+  $("#autors-close").removeClass('active');
   $('.lab').css({'display':'block'});
   $('.select-filter').find('span').text('Все лаборатории');
+  $("#autors-input").attr('placeholder' , 'Поиск по авторам');
   $(this).addClass('active');
   $(this).parents('.dropdown').addClass('active');
   $(this).parents('.dropdown').find('.dropdown-menu').slideDown(300); 
@@ -42,6 +66,7 @@ $("#publication-input").on("click", function() {
   $(close).on('click', function(){
     $("#publication-input").removeClass('active');
     $("#publication-input").val('');
+    $("#publication-input").attr('placeholder' , 'Поиск по публикациям');
     $(this).parents('.dropdown').find('.dropdown-menu').slideUp(300);
     var value = $("#publication-input").val().toLowerCase();
     $(this).removeClass('active');
@@ -51,12 +76,50 @@ $("#publication-input").on("click", function() {
     });
   })
 });
-
-
+$("#autors-input").on("click", function() {
+  $('.dropdown').removeClass('active');
+  $('.dropdown-menu').slideUp(300); 
+  $("#publication-input").removeClass('active');
+  $("#publication-close").removeClass('active');
+  $('.lab').css({'display':'block'});
+  $("#publication-input").attr('placeholder' , 'Поиск по публикациям');
+  $('.select-filter').find('span').text('Все лаборатории');
+  $(this).addClass('active');
+  $(this).parents('.dropdown').addClass('active');
+  $(this).parents('.dropdown').find('.dropdown-menu').slideDown(300); 
+  var close = $('#autors-close');
+  $(close).addClass('active');
+  $(close).on('click', function(){
+    $("#autors-input").removeClass('active');
+    $("#autors-input").val('');
+    $(this).parents('.dropdown').find('.dropdown-menu').slideUp(300);
+    var value = $("#autors-input").val().toLowerCase();
+    $(this).removeClass('active');
+    $("#autors-list li").filter(function() {
+      let item = $(this).text().toLowerCase().indexOf(value) > -1;
+      $(this).toggle(item);
+    });
+  })
+});
+$('.autor-select').on('click', function(){
+  var div = $(this).attr('id');
+  $('.card').css({'display':'none'})
+$('.'+div).css({'display':'block'})
+})
+$('.autor-all').on('click', function(){
+  $('.card').css({'display':'block'});
+})
 
 $("#publication-input").on("keyup", function() {
   var value = $(this).val().toLowerCase();
  $("#publication-list li").filter(function() {
+   let item = $(this).text().toLowerCase().indexOf(value) > -1;
+   $(this).toggle(item);
+ });
+});
+$("#autors-input").on("keyup", function() {
+  var value = $(this).val().toLowerCase();
+ $("#autors-list li").filter(function() {
    let item = $(this).text().toLowerCase().indexOf(value) > -1;
    $(this).toggle(item);
  });
@@ -114,7 +177,7 @@ if ($(".authors__wrap").length){
 
 
  // листалка авторов 
- if ($(".authors__wrap").length){
+ if ($("#publication1").length){
   InitVars();
   InitMenu();
     $(window).on("load",function(){

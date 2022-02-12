@@ -51,7 +51,8 @@
           font-size: 1.15rem;
           font-weight:600;
           font-family:$font-family--alt;
-          @media(max-width:1024px){
+          white-space:nowrap;
+          @media(max-width:1300px){
             margin-right: 25px;
           }
       }

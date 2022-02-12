@@ -62,9 +62,9 @@ html(class='page  no-js', lang='ru')
           #page-filter.page-filter 
             .container 
               .row 
-                .col-md-6.col-lg-4
-                  label(for="publication-input" aria-label="Фильтр по лабораториям") Фильтр по лабораториям
-                  .dropdown
+                .col-md-4.col-lg-4
+                  label(for="publication-input" aria-label="Фильтр по исследовательским группам") Фильтр по исследовательским группам
+                  .dropdown.dropdown--lab
                     .select.select-filter 
                       span Все лаборатории
                     #publication-list.dropdown-menu
@@ -85,9 +85,9 @@ html(class='page  no-js', lang='ru')
                             a.servise-form__link--lab(href="#lab6" data-anchor="SBERDEVICES" aria-label="SBERDEVICES" ) SBERDEVICES
                           li 
                             a.servise-form__link--lab(href="#lab7" data-anchor="Управление исследований и инноваций" aria-label="Управление исследований и инноваций" ) Управление исследований и инноваций
-                .col-md-6.col-lg-4
+                .col-md-4.col-lg-4
                   label(for="publication-input" aria-label="Фильтр по лабораториям") Поиск по публикациям
-                  .dropdown
+                  .dropdown.dropdown--publication
                     .select 
                         input#publication-input.search-input(type="text" placeholder='Поиск по публикациям')
                         #publication-close.dropdown__close 
@@ -209,14 +209,93 @@ html(class='page  no-js', lang='ru')
                               a.servise-form__link(href="#publication57" data-anchor="Пройти сквозь стену Тьюринга" aria-label="Пройти сквозь стену Тьюринга " ) Пройти сквозь стену Тьюринга
                             li 
                               a.servise-form__link(href="#publication58" data-anchor="Искусственный интеллект для науки и наука для искусственного интеллекта" aria-label="Искусственный интеллект для науки и наука для искусственного интеллекта " ) Искусственный интеллект для науки и наука для искусственного интеллекта
-
-
-
+                .col-md-4.col-lg-4
+                  label(for="autors-input" aria-label="Фильтр по авторам") Поиск по авторам
+                  .dropdown.dropdown--autors
+                    .select 
+                        input#autors-input.search-input(type="text" placeholder='Поиск по авторам')
+                        #autors-close.dropdown__close 
+                    #autors-list.dropdown-menu
+                          ul
+                            li#all.autor-all Все авторы
+                            li#blinov.autor-select Блинов Павел Дмитриевич
+                            li#shelmanov.autor-select Шелманов Артем Олегович
+                            li#gusev.autor-select  Гусев Глеб Геннадьевич
+                            li#babayev.autor-select Бабаев Дмитрий Леонидович
+                            li#kireev.autor-select Киреев Иван Александрович
+                            li#kapushev.autor-select Капушев Ермек Рахатович
+                            li#karpushin.autor-select Карпушкин Данил Дмитриевич
+                            li#yalunin.autor-select Ялунин Александр Александрович
+                            li#sokolovaE.autor-select Соколова Елена Владимировна
+                            li#burenko.autor-select Буренко Илья Михайлович
+                            li#ponomarchuk.autor-select Пономарчук Александр Васильевич
+                            li#umerenkov.autor-select Умеренков Дмитрий Евгеньевич
+                            li#tamm-yan.autor-select Тамм Ян-Мартин Юривич
+                            li#damdinov.autor-select Дамдинов Ринчин Гармаевич
+                            li#vasiliev_a.autor-select Васильев Алексей Валерьевич
+                            li#avetisyan.autor-select Аветисян Манвел Согомонович
+                            li#koh.autor-select Кох Владимир Николаевич
+                            li#nesterov_a.autor-select Нестеров Александр Игоревич
+                            li#egorov_k.autor-select Егоров Константин Сергеевич
+                            li#korbut.autor-select Корбут Андрей Михайлович
+                            li#davidova.autor-select Давыдова Александра Михайловна
+                            li#solyanova.autor-select Солянова Мария  Алексеевна
+                            li#sorensen.autor-select Соренсен Кристина
+                            li#klowait.autor-select Кловайт Нильс
+                            li#erofeeva.autor-select Ерофеева Мария Александровна
+                            li#vetushinsky.autor-select Ветушинский Александр Сергеевич
+                            li#semachkin.autor-select Семочкин Александр Николаевич
+                            li#seydehassen.autor-select Сейедхассан Забихифар
+                            li#gonnochenko.autor-select Гонноченко Алексей  Сергеевич
+                            li#egorov_d.autor-select Егоров Дмитрий  Александрович
+                            li#statovoy.autor-select Статовой Дмитрий Александрович
+                            li#postnikov.autor-select Постников Алексей Леонидович
+                            li#Burkov.autor-select Бурков Алексей Михайлович
+                            li#gamayunov.autor-select Гамаюнов Александр Русланович
+                            li#Sosedka.autor-select Соседка Артем Валерьевич
+                            li#Tishin.autor-select Тишин Владислав Викторович
+                            li#porvatov.autor-select Порватов Вадим Андреевич
+                            li#nesteruk.autor-select Нестерук Сергей Валентинович
+                            li#potaninm.autor-select Потанин Марк Станиславович
+                            li#dimitrov.autor-select Димитров Денис Валерьевич
+                            li#shonenkov.autor-select Шоненков Алексей Владимирович
+                            li#karachev.autor-select Карачев Денис Константинович
+                            li#novopoltsev.autor-select Новопольцев Максим Юрьевич
+                            li#chertok.autor-select Черток Андрей Викторович
+                            li#vedahin.autor-select Ведяхин Александр Александрович
+                            li#tutubalina.autor-select Тутубалина Елена Викторовна
+                            li#salikhov.autor-select Салихов Дмитрий Рифович
+                            li#stepnov_m.autor-select Степнов Михаил Игоревич
+                            li#semenova.autor-select Семенова Наталья Александровна
+                            li#fenogenova.autor-select Феногенова Алена Сергеевна
+                            li#mikhailov.autor-select Михайлов Владислав Николаевич
+                            li#emelyanov.autor-select Емельянов Антон Александрович
+                            li#tikhonova.autor-select Тихонова Мария Ивановна
+                            li#shavrina.autor-select Шаврина Татьяна Олеговна
+                            li#shevelev.autor-select Шевелев Денис Михайлович
+                            li#mazurin.autor-select Мазурин Александр Дмитриевич
+                            li#bernadott.autor-select Бернадотт Александра Карл
+                            li#zubov.autor-select Зубов Александр Игоревич
+                            li#isaeva.autor-select Исаева Марина Владимировна
+                            li#voronzova.autor-select Воронцова Дарья Васильевна
+                            li#rikunov.autor-select Рикунов Петр Викторович
+                            li#zvereva.autor-select Зверева Екатерина  Сергеевна
+                            li#flitman.autor-select Флитман Лев  Евгеньевич
+                            li#lanikin.autor-select Ланикин Антон Борисович
+                            li#sokolova.autor-select Соколова Анна Александровна
+                            li#markov.autor-select Марков Сергей Сергеевич
+                            li#shlyazhko.autor-select Шляжко Олег Михайлович
+                            li#katricheva.autor-select Катричева Надежда Сергеевна
+                            li#pisarevskaya.autor-select Писаревская Дина Борисовна
+                            li#tikhonova.autor-select Тихонова Мария Ивановна
+                            li#efimov.autor-select Ефимов Альберт Рувимович
+                            li#paison.autor-select Пайсон Дмитрий Борисович
           .card-list 
             .container 
               .row
                 #lab1.lab 
                   +card({
+                    
                     id: 'publication1',
                     url:'https://aclanthology.org/2021.smm4h-1.17.pdf',
                     img:'Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg',
@@ -227,6 +306,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1:'blinov.jpg',
                     autor1:'Блинов Павел<br> Дмитриевич',
                     lab:'Лаборатория по исскуственному интеллекту',
+                    autor1class:'blinov',
                   }, 'mod')
                   +card({
                     id: 'publication2',
@@ -239,6 +319,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1:'shelmanov.jpg',
 					          autor1: 'Шелманов Артем<br> Олегович',
 					          lab:'Лаборатория по исскуственному интеллекту',
+                    autor1class:'shelmanov',
                   }, 'mod')
                   +card({
                     url:'https://arxiv.org/pdf/2106.08361.pdf',
@@ -255,6 +336,9 @@ html(class='page  no-js', lang='ru')
                     autor2: 'Бабаев Дмитрий<br> Леонидович',
                     autor3: 'Киреев Иван<br> Александрович',
 					          lab:'Лаборатория по исскуственному интеллекту',
+                    autor1class:'gusev',
+                    autor2class:'babayev',
+                    autor3class:'kireev',
                   }, 'mod')
                   +card({
                     url:'https://arxiv.org/abs/2011.00594',
@@ -267,6 +351,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'kapushev.jpg',
                     autor1: 'Капушев Ермек<br> Рахатович',
 					          lab:'Лаборатория по исскуственному интеллекту',
+                    autor1class:'kapushev',
                   }, 'mod')
                   +card({
                     url:'https://arxiv.org/pdf/2110.15072.pdf',
@@ -279,6 +364,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'karpushin.jpg',
                     autor1: 'Карпушкин Данил<br> Дмитриевич',
 					          lab:'Лаборатория по исскуственному интеллекту',
+                    autor1class:'karpushin',
                   }, 'mod')
                   +card({
                     url: 'https://aclanthology.org/2021.findings-emnlp.15.pdf',
@@ -299,6 +385,11 @@ html(class='page  no-js', lang='ru')
                     autor4: 'Пономарчук Александр<br> Васильевич',
                     autor5: 'Умеренков Дмитрий<br> Евгеньевич',
 					          lab:'Лаборатория по исскуственному интеллекту',
+                    autor1class:'yalunin',
+                    autor2class:'sokolovaE',
+                    autor3class:'burenko',
+                    autor4class:'ponomarchuk',
+                    autor5class:'umerenkov',
                   }, 'mod')
                   +card({
                     url:'https://dl.acm.org/doi/pdf/10.1145/3460231.3478848?casa_token=WLRNnWpDon8AAAAA:I4IMSvGl-0ojlSMwQ1ZMGoKgl2zCztt-6rZQ9uUfsoILdsWDY-vIT42pWVQaoZimOvLVcRziASTCQQ',
@@ -315,6 +406,9 @@ html(class='page  no-js', lang='ru')
                     autor2: 'Дамдинов Ринчин<br> Гармаевич',
                     autor3: 'Васильев Алексей<br> Валерьевич',
 					          lab:'Лаборатория по исскуственному интеллекту',
+                    autor1class:'tamm-yan',
+                    autor2class:'damdinov',
+                    autor3class:'vasiliev_a',
                   }, 'mod')
                   +card({
                     url:'https://arxiv.org/abs/2105.11863',
@@ -332,7 +426,7 @@ html(class='page  no-js', lang='ru')
                     autorimg6: 'burenko-min.jpg',
                     autorimg7: 'egorov_k.jpg',
                     autorimg8: 'ponomarchuk.jpg',
-                              autor1: 'Аветисян Манвел<br> Согомонович',
+                    autor1: 'Аветисян Манвел<br> Согомонович',
                     autor2: 'Умеренков Дмитрий<br> Евгеньевич',
                     autor3: 'Кох Владимир<br> Николаевич',
                     autor4: 'Соколова Елена<br> Владимировна',
@@ -341,6 +435,14 @@ html(class='page  no-js', lang='ru')
                     autor7: 'Егоров Константин<br> Сергеевич',
                     autor8: 'Пономарчук Александр<br> Васильевич',
                     lab:'Лаборатория по исскуственному интеллекту',
+                    autor1class:'avetisyan',
+                    autor2class:'umerenkov',
+                    autor3class:'koh',
+                    autor4class:'sokolovaE',
+                    autor5class:'nesterov_a',
+                    autor6class:'burenko',
+                    autor7class:'egorov_k',
+                    autor8class:'ponomarchuk',
                   }, 'mod')
                   +card({
                     url:'https://aclanthology.org/2020.smm4h-1.17.pdf',
@@ -355,6 +457,8 @@ html(class='page  no-js', lang='ru')
                     autor1: 'Блинов Павел<br> Дмитриевич',
                     autor2: 'Аветисян Манвел<br> Согомонович',
                     lab:'Лаборатория по исскуственному интеллекту',
+                    autor1class:'blinov',
+                    autor1class:'avetisyan',
                   }, 'mod')
                   +card({
                     url:'https://www.aclweb.org/anthology/2020.webnlg-1.17.pdf',
@@ -367,6 +471,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'blinov.jpg',
                     autor1: 'Блинов Павел<br> Дмитриевич',
 					          lab:'Лаборатория по исскуственному интеллекту',
+                    autor1class:'blinov',
                   }, 'mod')
                 #lab2.lab 
                   +card({
@@ -380,6 +485,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'korbut.jpg',
                     autor1: 'Корбут Андрей<br> Михайлович',
 					          lab:'Лаборатория геймификации',
+                    autor1class:'korbut',
                   }, 'mod')
                   +card({
                     url:'https://www.monitoringjournal.ru/index.php/monitoring/article/view/1797/1493',
@@ -392,10 +498,13 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'davidova.jpg',
                     autorimg2: 'solyanova.jpg',
                     autorimg3: 'sorensen.jpg',
-                              autor1: 'Давыдова Александра<br> Михайловна',
+                    autor1: 'Давыдова Александра<br> Михайловна',
                     autor2: 'Солянова Мария<br>  Алексеевна',
                     autor3: 'Соренсен Кристина',
                     lab:'Лаборатория геймификации',
+                    autor1class:'davidova',
+                    autor2class:'solyanova',
+                    autor3class:'sorensen',
                   }, 'mod')
                   +card({
                     url:'https://www.monitoringjournal.ru/index.php/monitoring/article/view/1810/1494',
@@ -408,6 +517,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'klowait.jpg',
                     autor1: 'Кловайт Нильс',
 					          lab:'Лаборатория геймификации',
+                    autor1class:'klowait',
                   }, 'mod')
                   +card({
                     url:'https://www.monitoringjournal.ru/index.php/monitoring/article/view/1793/1485',
@@ -422,6 +532,8 @@ html(class='page  no-js', lang='ru')
                     autor1: 'Кловайт Нильс',
                     autor2: 'Ерофеева Мария<br> Александровна',
                     lab:'Лаборатория геймификации',
+                    autor1class:'klowait',
+                    autor2class:'erofeeva',
                   }, 'mod')
                   +card({
                     url:'https://eksmo.ru/book/filosofiya-v-videoigrakh-ITD1125100/ ',
@@ -434,6 +546,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'vetushinsky1-min.jpg',
                     autor1: 'Ветушинский Александр<br> Сергеевич',
                     lab:'Лаборатория геймификации',
+                    autor1class:'vetushinsky',
                   }, 'mod')
                 #lab3.lab 
                   +card({
@@ -451,6 +564,9 @@ html(class='page  no-js', lang='ru')
                     autor2: 'Семочкин Александр<br> Николаевич',
                     autor3: 'Сейедхассан Забихифар',
                     lab:'SBERROBOTICS',
+                    autor1class:'efimov',
+                    autor2class:'semachkin',
+                    autor3class:'seydehassen',
                   }, 'mod')
                   +card({
                     url:'https://www.cambridge.org/core/journals/robotica/article/abs/dual-adaptive-neural-network-controller-for-underactuated-systems/D7F9A11AE353DFB3D8CB39F91B98387B',
@@ -463,6 +579,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'seydehassen.jpg',
                     autor1: 'Сейедхассан Забихифар',
 					          lab:'SBERROBOTICS',
+                    autor1class:'seydehassen',
                   }, 'mod')
                   +card({
                     url:'https://www.sciencedirect.com/science/article/abs/pii/S187551002030603X',
@@ -475,6 +592,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'seydehassen.jpg',
                     autor1: 'Сейедхассан Забихифар',
 					          lab:'SBERROBOTICS',
+                    autor1class:'seydehassen',
                   }, 'mod')
                   +card({
                     url:'https://ieeexplore.ieee.org/abstract/document/9376455',
@@ -497,6 +615,12 @@ html(class='page  no-js', lang='ru')
                     autor5: 'Статовой Дмитрий<br> Александрович',
                     autor6: 'Постников<br> Алексей Леонидович',
                     lab:'SBERROBOTICS',
+                    autor1class:'gonnochenko',
+                    autor2class:'egorov_d',
+                    autor3class:'seydehassen',
+                    autor4class:'semachkin',
+                    autor5class:'statovoy',
+                    autor6class:'postnikov',
                   }, 'mod')
                   +card({
                     url:'https://arxiv.org/abs/2108.01654',
@@ -511,6 +635,8 @@ html(class='page  no-js', lang='ru')
                     autor1: 'Бурков Алексей<br> Михайлович',
                     autor2: 'Гонноченко Алексей<br> Сергеевич',
                     lab: 'SBERROBOTICS',
+                    autor1class:'Burkov',
+                    autor2class:'gonnochenko',
                   },'mod')
                   +card({
                     url: 'https://arxiv.org/pdf/2109.02965.pdf',
@@ -525,6 +651,8 @@ html(class='page  no-js', lang='ru')
                     autor1: 'Постников Алексей<br> Леонидович',
                     autor2: 'Гамаюнов Александр<br> Русланович',
                     lab:'SBERROBOTICS',
+                    autor1class:'postnikov',
+                    autor2class:'gamayunov',
                   },'mod')
                   +card({
                     url:'https://files.sberdisk.ru/s/nQgRgHofXBjwFKb',
@@ -539,6 +667,8 @@ html(class='page  no-js', lang='ru')
                     autor1: 'Постников Алексей<br> Леонидович',
                     autor2: 'Гамаюнов Александр<br> Русланович',
                     lab:'SBERROBOTICS',
+                    autor1class:'postnikov',
+                    autor2class:'gamayunov',
                   }, 'mod')
                 #lab4.lab 
                   +card({
@@ -552,10 +682,13 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'Sosedka.jpg',
                     autorimg2: 'Tishin.jpg',
                     autorimg3: 'porvatov-min.jpg',
-                              autor1: 'Соседка Артем<br> Валерьевич',
+                    autor1: 'Соседка Артем<br> Валерьевич',
                     autor2: 'Тишин Владислав<br> Викторович',
                     autor3: 'Порватов Вадим<br> Андреевич',
                     lab:'Sber AI',
+                    autor1class:'Sosedka',
+                    autor2class:'Tishin',
+                    autor3class:'porvatov',
                   }, 'mod')
                   +card({
                     url:'https://sciforum.net/paper/view/10811',
@@ -568,6 +701,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'nesteruk-min.jpg',
                     autor1: 'Нестерук Сергей<br> Валентинович',
 					          lab:'Sber AI',
+                    autor1class:'nesteruk',
                   }, 'mod')
                   +card({
                     url:'https://dl.acm.org/doi/10.1145/3476887.3476892',
@@ -590,6 +724,12 @@ html(class='page  no-js', lang='ru')
                     autor5: 'Новопольцев Максим<br> Юрьевич',
                     autor6: 'Черток Андрей<br> Викторович',
                     lab:'Sber AI',
+                    autor1class:'potaninm',
+                    autor2class:'dimitrov',
+                    autor3class:'shonenkov',
+                    autor4class:'karachev',
+                    autor5class:'novopoltsev',
+                    autor6class:'chertok',
                   }, 'mod')
                   +card({
                     url:'https://arxiv.org/abs/2108.11667',
@@ -612,6 +752,12 @@ html(class='page  no-js', lang='ru')
                     autor5: 'Димитров Денис<br> Валерьевич',
                     autor6: 'Черток Андрей<br> Викторович',
                     lab:'Sber AI',
+                    autor1class:'shonenkov',
+                    autor2class:'karachev',
+                    autor3class:'novopoltsev',
+                    autor4class:'potaninm',
+                    autor5class:'dimitrov',
+                    autor6class:'chertok',
                   }, 'mod')
                   +card({
                     url:'https://openaccess.thecvf.com/content/ICCV2021W/ILDAV/html/Illarionova_Object-Based_Augmentation_for_Building_Semantic_Segmentation_Ventura_and_Santa_Rosa_ICCVW_2021_paper.html',
@@ -624,6 +770,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'nesteruk-min.jpg',
                     autor1: 'Нестерук Сергей<br> Валентинович',
 					          lab:'Sber AI',
+                    autor1class:'nesteruk',
                   }, 'mod')
                 #lab5.lab 
                   +card({
@@ -635,6 +782,12 @@ html(class='page  no-js', lang='ru')
                     descr: 'Artificial General Intelligence: approaching the supermind / A. Vedyakhin, M. Burtsev, O. Bukhvalov, E. Vityaev, A. Efimov, M. Eryomenko, L. Kolonin, A. Kurpatov, V. Mazin, S. Markov, A. Molchanov, S. Nikolenko, L. Ocheretniy, L. Panov, D. Ponomarev, D. Potapov, D. Salikhov, G. Sarapulov, D. Sviridenko, A. Chertok, S. Shalyapin, V. Shelekhov, A. Franz — M.: Alpina PRO, 2021. — 216 p. ISBN 978-5-907470-11-8',
                     anons: 'Книга, основанная на исследовании лучших российских специалистов по ИИ, посвящена научным подходам к созданию общего ИИ, а также областям и потенциалу его применения. Авторы впервые обобщили и систематизировали накопленные знания в области общего ИИ  от компьютерных наук и машинного обучения до нейронаук и психологии. Эта книга — самый полный и глубокий обзор подходов к созданию общего ИИ, вышедший в России.',
 					          lab:'Sber AI / AIRI',
+                    autorimg1: 'efimov.jpg',
+                    autorimg2: 'vedahin.jpg',
+                    autor1: 'Ефимов Альберт<br>Рувимович',
+                    autor2: 'Ведяхин Александр<br> Александрович',
+                    autor1class:'efimov',
+                    autor2class:'vedahin',
 				          }, 'mod')
                   +card({
                     url:'https://ieeexplore.ieee.org/abstract/document/9316732?casa_token=6Z8_zSItwwoAAAAA:m6gtEqPQ-iKO5BIPNCs1yKMGvVnd90e-x4NbrGYMbxAP7om6t4yUN8U6l5GYxChKmeXY5OBsNKo-FQ',
@@ -647,6 +800,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'nesteruk-min.jpg',
                     autor1: 'Нестерук Сергей<br> Валентинович',
 					          lab:'Sber AI',
+                    autor1class:'nesteruk',
                   }, 'mod')
                   +card({
                     url:'https://www.mdpi.com/2072-4292/13/11/2181',
@@ -659,6 +813,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'nesteruk-min.jpg',
                     autor1: 'Нестерук Сергей<br> Валентинович',
 					          lab:'Sber AI',
+                    autor1class:'nesteruk',
                   }, 'mod')
                   +card({
                     url:'https://www.mdpi.com/2227-7390/9/5/544',
@@ -671,6 +826,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'dimitrov-min.jpg',
                     autor1: 'Димитров Денис<br> Валерьевич',
 					          lab:'Sber AI',
+                    autor1class:'dimitrov',
                   }, 'mod')
                   +card({
                     url:'https://arxiv.org/abs/2111.12956',
@@ -683,6 +839,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'tutubalina-min.jpg',
                     autor1: 'Тутубалина Елена<br> Викторовна',
 					          lab:'Sber AI',
+                    autor1class:'tutubalina',
                   }, 'mod')
                   +card({
                     url:'https://arxiv.org/abs/2111.12477',
@@ -695,6 +852,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'tutubalina-min.jpg',
                     autor1: 'Тутубалина Елена<br> Викторовна',
 					          lab:'Sber AI',
+                    autor1class:'tutubalina',
                   }, 'mod')
                   +card({
                     url:'https://arxiv.org/abs/2108.13112',
@@ -707,6 +865,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'tutubalina-min.jpg',
                     autor1: 'Тутубалина Елена<br> Викторовна',
 					          lab:'Sber AI',
+                    autor1class:'tutubalina',
                   }, 'mod')
                   +card({
                     url:'https://drive.google.com/file/d/1uN_HiNFswn4ZL-uox9l7HdPhBhhLZbKH/view',
@@ -724,6 +883,10 @@ html(class='page  no-js', lang='ru')
                     autor2: 'Черток Андрей<br> Викторович',
                     autor3: 'Салихов Дмитрий<br> Рифович ',
                     autor4: 'Степнов Михаил<br> Игоревич ',
+                    autor1class:'tutubalina',
+                    autor2class:'chertok',
+                    autor3class:'salikhov',
+                    autor4class:'stepnov_m',
                     lab:'Sber AI',
                   }, 'mod')
                   +card({
@@ -737,6 +900,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'tutubalina-min.jpg',
                     autor1: 'Тутубалина Елена<br> Викторовна',
 					          lab:'Sber AI',
+                    autor1class:'tutubalina',
                   }, 'mod')
                   +card({
                     url:'https://arxiv.org/abs/2110.04228',
@@ -753,6 +917,9 @@ html(class='page  no-js', lang='ru')
                     autor2: 'Семенова Наталья<br> Александровна',
                     autor3: 'Порватов Вадим<br> Андреевич',
                     lab:'Sber AI',
+                    autor1class:'chertok',
+                    autor2class:'semenova',
+                    autor3class:'porvatov',
                   }, 'mod')
                 #lab6.lab 
                   +card({
@@ -766,6 +933,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'potaninm-min.jpg',
                     autor1: 'Потанин Марк<br> Станиславович',
 					          lab:'SBERDEVICES',
+                    autor1class:'potaninm',
                   }, 'mod')
                   +card({
                     url:'http://webcache.googleusercontent.com/search?q=cache:luWfZLU5NeoJ:www.dialog-21.ru/media/5507/fenogenovaaplusetal053.pdf+&cd=2&hl=ru&ct=clnk&gl=ru',
@@ -787,6 +955,12 @@ html(class='page  no-js', lang='ru')
                     autor4: 'Тихонова Мария<br> Ивановна',
                     autor5: 'Шаврина Татьяна<br> Олеговна',
                     autor6: 'Шевелев Денис<br> Михайлович',
+                    autor1class:'fenogenova',
+                    autor2class:'mikhailov',
+                    autor3class:'emelyanov',
+                    autor4class:'tikhonova',
+                    autor5class:'shavrina',
+                    autor6class:'shevelev',
                     lab:'SBERDEVICES',
                   }, 'mod')
                   +card({
@@ -800,6 +974,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'mikhailov.jpg',
                     autor1: 'Михайлов Владислав<br> Николаевич',
                     lab:'SBERDEVICES',
+                    autor1class:'mikhailov',
                   }, 'mod')
                   +card({
                     url:'https://arxiv.org/abs/2109.14017',
@@ -812,6 +987,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'mikhailov.jpg',
                     autor1: 'Михайлов Владислав<br> Николаевич',
 					          lab:'SBERDEVICES',
+                    autor1class:'mikhailov',
                   }, 'mod')
                   +card({
                     url:'https://vja.ruslang.ru/ru/archive/2021-6/117-138',
@@ -824,6 +1000,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'shavrina.jpg',
                     autor1: 'Шаврина Татьяна<br> Олеговна',
 					          lab:'SBERDEVICES',
+                    autor1class:'shavrina',
                   }, 'mod')
                   +card({
                     url:'https://arxiv.org/abs/2112.01342',
@@ -836,6 +1013,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'shavrina.jpg',
                     autor1: 'Шаврина Татьяна<br> Олеговна',
 					          lab:'SBERDEVICES',
+                    autor1class:'shavrina',
                   }, 'mod')
                   +card({
                     url:'http://www.dialog-21.ru/media/5383/fenogenova-alena.pdf',
@@ -848,6 +1026,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'fenogenova.jpg',
                     autor1: 'Феногенова Алена<br> Сергеевна',
 					          lab:'SBERDEVICES',
+                    autor1class:'fenogenova',
                   }, 'mod')
                   +card({
                     url:'https://drive.google.com/file/d/1z_hUIDX339ERtqJrSfFPeQQAKdQaTTho/view?usp=sharing',
@@ -862,6 +1041,8 @@ html(class='page  no-js', lang='ru')
                     autor1: 'Мазурин Александр<br> Дмитриевич',
                     autor2: 'Бернадотт Александра<br>  Карл',
                     lab:'SBERDEVICES',
+                    autor1class:'mazurin',
+                    autor2class:'bernadott',
                   }, 'mod')
                   +card({
                     url:'https://aclanthology.org/2021.bsnlp-1.2/',
@@ -874,6 +1055,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'fenogenova.jpg',
                     autor1: 'Феногенова Алена<br> Сергеевна',
 					          lab:'SBERDEVICES',
+                    autor1class:'fenogenova',
                   }, 'mod')
                   +card({
                     url:'https://drive.google.com/file/d/117l5Rl1SgM-bQBlvfpQIXZredTYnRhqc/view?usp=drivesdk',
@@ -890,6 +1072,9 @@ html(class='page  no-js', lang='ru')
                     autor2: 'Исаева Марина<br>  Владимировна',
                     autor3: 'Бернадотт Александра<br>  Карл',
                     lab:'SBERDEVICES',
+                    autor1class:'zubov',
+                    autor2class:'isaeva',
+                    autor3class:'bernadott',
                   }, 'mod')
                   +card({
                     url:'https://www.mdpi.com/1424-8220/21/20/6744',
@@ -917,6 +1102,15 @@ html(class='page  no-js', lang='ru')
                     autor7: 'Соколова Анна<br>  Александровна',
                     autor8: 'Марков Сергей<br>  Сергеевич',
                     autor9: 'Бернадотт Александра<br> Карл',
+                    autor1class:'voronzova',
+                    autor2class:'zubov',
+                    autor3class:'rikunov',
+                    autor4class:'zvereva',
+                    autor5class:'flitman',
+                    autor6class:'lanikin',
+                    autor7class:'sokolova',
+                    autor8class:'markov',
+                    autor9class:'bernadott',
                     lab:'SBERDEVICES',
                   }, 'mod')
                   +card({
@@ -930,6 +1124,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'mikhailov.jpg',
                     autor1: 'Михайлов Владислав<br> Николаевич',
 					          lab:'SBERDEVICES',
+                    autor1class:'mikhailov',
                   }, 'mod')
                   +card({
                     url:'https://arxiv.org/abs/2103.00573',
@@ -942,6 +1137,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'mikhailov.jpg',
                     autor1: 'Михайлов Владислав<br> Николаевич',
 					          lab:'SBERDEVICES',
+                    autor1class:'mikhailov',
                   }, 'mod')
                   +card({
                     url:'http://www.dialog-21.ru/media/5505/emelyanovaplusetal148.pdf',
@@ -960,6 +1156,10 @@ html(class='page  no-js', lang='ru')
                     autor3: 'Шаврина Татьяна<br> Олеговна',
                     autor4: 'Катричева Надежда<br> Сергеевна',
                     lab:'SBERDEVICES',
+                    autor1class:'emelyanov',
+                    autor2class:'shlyazhko',
+                    autor3class:'shavrina',
+                    autor4class:'katricheva',
                   }, 'mod')
                   +card({
                     url:'https://files.sberdisk.ru/s/LLHNjNgpPCYwAaY2',
@@ -974,6 +1174,8 @@ html(class='page  no-js', lang='ru')
                     autor1: 'Шаврина Татьяна<br> Олеговна',
                     autor2: 'Писаревская Дина<br> Борисовна',
                     lab:'SBERDEVICES',
+                    autor1class:'shavrina',
+                    autor2class:'pisarevskaya',
                   }, 'mod')
                   +card({
                     url:'http://www.dialog-21.ru/media/5581/tikhonovamplusetal138.pdf ',
@@ -992,6 +1194,10 @@ html(class='page  no-js', lang='ru')
                     autor3: 'Шаврина Татьяна<br> Олеговна',
                     autor4: 'Шляжко Олег<br> Михайлович',
                     lab:'SBERDEVICES',
+                    autor1class:'tikhonova',
+                    autor2class:'pisarevskaya',
+                    autor3class:'shavrina',
+                    autor4class:'shlyazhko',
                   }, 'mod')
                 #lab7.lab 
                   +card({
@@ -1005,6 +1211,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'efimov.jpg',
                     autor1: 'Ефимов Альберт<br> Рувимович',
 					          lab:'Управление исследований и инноваций',
+                    autor1class:'efimov',
                   }, 'mod')
                   +card({
                     url:'https://www.phisci.info/jour/article/view/3330',
@@ -1017,6 +1224,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'efimov.jpg',
                     autor1: 'Ефимов Альберт<br> Рувимович',
 					          lab:'Управление исследований и инноваций',
+                    autor1class:'efimov',
                   }, 'mod')
                   +card({
                     url:'https://www.boomdenhaag.nl/en/webshop/outer-space-future-for-humankind',
@@ -1029,6 +1237,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'paison.jpg',
                     autor1: 'Пайсон Дмитрий<br> Борисович',
 					          lab:'Управление исследований и инноваций',
+                    autor1class:'paison',
                   }, 'mod')
                   +card({
                     url:'https://www.sciencedirect.com/science/article/pii/S2405896321018851',
@@ -1041,6 +1250,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'efimov.jpg',
                     autor1: 'Ефимов Альберт<br> Рувимович',
                     lab:'Управление исследований и инноваций',
+                    autor1class:'efimov',
                   }, 'mod')
                   +card({
                     url:'https://files.sberdisk.ru/s/JtxJaTjmbKX7tpS',
@@ -1053,6 +1263,7 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'efimov.jpg',
                     autor1: 'Ефимов Альберт<br> Рувимович',
                     lab:'Управление исследований и инноваций',
+                    autor1class:'efimov',
                   }, 'mod')
 
       .page__footer-wrapper
@@ -1062,4 +1273,5 @@ html(class='page  no-js', lang='ru')
       script(src='js/fslightbox.js')
       script(src='js/bundle.js')
       block content
+        span
           

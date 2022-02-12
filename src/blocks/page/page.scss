@@ -90,13 +90,10 @@ html {
   @media(max-width:1920px)and(min-width:1600px){
     font-size:16px;
   } 
-  @media(max-width:1600px)and(min-width:1024px){
+  @media(max-width:1600px){
     font-size:14px;
   }
 
-  @media(max-width:1024px){
-    font-size:12px;
-  }
 
 }
 body, html {
@@ -629,8 +626,11 @@ pre {
     @media (max-width:1367px) and (min-width: 600px){
       font-size:5.5rem;
     }
-    @media (max-width: 600px){
+    @media (max-width: 600px)and(min-width:330px){
       font-size: 6rem;
+    }
+    @media (max-width: 330px){
+      font-size: 4rem;
     }
     
 
@@ -1739,6 +1739,9 @@ pre {
     display:block;
     margin-bottom:11px;
     color: #9E9E9E;
+    @media(max-width:820px)and(min-width:600px){
+      min-height:38px;
+    }
   }
   & a {
     text-decoration:none;
@@ -1794,7 +1797,7 @@ pre {
       position:absolute;
       top:0;
       left:0;
-      padding: 0 15px;
+      padding: 0 50px 0 15px;
       margin: 0;
       height:100%;
       width: 100%;

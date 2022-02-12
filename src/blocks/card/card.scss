@@ -85,7 +85,7 @@
     }
 
     &__wrap {
-      position: absolute;
+      position: relative;
       left: 0;
 
       padding: 0;
@@ -95,7 +95,6 @@
       white-space: nowrap;
       transform: translate3d(0, 0, 0);
       transition: all 0.3s ease-out;
-      position:relative;
    
       @media(max-width:1250px){
         margin-left:0;
