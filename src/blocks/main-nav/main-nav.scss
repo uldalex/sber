@@ -80,7 +80,7 @@ position:relative;
     }
 
     &--active {
-
+     font-weight:600;
       & > #{$block-name}__link { // stylelint-disable-line  selector-combinator-blacklist
       }
     }
