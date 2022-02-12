@@ -728,6 +728,7 @@ pre {
   &__position {
      color: #949494;
      font-size: 12px;
+     max-width:50%;
   }
   &__read-more {
     color: #b3adad;
@@ -1065,8 +1066,8 @@ pre {
     height: 64px;
     @media (max-width:768px) and (min-width:600px){
       height: 34px;
-      margin-top:20px;
-      margin-bottom:20px;
+      margin-top:30px;
+      margin-bottom:10px;
     }
     @media (max-width:600px){
       height: auto;
