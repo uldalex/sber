@@ -646,7 +646,7 @@ pre {
   z-index: 3; 
   padding-top:60px;
   margin-bottom:100px;
-  @media (max-width:768px){
+  @media (max-width:820px){
     padding-top:2rem;
     margin-bottom:30px;
   }
@@ -749,8 +749,8 @@ pre {
 }
 .three-screen {
   padding:100px 0;
-  @media(max-width:768px){
-    padding:90px 0 0 0;
+  @media(max-width:820px){
+    padding:60px 0 0 0;
   }
 }
 .info-card {
@@ -794,7 +794,7 @@ pre {
 .four-screen {
   padding:100px 0;
  
-  @media(max-width:768px){
+  @media(max-width:820px){
       padding:70px 0 0 0;
   }
   &__content {
@@ -863,8 +863,8 @@ pre {
   background-image: url('../img/six-screen-bg.jpg');
   background-repeat:no-repeat;
   background-position:top 200px right;
-  @media(max-width:768px){
-    padding:120px 0 60px 0;
+  @media(max-width:820px){
+    padding:120px 0 0px 0;
   }
   @media(max-width:600px){
     background-position:top -50px center;
@@ -1476,7 +1476,7 @@ pre {
 .thirteen-screen {
   padding:100px 0;
   @media(max-width:820px){
-    padding:60px 0;
+    padding:20px 0;
   }
 & h4 {
   color: #0C8688;
@@ -1561,7 +1561,7 @@ pre {
 }
 .fourteen-screen {
   padding-bottom:100px;
-  @media(max-width:768px){
+  @media(max-width:820px){
     padding-bottom:40px;
   }
   & h4 {
@@ -1582,7 +1582,7 @@ pre {
 }
 .fifteen-screen{
   padding:100px 0;
-  @media(max-width:768px){
+  @media(max-width:820px){
     padding:50px 0;
   }
   &__img {
