@@ -51,14 +51,16 @@ html(class='page  no-js', lang='ru')
                     +burger('Показать содержание', 'nav', 'main-nav--open')(class='main-nav__toggler')
               block nav
                 +main-nav('10')
-            .row 
-              +breadcrumbs()
-                +breadcrumbs-item('Наука в Сбере 2021', 'index.html#publications')
-                +breadcrumbs-item('Научные публикации 2021 года', '')
+            .row
+              .col-lg-12.col-md-12  
+                +breadcrumbs()
+                  +breadcrumbs-item('Наука в Сбере 2021', 'index.html#publications')
+                  +breadcrumbs-item('Научные публикации 2021 года', '')
           .page-title 
             .container 
               .row 
-                h1 Научные публикации <span>2021 года </span>
+                .col-lg-12.col-md-12 
+                  h1 Научные публикации <span>2021 года </span>
           #page-filter.page-filter 
             .container 
               .row 
