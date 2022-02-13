@@ -211,7 +211,7 @@ var header = $('.page-header'),
 	scrollPrev = 100;
 $(window).scroll(function() {
 	var scrolled = $(window).scrollTop();
-  if ( scrolled > 100 && scrolled < scrollPrev ) {
+  if ( scrolled > 10 && scrolled < scrollPrev ) {
 		header.addClass('fixed').css({'top':'0%'});
 	}
   else if( scrolled > scrollPrev ) {
