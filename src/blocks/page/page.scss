@@ -611,6 +611,7 @@ pre {
     background-size:contain;
     background-position: center bottom;
     align-items: flex-start;
+    padding-top:92px;
   }
 
   & h1 {
@@ -630,10 +631,10 @@ pre {
       font-size:5.5rem;
     }
     @media (max-width: 600px)and(min-width:330px){
-      font-size: 6rem;
+      font-size: 5rem;
     }
     @media (max-width: 330px){
-      font-size: 3.2rem;
+      font-size: 3.5rem;
     }
     
 
