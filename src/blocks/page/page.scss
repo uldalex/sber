@@ -1878,6 +1878,10 @@ pre {
 
     & span {
       color:rgb(117, 117, 117);
+      display:block;
+      white-space: nowrap;
+    margin-right: 30px;
+    overflow: hidden;
     }
 }
 

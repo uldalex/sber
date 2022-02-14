@@ -105,6 +105,8 @@
       &--scroll {
         cursor: url("data:image/svg+xml;charset=utf8,%3Csvg width='38' height='28' viewBox='0 0 68 58' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M48.6666 12.0833C52.4379 12.0833 54.3235 12.0833 55.4951 13.2549C56.6667 14.4265 56.6667 16.3121 56.6667 20.0833V37.9166C56.6667 41.6879 56.6667 43.5735 55.4951 44.7451C54.3235 45.9166 52.4379 45.9166 48.6667 45.9166H20.5C14.8431 45.9166 12.0147 45.9166 10.2574 44.1593C8.49999 42.4019 8.49999 39.5735 8.49999 33.9167V24.0833C8.49999 18.4265 8.49999 15.598 10.2574 13.8407C12.0147 12.0833 14.8431 12.0833 20.5 12.0833L48.6666 12.0833Z' stroke='%23353E46' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M50.6667 29H36.5' stroke='%23353E46' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 16 16, pointer;
         overflow-x: scroll;
+        scrollbar-color: #21a038 #f2f4f5;
+       scrollbar-width: thin;
       }
       &::-webkit-scrollbar {
         width: 5px;
