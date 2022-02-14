@@ -233,7 +233,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
     type   : 'loop',
     perPage:6,
     perMove: 1,
-    autoplay:true,
+    autoplay:false,
     pauseOnHover:true,
     pauseOnFocus: true,
     arrows: true,
