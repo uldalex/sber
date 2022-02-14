@@ -601,7 +601,7 @@ pre {
   min-height:100vh;
   display: flex;
   flex-wrap:wrap;
-  align-items: center;
+  align-items: flex-start;
   background-image: url('../img/bg.png');
   background-repeat:no-repeat;
   background-position: right center;
