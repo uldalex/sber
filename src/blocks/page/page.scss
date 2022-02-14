@@ -1480,7 +1480,7 @@ pre {
 .thirteen-screen {
   padding:100px 0;
   @media(max-width:820px){
-    padding:20px 0;
+    padding:60px 0;
   }
 & h4 {
   color: #0C8688;
@@ -1582,6 +1582,9 @@ pre {
     margin-top:10px;
     padding:10px 40px;
     display:block;
+    @media(max-width:820px){
+      margin-top:30px;
+    }
   }
 }
 .fifteen-screen{
