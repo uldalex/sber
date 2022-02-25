@@ -50,7 +50,7 @@ mixin card(data, mods, id)
             .card__descr!= data.descr
           if (data.anons !== 'undefined' && data.anons)
             .card__anons!= data.anons
-          a.btn(href=data.url target="blank" aria-label="Читать работу") Читать
+          a.btn(href=data.url target="blank" aria-label!= data.readmore)!= data.btn
           .card__authors.authors
             .authors__wrap 
               if (data.autor1 !== 'undefined' && data.autor1)

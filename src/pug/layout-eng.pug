@@ -36,8 +36,6 @@ html(class='page  no-js', lang='ru')
         include ../js/head-script.js
 
   body
-    noscript У вас отключен JavaScript. Это пугает.
-
     .page__inner
       .page__content
         //- первый экран
@@ -45,10 +43,10 @@ html(class='page  no-js', lang='ru')
           +page-header()
             .row 
               .col-lg-2.col-xs-4 
-                +logo(' ')
+                +logo('index-en.html')
                     img(src='img/logo.svg', alt='Logo', width='132', height='37')
               .col-lg-4.col-xs-4.page-header__right-part 
-                a(href="index.html").page-header__language RU
+                a(href="/index.html").page-header__language RU
                 .page-header__button  Content
                     +burger('Show content', 'nav', 'main-nav--open')(class='main-nav__toggler')
               nav.main-nav#nav
