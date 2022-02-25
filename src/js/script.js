@@ -144,10 +144,13 @@ $(".main-nav__link").on('click', function(){
 $(".six-screen__readmore").on('click', function(){
   $(".six-screen__more").toggleClass("six-screen__more--open");
   var text = $(".six-screen__readmore").text();
-  $(".six-screen__readmore").text(
+  $(".six-screen__readmore--ru").text(
     text == "Свернуть" ? "Читать полностью" : "Свернуть");
-
+  $(".six-screen__readmore--en").text(
+    text == "Show less" ? "Read More" : "Show less");
   });
+
+  
 
 
 // меняем класс у обертки  для курсора
