@@ -1,0 +1,544 @@
+//- Стандартный шаблон страницы
+
+include mixins.pug
+
+doctype html
+html(class='page  no-js', lang='ru')
+
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    //- Edge и ряд мобильных браузеров слишком умны. Отключим это.
+    meta(name='format-detection', content='telephone=no')
+    meta(name='format-detection', content='date=no')
+    meta(name='format-detection', content='address=no')
+    meta(name='format-detection', content='email=no')
+    meta(content='notranslate', name='google')
+    //- Фавиконки (https://realfavicongenerator.net)
+    //- link(rel='apple-touch-icon', sizes='180x180', href='/img/favicon/apple-touch-icon.png')
+    //- link(rel='icon', type='image/png', sizes='32x32', href='/img/favicon/favicon-32x32.png')
+    //- link(rel='icon', type='image/png', sizes='16x16', href='/img/favicon/favicon-16x16.png')
+    //- link(rel='manifest', href='/img/favicon/site.webmanifest')
+    //- link(rel='mask-icon', href='/img/favicon/safari-pinned-tab.svg', color='#5bbad5')
+    //- meta(name='msapplication-TileColor', content='#5bbad5')
+    //- meta(name='theme-color', content='#000')
+    //- meta(name='msapplication-navbutton-color', content='#000')
+    //- meta(name='apple-mobile-web-app-status-bar-style', content='#000')
+    meta(property="og:title" content="Научные_публикации-2021")
+    meta(property="og:description" content="Научные_публикации-2021")
+    meta(property="og:image" content="img/preview.jpg")
+    block meta
+      title Science at Sber
+
+    block head
+      link(rel='stylesheet', href='css/style.css')
+      script
+        include ../js/head-script.js
+
+  body
+    noscript У вас отключен JavaScript. Это пугает.
+
+    .page__inner
+      .page__content
+        //- первый экран
+        .first-screen 
+          +page-header()
+            .row 
+              .col-lg-2.col-xs-4 
+                +logo(' ')
+                    img(src='img/logo.svg', alt='Logo', width='132', height='37')
+              .col-lg-4.col-xs-4.page-header__right-part 
+                a(href="/index.html").page-header__language RU
+                .page-header__button  Content
+                    +burger('Show content', 'nav', 'main-nav--open')(class='main-nav__toggler')
+              nav.main-nav#nav
+                .main-nav__inner
+                    .main-nav__wrapper
+                      ul.main-nav__list
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#sifry_i_fakty" data-anchor="Numbers and Facts") Numbers and Facts
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#videnie" data-anchor="Vision 2035") Vision 2035
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#nayka_i_bisness" data-anchor="Science and Business") Science and Business
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#metavselennaya" data-anchor="The Metaverse") The Metaverse
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#partners" data-anchor="Sber’s Key Research Partners") Sber’s Key Research Partners
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#sber-kosmos-sber" data-anchor="Sber-Cosmos-Sber") Sber-Cosmos-Sber
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#nauka_v_sber" data-anchor="Science at Sber") Science at Sber
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#kvant" data-anchor="Quantum Perspective") Quantum Perspective
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#naychnaya_premiya" data-anchor="The Sber Science Award") The Sber Science Award
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#pobedy_v_konkursah" data-anchor="Competition Wins") Competition Wins
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#ii" data-anchor="AI Research Centres") AI Research Centres
+                        li.main-nav__item.main-nav__item--active
+                            a.main-nav__link( href="index-en.html#publications" data-anchor="Academic Publications of 2021") Academic Publications of 2021
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#sovmestnie_proekty_s_vuzami" data-anchor="Projects Implemented Jointly with Universities and Research Centers") Projects Implemented Jointly with Universities and Research Centers
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#rabota_prodoljaetsya" data-anchor="The Work Goes On") The Work Goes On
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#vzglad_v_budushee" data-anchor="A Glimpse into the Future") A Glimpse into the Future
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#dnk" data-anchor="An Engineer’s DNA") An Engineer’s DNA
+          .container.first-screen__background 
+            .row 
+              .col-lg-7.col 
+                h1 Science at&nbsp;Sber <span>2021</span>
+        //- второй экран
+        .two-screen 
+          .container 
+            .row.block-quote
+              .col-xl-6.col-xxl-6.col-md-12.block-quote__content
+                  p Historically, the Russian scientific school has been considered one of the strongest in the world. At Sber, we gather the best minds to focus on the scientific and technical areas that are strategically important to us. We also cooperate closely with leading Russian institutions and research centres. The synergy between academia and business community creates a good background for technological disruption. In order to support scientists, we have also established annual Sber Science Award. 
+                  .block-quote__footer
+                    p.block-quote__name Herman Gref
+                    p.block-quote__position CEO and Chairman of the Executive Board of Sberbank
+              .col-xl-6.col-xxl-6.col-md-12.block-quote__img
+                img(src="img/gref.png" decoding="async" loading="lazy" width="300" height="450" alt="Герман Оскарович Греф")
+        //- третий экран
+        #sifry_i_fakty.three-screen 
+          .container 
+            .row 
+              .col-lg-4.col-md-6.info-card
+                .info-card__wrapper
+                  .info-card__header 46
+                  .info-card__footer books, articles and conference papers published in the world’s leading scientific journals, including Q1/Q2 quartile ones and the proceedings of A/A*-level conferences 
+              .col-lg-4.col-md-6.info-card
+                .info-card__wrapper
+                  .info-card__header 12
+                  .info-card__footer articles and conference papers accepted for publication in the world’s leading journals
+              .col-lg-4.col-md-6.info-card
+                .info-card__wrapper
+                  .info-card__header 19
+                  .info-card__footer articles and conference papers submitted for publication
+              .col-lg-4.col-md-6.info-card
+                .info-card__wrapper
+                  .info-card__header 90
+                  .info-card__footer patents obtained in 2021, and 5 inventions awarded by Rospatent as the best inventions in Russia of the year
+ 
+              .col-lg-4.col-md-6.info-card
+                .info-card__wrapper
+                  .info-card__header 20
+                  .info-card__footer each of three winners of the Sber Science Award to recieve
+              .col-lg-4.col-md-6.info-card
+                .info-card__wrapper
+                  .info-card__header 3
+                  .info-card__footer AI research centers started up in partnership with universities in 2021 within government AI program
+        //- четвертый экран
+        #nayka_i_bisness.four-screen
+          .container
+            .four-screen__content
+                h3 Science and Business 
+                p Now, Sber is more than just a bank; it is also a major hi-tech company with a strong R&D capabilities. Our research and development results are the base for our competitiveness. Whether we are improving the efficiency of our own business processes, launching new products for retail or corporate clients, or developing solutions to transform entire sectors of the economy, our every step builds on achievements made by thousands of engineers and scientists of our laboratories and research centres, as well as our partners at leading universities and research institutions. And I am sincerely grateful to all of them! 
+                p In 2021, Global Finance named Sber the World’s Best Digital Retail Bank. Our clients do not (and should not) know the names of those whose work supports these digital services, the world’s best. However, we know them all, and are proud of each and every one. 
+                p In 2021, Sber scientists and developers received more than 90 invention patents, published and submitted for publication 77 academic papers (in leading global journals and at international A/A* level conferences), and received various awards. At the end of the year, they also won an international competition held at NeurIPS, the world’s largest conference, by showing the best results in training neural networks to solve the most complicated real-world problems.
+                p I have no doubt that with such a team, and with the spirit of ongoing scientific research and creative freedom that reigns at Sberbank, we can meet any challenge. I believe that in 2022 we will witness new achievements our scientists, as well as more pioneering publications and inventions, and breakthrough ideas introduced via Sber’s technologies and products.
+                p.block-quote__name Alexander Vedyakhin
+                p.block-quote__position First Deputy Chairman of the Executive Board of Sberbank 
+
+          #partners.four-screen__partners.partners
+            .container
+              h3 Sber’s Key Research  <br>Partners 
+              #partners__splide.splide
+                .splide__track
+                  ul.partners__list.splide__list
+                    li.partners__item.splide__slide 
+                      a.partners__link(href="https://www.rgo.ru" target="_blank" aria-label="Русское Географическое Общество")
+                        img(src="img/logos/rgo.svg" decoding="async" loading="lazy"   width="156" height="112" alt="Русское Географическое Общество")
+                    li.partners__item.splide__slide 
+                      a.partners__link(href="https://miem.hse.ru/" target="_blank" aria-label="МИЭМ")
+                        img(src="img/logos/miem.svg" decoding="async" loading="lazy"   width="185" height="92" alt="МИЭМ")
+                    li.partners__item.splide__slide 
+                      a.partners__link(href="https://www.nes.ru/" target="_blank" aria-label="Российская школа экономики")
+                        img(src="img/logos/resh.svg" decoding="async" loading="lazy"   width="165" height="106" alt="Российская школа экономики")
+                    li.partners__item.splide__slide 
+                      a.partners__link(href="https://rqc.ru/" target="_blank" aria-label="РКС")
+                        img(src="img/logos/rqc.svg" decoding="async" loading="lazy"   width="203" height="64" alt="РКС")
+                    li.partners__item.splide__slide 
+                      a.partners__link(href="https://www.inm.ras.ru/" target="_blank" aria-label="IBM")
+                        img(src="img/logos/ivm.svg" decoding="async" loading="lazy"   width="155" height="155" alt="IBM")
+                    li.partners__item.splide__slide 
+                      a.partners__link(href="https://mai.ru" target="_blank" aria-label="МАИ")
+                        img(src="img/logos/mai.svg" decoding="async" loading="lazy"   width="80" height="80" alt="МАИ")
+                    li.partners__item.splide__slide 
+                      a.partners__link(href="https://www.inm.ras.ru/" target="_blank" aria-label="ПОМИ РАН")
+                        img(src="img/logos/pomiran.svg" decoding="async" loading="lazy"   width="150" height="150" alt="ПОМИ РАН")
+                    li.partners__item.splide__slide 
+                      a.partners__link(href="https://www.ocean.ru/" target="_blank" aria-label="Институт Океанологии")
+                        img(src="img/logos/Oceanology.svg" decoding="async" loading="lazy"   width="184" height="118" alt="Институт Океанологии")
+                    li.partners__item.splide__slide 
+                      a.partners__link(href="https://www.hse.ru/" target="_blank" aria-label="Высшая школа экономики")
+                        img(src="img/logos/vse.svg" decoding="async" loading="lazy"   width="100" height="100" alt="Высшая школа экономики")
+                    li.partners__item.splide__slide 
+                      a.partners__link(href="https://www.msu.ru/" target="_blank" aria-label="МГУ")
+                        img(src="img/logos/mgu.svg" decoding="async" loading="lazy"   width="134" height="134" alt="МГУ")
+                    li.partners__item.splide__slide 
+                      a.partners__link(href="https://mipt.ru/" target="_blank" aria-label="МФТИ")
+                        img(src="img/logos/mfti.svg" decoding="async" loading="lazy"   width="150" height="50" alt="МФТИ")
+                    li.partners__item.splide__slide 
+                      a(href="https://misis.ru/" target="_blank" aria-label="МИСИС")
+                        img(src="img/logos/misis.svg" decoding="async" loading="lazy"   width="150" height="104" alt="МИСИС")
+                    li.partners__item.splide__slide 
+                      a.partners__link(href="https://itmo.ru/" target="_blank" aria-label="ИТМО")
+                        img(src="img/logos/itmo.svg" decoding="async" loading="lazy"   width="200" height="150" alt="ИТМО")
+                    li.partners__item.splide__slide 
+                      a.partners__link(href="https://ssau.ru/" target="_blank" aria-label="Самарский Университет")
+                        img(src="img/logos/su.svg" decoding="async" loading="lazy"   width="150" height="80" alt="Самарский Университет")
+                    li.partners__item.splide__slide 
+                      a.partners__link(href="https://www.skoltech.ru/?lang=ru" target="_blank" aria-label="Сколтех")
+                        img(src="img/logos/skolteh.svg" decoding="async" loading="lazy"   width="150" height="80" alt="Сколтех")
+          //- Шестой экран 
+        #nauka_v_sber.six-screen
+          .container
+            .six-screen__content 
+              h3 Science at Sber
+              img(src="img/photo_evimov_group.jpg" decoding="async" loading="lazy" alt="Альберт Ефимов") 
+              p Today, Sber is a leading hi-tech company. It has researchers and engineers on board, who provides our platforms, products, and services with a competitive advantage. The results of developments are well known, generating real value for clients and improving the performance of Sber and its subsidiaries. The results are patentprotected and have won both national and international awards. Our open-source products are more and more idely used by developer communities all over the world.
+              .six-screen__more 
+                p However, we can look beyond the horizon too! Our research allows us to better understand the challenges and opportunities our teams will face in the future.
+                p Research is being conducted and innovations are being introduced across the Sber group, and our R&D teams include the best of the best researchers. The practical results of their activity often feature a significant degree of genuine scientific novelty. Therefore, our colleagues’ articles are regularly published in leading international scientific journals. We are actively expanding one of the Sber’s most important assets: its intellectual property. By December 2021 our engineers had obtained 226 patents, and that number is constantly growing. Rospatent awarded five of our inventions as the best inventions of the year in Russia. In 2021, our researchers published (and submitted for publication) over 70 academic papers in leading peer-reviewed scientific journals in Russia and abroad.
+                p Our research and innovations are carried out both by our own teams and by joining forces with leading universities, research centres, and technology partners around the world. Research performed jointly by Sber and universities expands our ability to create technological competitive advantage: together we achieve better results more quickly. This year, we launched new joint research with the Russian Quantum Center, Skoltech, HSE, MIPT, MIEM, MSU, MISIS, RES, and the Russian Academy of Sciences Institutes of Oceanology, Geography, and Computational Mathematics.
+                p About a year ago, we started considering the next step in supporting the fundamental research which is painfully needed, in order to build a national competitive advantage. This effort resulted in the launch of the Sber Science Award. In March 2022 we announce the winners of all Award’s three categories: Physical Sciences, the Digital Universe, and Life Sciences.
+                p When you are regularly in touch with leading scientists and practitioners, you understand that world of science and corporations are changing right before our eyes. The distance between fundamental scientific discoveries and practical results that enable new products and new competitiveness is shrinking. Today’s science becomes tomorrow’s technology; the day after tomorrow, this technology becomes a product.
+                p The world has become significantly more complex. Sber’s place in this world of ‘new complexity’ is determined by its 180-year history, inextricably associated with the development of the Russian economy, and the new challenges being faced by major technology companies. Corporate developments are the key to tomorrow’s competitiveness, and research drives our ability to survive. Sber researchers make a significant contribution to this work.
+                p In this digest we present fundamental information on papers published by Sber researchers, discuss the Science Award and the results of predictive research, and introduce our key scientific partners. 
+                p We believe that the new Science at Sber 2021 collection will prove to be an interesting and useful read!
+
+             
+              p.block-quote__name Albert Yefimov
+              p.block-quote__position PhD., Vice President,Director, <br>Sber Innovation & Research,Sberbank
+              p.six-screen__readmore.btn(aria-label="Read more") Read more 
+        //- Седьмой экран
+        #naychnaya_premiya.seven-screen
+          .container
+            h3 Sber Science<span> Award</span>
+            .seven-screen__content
+              .seven-screen__subtitle  In Russia, 2021 was declared the Year of Science and Technology.   
+              p On 14 September 2021, Sber announced the launch of its Award in Science and Technology.  Today, it is extremely important to support the scientific audacity of visionary scientists, who are carrying out advanced fundamental research and laying the groundwork to create future technologies. The launch of the Science Award was a inevitable step for Sber. The Award has three categories.
+              a.seven-screen__btn.btn(href="https://promo.sber.ru/sberscienceaward" target="_blank" aria-label="Read about the award") Read about the award
+              .seven-screen__img 
+                  img(src="img/silense1.png" decoding="async" loading="lazy" width="33%" alt="physical world" )
+                  img(src="img/silense2.png" decoding="async" loading="lazy" width="33%" alt="digital universe" )
+                  img(src="img/silense3.png" decoding="async" loading="lazy" width="33%"  alt="life sciences" )
+        #sovmestnie_proekty_s_vuzami.eight-screen
+          .container 
+            h3 Projects Implemented Jointly 
+            .eight-screen__subtitle with Universities and Research Centers
+            .row 
+              .col-lg-3.col-md-12
+                img.eight-screen__img(src="img/logos/miem.svg" decoding="async" loading="lazy"   width="248" height="64" alt="МИЭМ")
+                p In 2021, Sber’s Internet of Things Laboratory and Moscow Institute of Electronics and Mathematics (part of Higher School of Economics) jointly explored the technical features and capacities of various wireless connection protocols (both ground- and satellite-based), and created an experimental unit to identify possibilities for using cutting-edge telecommunication echnologies to drive Sber’s high-potential projects. 
+
+              .col-lg-3.col-md-12
+                img.eight-screen__img(src="img/logos/rqc.svg" decoding="async" loading="lazy"   width="248" height="64" alt="РКС")
+                p Jointly with the Russian Quantum Center, Sber Innovation & Research develops methodologies to evaluate the impact of quantum technologies on the business activity of hi-tech and financial companies. The massive introduction of quantum calculations in business will not happen today or tomorrow, although the consequences may turn out to be so drastic that the best time to prepare for the ‘quantum revolution’ is now. 
+              .col-lg-6.col-md-12
+                img.eight-screen__img(src="img/logos/skolteh.svg" decoding="async" loading="lazy"   width="219" height="64" alt="Сколтех")
+                p Skoltech and Sber cooperate now in many areas. We have already elaborated a system for the analytical recovery of non-obvious connections between Sber’s clients. The results of this work are used to refine the credit scoring model and to identify fraud. An anomaly prediction system for servers has been developed. In addition, we have created a model to predict server load in highintensity periods, in order to optimise the server capacity growth strategy. We carry out works aimed at predicting the degradation of machine learning models over time, based on historical validation data. In 2021, we launched a project to develop promising power elements; that is, batteries for micro-electronic devices. 
+        #ii.nine-screen 
+          .container 
+            h3 AI Research Centres
+            .row 
+              .col-lg-6.col-md-6
+                p In early November 2021, Sber became the industrial partner of three artificial intelligence research centres. In collaboration with leading national university teams, research is planned until the end of 2024, and its results will be implemented in Sber’s technologies and products.
+              .col-lg-6.col-md-6
+                p Thanks to Sber’s support as an industrial partner, three leading Russian universities received about RUB 2.7 billion of additional state subsidies from Federal Government within a program for the development of highpotential AI-driven projects.
+            .row 
+              .col-lg-4.col-md-12
+                .nine-screen__card 
+                 .nine-screen__card-title Skoltech
+                 .nine-screen__card-content Jointly with Skoltech, we are also performing analysis and computer modelling for financial risks, as well as for methods of evaluating Russia’s forests’ ability to absorb greenhouse gas. We are also developing algorithms which help to decrease the carbon footprint of computation, and in order to combat climate changewithin Sber’s ESG agenda.
+              .col-lg-4.col-md-12
+                .nine-screen__card 
+                 .nine-screen__card-title MIPT
+                 .nine-screen__card-content Together with the Moscow Institute of Physics and Technolgoy (MIPT) we emphasize creation of more reliable anthropomorphic robots, as well as software for autonomous cars, and recognition of the sense and sentiment of speech.
+
+              .col-lg-4.col-md-12
+                .nine-screen__card 
+                 .nine-screen__card-title Higher School of Economics
+                 .nine-screen__card-content Projects implemented together with Higher School of Economics are aimed at developing artificial intelligence methods and socially oriented services, as well as improving some of the bank’s processes.
+            .row.block-quote
+              .col-xl-6.col-xxl-6.col-md-12.block-quote__content
+                  p «When scientific research and development are closely intertwined with business objectives, it always leads either to the creation of disruptive technologies, or to the resolution of pressing problems. I would like to note a number of important future vectors, one of which is Metaverse. The idea of Metaverse is to make the digital world as close as possible to real life, to get more of a tactile feel. This requires efforts of many people to be joint, but there is no doubt that it will happen. 
+                  p At Sber, science and applied technologies have been developing intensively in recent years, and I think that Sber will be able to significantly expand its position at the forefront of scientific and applied research.»
+                  .block-quote__footer
+                    p.block-quote__name Aleksander Kuleshov
+                    p.block-quote__positionPresident of the Skolkovo Institute of Science and Technology, and Member of the Supervisory Board of Sber 
+              .col-xl-6.col-xxl-6.col-md-12.block-quote__img
+                img(src="img/kuleshov.png" decoding="async" loading="lazy" width="300" height="450" alt="Aleksander Kuleshov")
+        #vzglad_v_budushee.ten-screen 
+         .page-title
+          .container 
+            .row 
+              h1 A Glimpse into the Future
+            .ten-screen__subtitle Sber Innovation & Research actively conducts research and analytical activities to assess the middle- and longterm prospects of high technologies and technology business. In this report, we present a few of our projects. 
+        #videnie.eleven-screen
+          .container 
+            h3 Vision 2035
+            .row.eleven-screen__row
+              .col-lg-4.col-md-12
+                p Studying and predicting the future is an ambitious research task. Technological giants do it to identify promising areas for investment, to take note of advanced R&D topics, and (of course) to proactively build a preferred version of future, where we would all like to live and work.
+                p In 2021, we conducted a number of studies to forecast the future: 
+              .col-lg-4.col-md-12
+                p  changes in the social and economic order, new products, and disruptive innovations and technologies. We put particular emphasis on areas that could lead to technological disruption and principal changes to the ‘rules of the game’ and distribution of forces in the market. This will become possible due to original developments and business models that are technically and organisationally unavailable today, but which would be real in 2035.
+                 
+              .col-lg-4.col-md-12
+                p The Vision 2035 research report gives an idea of how each of us will live, and what each of us will do. It also tells about new practices in education, transport, communications, and our daily routines. Using various combinations of well-established and already known tendencies (including digitization, robotization, and virtualization) and emerging enhancements, such as seamless virtual and augmented spaces and flying cars, we showed what would happen on three levels: 
+            .row
+              .col-lg-4.col-md-12
+                .eleven-screen__card 
+                  .eleven-screen__card-title Macro level(World 2035 section)
+                  .eleven-screen__card-content Here you can find the most probable scenarios in terms of the world order and geopolitics in general, and changes to the roles of institutions, society, science and technology; the World Scenarios 2035 contains mental food about alternative scenarios. 
+
+              .col-lg-4.col-md-12
+                .eleven-screen__card 
+                  .eleven-screen__card-title Meso level(Case Collection section) 
+                  .eleven-screen__card-content This section immerses the reader in more than 50 real-life situations, identifying the new habits of adults and children, and noting innovative products and services that have become an indispensible part of our life. 
+              .col-lg-4.col-md-12
+                .eleven-screen__card 
+                  .eleven-screen__card-title Corporate(Roles 2035 section)  
+                  .eleven-screen__card-content At the corporate level, you can explore and select the most relevant corporate roles that match your own spirit. These are similar to the roles of the ‘big techs’, which build super customer-centric service, ecosystems, and interaction environments in the brand new technological paradigm of the 2035 world.
+            
+              .row.eleven-screen__block 
+                .col-lg-6.col-md-6 
+                  h4 Scientific and Technological Disruptions
+                  p The survey study <b>Scientific and Technological Disruptions</b> was conducted to build up Sber’s long-term strategy and ecosystem shaping. In the future, a few tens of key technologies will create a very new technological paradigm, and enable changes in the majority of industries and lifestyle that we are used to. We discussed ‘cutting-edge’ research carried out within 7 basic spheres (energy, infrastructure, telecommunications, materials, computation, biotechnologies, and interfaces). How will the industrial ‘thermonuke’ change force distribution in the global economy? Will our offices and living rooms relinquish electric sockets? Will a super computer fit into a smartphone, and will the smartphone be able to connect directly to satellites? Can DNA molecules store data? What will an augmented human body look like, and will it need gadgets to enter virtual and augmented reality?
+                  p <b>In 2022, we will definitely continue our effort to integrate scientific and technological forecasting into a corporate context, and to expandrelated ‘visibile areas.’</b>
+                .col-lg-6.col-md-6 
+                  img(src="img/eleven_bg.jpg" decoding="async" loading="lazy" width="750" height="500" alt="Научно-технологические дисрапты")
+              #metavselennaya.row 
+                .col-lg-12.col-md-12
+                  h4 The Metaverse —
+              .row 
+                .col-lg-6.col-md-12 
+                  .meta 
+                   p The metaverse is a virtual world, built on a real-world basis; it has its own economic cycle, compatible with that of the real world, and allows millions of users to do business, work, study, connect, and have fun in a fully immersive mode.  
+                   p <b>We have analysed the technological aspects of metaverse creation, and arrived at a number of important conclusions that we would like to share here. </b>
+                .col-lg-6.col-md-12 
+                  .meta.meta--right
+                    p Announced by Mark Zuckerberg in late July 2021, ‘Metaverse’ made the headlines in the social networking and virtual reality industries, and it looks like it has a good chance to become the Next Big Thing for the digital industry as a whole, in the near future. Anyway, Facebook has already been renamed as ‘Meta Platforms’, analysts are issuing long reports, and companies as different as Microsoft and NVIDIA have already presented their visions on the future ‘Matrix’. 
+
+              .row 
+                .col-lg-3.col-md-12 
+                  .eleven-screen__bordered
+                    p Metaverse fits perfectly into the modern technological context. On the one hand, a transition to the super high-speed 5G/6G mobile communications raises a need for a killer oplication, which provides demand on network capacities run at speeds of terrabits per second, rather than megabits or gigabits. Metaverse is the ideal candidate for this role. On the other hand, the newly created world will be driven by exponential growth of computing capacities, 
+                .col-lg-3.col-md-12
+                  .eleven-screen__bordered 
+                    p miniaturization of electronics, new artificial intelligence capabilities, graphic accelerators for 3D rendering, mio- and neuro-computer interfaces, and blockchain technology. Over time, AI-generated content will also decrease Metaverse building costs radically.  
+                .col-lg-3.col-md-12 
+                  .eleven-screen__bordered
+                    p The Metaverse will create opportunities for new businesses related to the creation of online content, and consequently, for the transfer of ‘demonstrative super-consumption’into virtual worlds.
+                .col-lg-3.col-md-12
+                  .eleven-screen__bordered
+                    p However, the Metaverse is not a simple infrastructural system, which can be ‘designed’, ‘ordered’, or ‘deployed’. The practical implementation of a particular concept for a comprehensive Metaverse will require a significant amount of R&D in the fields of multi-user platforms, virtual reality, user interfaces, and sensors.
+        .twelve-screen
+          .container
+            .row
+              .col-lg-6.col-md-12 
+                p We believe that practical efforts to create the Metaverse - or a number of ‘meta galaxies’ - will start, once corporations and governments formulate the answersto a number of key questions:
+            .row
+              .col-lg-3.col-md-6
+                .twelve-screen__card
+                  p Will the unified Metaverse be developed on the basis of an open multilateral agreement, or will there be separate corporate ‘galaxies’ connected by portals (as, for example, in Omniverse by NVIDIA)?
+              .col-lg-3.col-md-6
+                .twelve-screen__card
+                  p Will there be a standardisation consortium similar to W3C, or will individual galaxies be integrated into the Metaverse through a ‘battle of standards’ (e.g. Microsoft Teams-Meta Facebook alliance vs NVIDIA Omniverse…)?
+              .col-lg-3.col-md-6
+                .twelve-screen__card
+                  p What is the role of the governments in potential transfer of individuals’ activities in the Metaverse, and how will this role be exercised in practice?
+              .col-lg-3.col-md-6
+                .twelve-screen__card
+                  p At which level of VR credibility will corporations launch the Metaverse 1.0 project, which is open for users to join (right now, after the massive introduction of AR glasses, or when interfaces providing even deeper immersion are ready)? 
+            .row 
+              .col-lg-6.col-md-12 
+                p We will continue studying the concept of the future Metaverse, and the role of Russian players in combining the virtual and real worlds emerging before our eyes.
+        #sber-kosmos-sber.thirteen-screen 
+          .container
+            .row
+              .col-lg-6.col-md-6 
+                h4 Sber-Cosmos-Sber 
+            .row 
+             .col-lg-6.col-md-12 
+              p Sber researchers proposed metrics to evaluate promising space-related projects and technological innovations. Our metrics are based on the following criteria:
+            .row.thirteen-screen__list
+              .col-lg-3.col-md-12
+                .thirteen-screen__card
+                  p Applicability to current business, and evaluation of the impact of particular space communication channels or geoinformation data on the efficiency of current and future business tasks.
+              .col-lg-3.col-md-12
+                .thirteen-screen__card
+                  p Creation of new businesses within the Sber ecosystem, based on space solutions.
+              .col-lg-3.col-md-12
+                .thirteen-screen__card
+                  p Impact on Russia’s economy and innovation development. 
+              .col-lg-3.col-md-12
+                .thirteen-screen__card
+                  p Attractiveness of new projects and ideas for investment. 
+            .row 
+              .col-lg-6.col-md-6 
+                p This model allows us to build an efficient system to evaluate projects and potential partnerships. 
+                p In 2021, we began developing a distributed competency network, which will focus on analysing possibilities and formats for using space technologies to solve practical business problems. A meeting of Sber executives and Roscosmos’ leadearship took place in spring 2021, and both sides conmirmed the interest in joint space projects. Sber Innovation & Research cooperates with all the interested business lines and business blocks of Sber and its ecosystem, in order to explore ‘space opportunities’ for our business. 
+              .col-lg-6.col-md-6.thirteen-screen__btn
+                a.btn(href="https://sberbank.ru/common/img/uploaded/news/2021/sber-cosmos-otchet.pdf" target="_blank" aria-label="Conference Report") Conference Report
+        #kvant.fourteen-screen 
+          .container
+            .row
+              .col-lg-6.col-md-12 
+                h4 Quantum Perspective
+            .row 
+              .col-lg-2.col-md-2
+                img.fourteen-screen__img(src="img/logos/rqc.svg" decoding="async" loading="lazy"   width="203" height="64" alt="РКС") 
+              .col-lg-5.col-md-5 
+                p In 2021, we launched a joint project with the Russian Quantum Center, focussed on the development of a methodology to evaluate ‘quantum impact’ on business, as well as on business sustainability and competitiveness.Now, quantum computers are the only known technology which can enable the exponential acceleration of future computations, compared to modern classic supercomputers. Quantum encryption and communications, in turn, can make data storage and exchange processes practically invulnerable to hacking. 
+              .col-lg-5.col-md-5
+                p Next year we are planning to complete the development of a methodology to determine the impact of quantum technologies on the business of large, diversified companies. 
+                a.btn(href=" https://files.sberdisk.ru/s/7nExdAnezstgB4b/download" target="_blank" aria-label="Quantum Seminar") Quantum Seminar
+
+        #pobedy_v_konkursah.fifteen-screen 
+          .container
+            .row 
+              .col-lg-12.col-md-12
+                h3 Competition Wins
+            .row 
+              .col-lg-6.col-md-12
+                p In late 2021, the bank’s teams won two international competitions, which took place at NeurIPS, the world’s largest conference on neural computation and machine learning. 
+                .fifteen-screen__list
+                  .fifteen-screen__card 
+                    p The comparison of solutions suggested by the competitors was made using a dataset of 1,600 hours of traffic on roads in Russia, Israel and the US, in fine weather, snow, and rain. Basing on this data, teams evaluated to what extent ML models are able to tackle unknow road situations. The competition participants trained their algorithms on the data provided, then checked their performance against new data. The work carried out by the team is important for the development of selfdriven motor vehicles, and the possibility of applying the developed algorithms is already being elaborated, together with SberAutoTech company. 
+                    a(href="https://research.yandex.com/shifts/vehicle-motion-prediction" aria-label="Read more") Read more
+                  .fifteen-screen__card
+                    p The neural networks trained by the team showed the best performance for passing through NetHack. This is the world of Labyrinth, where the player fights against various beings, trades, develops, and tries to capture a magic talisman. The game is considered to be one of the most difficult ones for artificial intelligence, due to numerous event development options and the strategy not being known in advance. For example, a long time has passed since machine learning models mastered chess, Dota 2, and Starcraft. Progress in resolving such tasks will lead to new achievements in autonomous transport and robotised delivery spheres, as well is as in the field of user interface testing automation. 
+                    a(href="https://ludios.org/ivank/photos/Miscellaneous/" aria-label="Read more") Read more
+              .col-lg-6.col-md-6.fifteen-screen__img
+                img(src="img/fifteen_bg.jpg" decoding="async" loading="lazy" width="750" height="500" alt="Победы в конкурсах")
+
+        #publications.sixteen-screen 
+          .page-title
+            .container 
+              .row 
+                h1 Academic Publications <span>of 2021</span>
+          .container 
+            .row 
+              .col-lg-6.col-md-6
+                p The papers published in 2021 mirror the key scientific achievements of Sber’s researchers. It is hard to single out one article, but it should be noted that Sber researchers participate and publish in the collection of proceedings for the most highly quoted world conferences on artificial intelligence and robotics. 
+                p Articles and reports by leading SberDevices scientists are dedicated to various computer linguistics problems, as well as the specificity of working with the Russian SuperGLUE 1.1 benchmark and ruGPT-3 XL language model, which gained popularity last year.
+                p The papers published in 2021 mirror the key scientific achievements of Sber’s researchers. It is hard to single out one article, but it should be noted that Sber researchers participate and publish in the collection of proceedings for the most highly quoted world conferences on artificial intelligence and robotics. Articles and reports by leading SberDevices scientists are dedicated to various computer linguistics problems, as well as the specificity of working with the Russian SuperGLUE 1.1 benchmark and ruGPT-3 XL language model, which gained popularity last year. A range of papers written jointly by SberDevices researchers and the Artificial Intelligence Laboratory describe our contribution to the fight against the COVID-19 pandemic, and the problems of AI application in other medical areas, including analysing the effectiveness of drugs and the results of various instrumental examinations. Publications on human-machine interfaces are intended to help people with limited physical abilities, and to contribute to emerging of future neural interfaces. Our work helps to create next generation devices, which will be distinguished by a higher reliability regarding the recognition of electrical signals emitted by the human brain. 
+              .col-lg-6.col-md-6
+                .sixteen-screen__card 
+                  span 7
+                  p Seven leading A/A* level conferences graded by CORE accepted papers by Sber researchers
+                ul.sixteen-screen__list 
+                  li Knowledge Discovery and Data Mining Virtual Conference 2021
+                  li European Association of Computational Linguistics (EACL)
+                  li 15th ACM Conference on Recommender Systems
+                  li 2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2021) 
+                  li IEEE/CVF International Conference on Computer Vision (ICCV) 
+                  li 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)
+                  li 35th Conference on Neural Information Processing Systems (NeurIPS)
+            .row 
+              .col-lg-12.col-md-12 
+                a.btn.sixteen-screen__btn(href="publications-en.html" aria-label="Go to publications") Go to publications
+            .row 
+              .col-lg-3.col-md-12 
+                .sixteen-screen__bordered
+                  p In its papers, the Robotics Center described new methods of artificial intelligence application in computer vision for robots, for both indoor and outdoor activities. Sber AI presented new methods for designing and streamlining the application of neural networks, as well as new approaches to recognising handwritten text and Earth images taken from space.  
+              .col-lg-3.col-md-12 
+                .sixteen-screen__bordered
+                  p In addition to summarising the work carried out throughout the year, the scientific papers by Sber researchers also lay foundations for the future application of the results obtained, both in business and in socially important fields – primarily, healthcare and humanitarian studies. 
+              .col-lg-3.col-md-12 
+                .sixteen-screen__bordered
+                  p This collection includes the most important academic papers, many of which were prepared by Sber employees in co-authorship with partner researchers from leading Russian universities and research institiutions. A notable portion of these papers were published or accepted for publication in journals with the highest Q1 category, or reported at A/A*-level conferences, whereas others found their audiences via Russian scientific and or narrowly specialised international editions.
+              .col-lg-3.col-md-12 
+                .sixteen-screen__bordered
+                  p This section contains bibliographic data and abstracts of papers published in 2021, as well as photos of Sber’s contributors. For the final (Work Goes On) section, we have summarised details on papers being published in early 2022, in order to give the reader an idea of current areas of research being carried out by Sber. 
+        #rabota_prodoljaetsya.seventeen-screen
+          .container
+            .row
+              .col-lg-8.col-md-10
+                h4 The Work Goes On
+            .row
+              .col-lg-6.col-md-6
+                .seventeen-screen__card 
+                  p In 2021, Sber researchers prepared and presented articles and reports for the world's leading scientific journals and conferences. Their brief overview gives an idea of the most relevant areas of work of our teams.
+            .row
+              .col-lg-10.col-md-12
+                ul 
+                  li <b>Additive Regularization Scheduler for Neural Architecture Research</b> / Mark Potanin, Kirill Vayser, Vadim Strijov (submitted)
+                  li <b>Blending of Predictions Boosts Multimodal Ads Understanding</b> / Anton Alekseev, Andrey Savchenko, Sejeong Kwon, Elena Tutubalina, Evgeniy Miasnikov, Andrei Kuznecov, Ilya Shenbin, Sergey Nikolenko // (submitted)
+                  li <b>Brain Commands Recognition with Semantic Load Maximization with Graph Algorithm</b> /Aleksandr Mazurin, Aleksey Galatenko, Alexandra Bernadotte // Journal of Computer Science.ISSN: 1552-6607 ((under review by journal)
+                  li <b>Comparison of Modern Open-source Visual SLAM Аpproaches / Dinar Sharafutdinov, Mark Griguletskii, Pavel Kopanev, Mikhail Kurenkov, Gonzalo Ferrer, Aleksey Burkov, Aleksei Gonnochenko, Dzmitry Tsetserukou</b> // [site] [2021] URL: https://arxiv.org/abs/2108.01654
+                  li <b>Continuous Learning of Humanoid Robots: Object Detection Using External Random Memory</b> / Ivan Nenakhov, Ruslan Mazhitov, Kirill Artemov, Seyed Hassan Zabihifar, Aleksandr Semochkin, Sergey Kolyubin // IEEE Xplore (under review  by journal)
+                  li <b>COVID-19 Connected EEG-Patterns / Aleksandr Zubov, Marina Isaeva, Ivan Menshikov, Alexandra Bernadotte </b>// Neuroscience International, Special Issue on Neuroinflammation and COVID-19. ISSN: 2524-2245 ((under review)
+                  li <b>Cross-Domain Limitations of Neural Models on Biomedical Relation Classification</b> / Ilseyar Alimova, Elena Tutubalina, Sergey Nikolenko // (under review  by journal)
+                  li <b>DetIE: Multilingual Open Information Extraction Inspired by Object Detection </b>/ MichaelVasilkovsky, Anton Alekseev, Valentin Malykh, Ilya Shenbin, Elena Tutubalina, Dmirtiy Salikhov, Mikhail Stepanov, Andrey Chertok, Sergey Nikolenko // (under review  by journal)
+                  li <b>DNN-Based Indoor Metric-Semantic Mapping for Autonomous Robots </b>/ Amiran Berkaev, Malik Mohrat, Alexey Burkov, Sergey Kolyubin // IEEE International Conference on Robotics and Automation 2022 (under review)
+                  li <b>Empowering BT5.1 Location Capabilities: from Theory to Practice</b> / Irina Bessonova, Ekaterina Naumova, Ali Ajad, Aleksandr Novikov, Svyatoslav Yakimenko, Evgeniy Kucheryaviy, Andrey Tsislav, Yuriy Litvak // (submitted)
+                  li <b>Fast and Memory-Efficient Planning in C-space: Modified Bi-directional RRT* Algorithm for Humanoid Robots</b> / Ilya Dovgopolik, Kirill Artemov, Seyed Hassan Zabihifar, Aleksandr Semochkin, Sergey Kolyubin // IEEE Xplore (under review)
+                  li <b>Feasibility Study of LEO for Support of Advanced 5G-Grade Services </b>/ Vladimir Bychkov, Evgeniy Kucheryaviy, Natalia Seltsova, Andrey Tsislav // (submitted)
+                  li <b>Fulfilling ESG Expectations for AI/ML Aided NB-IoT Services</b> / Ksenia Lyakhova, Ksenia Glinkina, Svyatoslav Yakimenko, Evgeniy Kucheryaviy, Natalia Seltsova, Andrey Tsislav, Yuriy Litvak // (submitted)
+                  li <b>Medical Crossing: A Cross-lingual Evaluation of Clinical Entity Linking</b> / Anton Alekseev, Zulfat Miftahutdinov, Elena Tutubalina, Artem Shelmanov, Vladimir Ivanov, Vladimir Kokh, Alexander Nesterov, Manvel Avetisyan, Andery Chertok, Sergey Nikolenko // (submitted)
+                  li <b>Multimodal Model with Text and Drug Embeddings for Adverse Drug Reaction Classification</b> / Andery Sakhovskiy, Elena Tutubalina // (submitted)
+                  li <b>The Multivariate Inhomogeneity Detection with Scan Statistics Based on the KullbackLeibler Divergence Estimates</b> / Denis Dimitrov // (submitted)
+                  li <b>The Three Cultures and Scientific Diversity</b> / Ivan Menshikov, Aleksandr Zubov, Marina Isaeva, Alexandra Bernadotte // Neuron. ISSN 1097-4199 (under review by journal)
+                  li <b>Towards Robust and Accurate SLAM for Wheeled Robots in Dynamic </b>/ Long Vuong Ha, Jaafar Mahmoud, Aleksey Burkov, Sergey Kolyubin // IEEE International Conference on Robotics and Automation 2022 (under review by journal)
+                  li <b>XtremeAugment: Getting the Most from Your Data by Combining Image Collection with Image Augmentation</b> / Sergey Nesteruk, Svetlana Illarionova, Timur Akhtyamov, Dmiry Shadrin, Maria Pukalchik, Andery Somov // IEEE Access (under review by journal)
+                  li <b>Надежный источник времени в распределенных системах на примере Hyperledger Fabric</b> / А.И. Филиппов, В. А. Попов, О.В. Абдрашитов, А. Баргер // (under review by journal)
+                  li <b>Is There the Brain New World? </b>/ Alexandra Bernadotte // Science Robotics. ISSN 2470-9476 (invited paper submitted) 
+        #dnk.eighteen-screen
+          .container
+            .row  
+              .col-lg-12.col-md-12 
+                a.eighteen-screen__link(href=" https://developers.sber.ru/kak-v-sbere/engineer-dna" aria-label="ДНК ИНЖЕНЕРА") #каквсбере
+                h3 An Engineer’s DNA
+              .offset-lg-1.md-offset-1.col-lg-6.col-md-6
+                p Sber’s scientific and technical achievements are enabled by the creative and humble work of our team. Not only do Sber researchers already possess vast knowledge in their respective fields; they continue to extend that knowledge. We see curiosity, love of learning, and inquisitiveness as the essence of what it means to be an engineer. I am pleased to introduce to the readers the DNA of a Sber Engineer, a kind of genetic code that determines our culture.  
+                .block-quote__name David Rafalovsky
+                .block-quote__position Sberbank Group CTO, Executive Vice President
+                a.btn.eighteen-screen__btn(href=" https://developers.sber.ru/kak-v-sbere/engineer-dna" aria-label="ДНК ИНЖЕНЕРА") Go to website
+            img(src="img/dnk.png" decoding="async" loading="lazy" width="467" height="772" alt="ДНК Инженера")
+      .page__footer-wrapper
+        footer.page-footer
+          .container
+            .page-footer__row
+              .page-footer__col-1
+                .page-footer__logo
+                  img.logo-mobile(src='img/logo-green.svg', alt='Logo', width='230', height='64') 
+                .page-footer__content
+                  p 19 Vavilova Street, Moscow, 117997, Russia <br>© 1997—2022 Sberbank.
+                .page-footer__info 
+                  p 
+                    a(href="https://www.sberbank.ru/common/img/uploaded/files/el_docs/licence_sberbank.pdf") General banking licence No. 1481 dated 11 August 2015
+                  p 
+                    a(href="https://www.sberbank.ru/ru/inform") Information about interest rates under deposit agreements with individuals
+                  p 
+                    a(href="https://www.sberbank.ru/ru/disclosure3921u") Information subject to mandatory disclosure
+              .page-footer__col-2
+               ul.stores-list
+                li.stores-list__item 
+                  a.app-store(href="https://apps.apple.com/RU/app/id492224193?mt=8" target="_blank" aria-label="app store")  
+                li.stores-list__item 
+                  a.play-market(href="https://play.google.com/store/apps/details?id=ru.sberbankmobile&hl=ru" target="_blank" aria-label="play market")
+               ul.sotials-list
+                li.sotials-list__item
+                 a.fb(href="https://www.facebook.com/sberbank" target="_blank" aria-label="Фейсбук") 
+                li.sotials-list__item
+                  a.insta(href="https://www.instagram.com/sberbank/" target="_blank" aria-label="Инстаграмм")
+                li.sotials-list__item 
+                  a.twitter(href="https://twitter.com/sberbank/" target="_blank" aria-label="Твиттер") 
+                li.sotials-list__item
+                  a.youtube(href="https://www.youtube.com/user/Sberbank" target="_blank" aria-label="Ютубе")  
+                li.sotials-list__item 
+                  a.wk(href="https://vk.com/sberbank" target="_blank" aria-label="Вконтакте") 
+                li.sotials-list__item
+                  a.ok(href="https://ok.ru/sberbank" target="_blank" aria-label="Одноклассники")
+    +to-top()    
+      block content
+          span
+    block page-bottom
+      script(src='js/bundle.js')

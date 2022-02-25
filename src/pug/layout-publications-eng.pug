@@ -46,11 +46,45 @@ html(class='page  no-js', lang='ru')
                 +logo('index.html')
                     img(src='img/logo-green.svg', alt='Logo', width='132', height='37')
               .col-lg-4.col-xs-4.page-header__right-part 
-                a(href="/publications-en.html").page-header__language EN
-                .page-header__button  Содержание
-                    +burger('Показать содержание', 'nav', 'main-nav--open')(class='main-nav__toggler')
-              block nav
-                +main-nav('10')
+                a(href="publications.html").page-header__language  RU
+                .page-header__button  Content
+                    +burger('Show content', 'nav', 'main-nav--open')(class='main-nav__toggler')
+              nav.main-nav#nav
+                .main-nav__inner
+                    .main-nav__wrapper
+                      ul.main-nav__list
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#sifry_i_fakty" data-anchor="Numbers and Facts") Numbers and Facts
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#videnie" data-anchor="Vision 2035") Vision 2035
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#nayka_i_bisness" data-anchor="Science and Business") Science and Business
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#metavselennaya" data-anchor="The Metaverse") The Metaverse
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#partners" data-anchor="Sber’s Key Research Partners") Sber’s Key Research Partners
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#sber-kosmos-sber" data-anchor="Sber-Cosmos-Sber") Sber-Cosmos-Sber
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#nauka_v_sber" data-anchor="Science at Sber") Science at Sber
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#kvant" data-anchor="Quantum Perspective") Quantum Perspective
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#naychnaya_premiya" data-anchor="The Sber Science Award") The Sber Science Award
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#pobedy_v_konkursah" data-anchor="Competition Wins") Competition Wins
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#ii" data-anchor="AI Research Centres") AI Research Centres
+                        li.main-nav__item.main-nav__item--active
+                            a.main-nav__link( href="index-en.html#publications" data-anchor="Academic Publications of 2021") Academic Publications of 2021
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#sovmestnie_proekty_s_vuzami" data-anchor="Projects Implemented Jointly with Universities and Research Centers") Projects Implemented Jointly with Universities and Research Centers
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#rabota_prodoljaetsya" data-anchor="The Work Goes On") The Work Goes On
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#vzglad_v_budushee" data-anchor="A Glimpse into the Future") A Glimpse into the Future
+                        li.main-nav__item
+                            a.main-nav__link( href="index-en.html#dnk" data-anchor="An Engineer’s DNA") An Engineer’s DNA
             .row
               .col-lg-12.col-md-12  
                 +breadcrumbs()
