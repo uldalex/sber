@@ -1302,7 +1302,40 @@ html(class='page  no-js', lang='ru')
                   }, 'mod')
 
       .page__footer-wrapper
-        +page-footer()
+        footer.page-footer
+          .container
+            .page-footer__row
+              .page-footer__col-1
+                .page-footer__logo
+                  img.logo-mobile(src='img/logo-green.svg', alt='Logo', width='230', height='64') 
+                .page-footer__content
+                  p 19 Vavilova Street, Moscow, 117997, Russia <br>© 1997—2022 Sberbank.
+                .page-footer__info 
+                  p 
+                    a(href="https://www.sberbank.ru/common/img/uploaded/files/el_docs/licence_sberbank.pdf") General banking licence No. 1481 dated 11 August 2015
+                  p 
+                    a(href="https://www.sberbank.ru/ru/inform") Information about interest rates under deposit agreements with individuals
+                  p 
+                    a(href="https://www.sberbank.ru/ru/disclosure3921u") Information subject to mandatory disclosure
+              .page-footer__col-2
+               ul.stores-list
+                li.stores-list__item 
+                  a.app-store(href="https://apps.apple.com/RU/app/id492224193?mt=8" target="_blank" aria-label="app store")  
+                li.stores-list__item 
+                  a.play-market(href="https://play.google.com/store/apps/details?id=ru.sberbankmobile&hl=ru" target="_blank" aria-label="play market")
+               ul.sotials-list
+                li.sotials-list__item
+                 a.fb(href="https://www.facebook.com/sberbank" target="_blank" aria-label="Фейсбук") 
+                li.sotials-list__item
+                  a.insta(href="https://www.instagram.com/sberbank/" target="_blank" aria-label="Инстаграмм")
+                li.sotials-list__item 
+                  a.twitter(href="https://twitter.com/sberbank/" target="_blank" aria-label="Твиттер") 
+                li.sotials-list__item
+                  a.youtube(href="https://www.youtube.com/user/Sberbank" target="_blank" aria-label="Ютубе")  
+                li.sotials-list__item 
+                  a.wk(href="https://vk.com/sberbank" target="_blank" aria-label="Вконтакте") 
+                li.sotials-list__item
+                  a.ok(href="https://ok.ru/sberbank" target="_blank" aria-label="Одноклассники")
       +to-top()
     block page-bottom
       script(src='js/fslightbox.js')
