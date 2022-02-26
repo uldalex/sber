@@ -22,6 +22,7 @@ let config = {
   ],
   'addJsBefore': [
     './splide.min.js',
+    './fslightbox.js',
   ],
   'addJsAfter': [
     './script.js',
@@ -36,8 +37,9 @@ let config = {
     'src/fonts/SBSansDisplay-Bold.woff2': 'fonts/',
     'src/img/*.{png,svg,jpg,jpeg}': 'img/',
     'src/img/docs/*.{png,svg,jpg,jpeg}': 'img/docs/',
+    'src/img/logos/*.{png,svg,jpg,jpeg}': 'img/logos/',
     'src/img/authors/*.{png,svg,jpg,jpeg}': 'img/authors/',
-    'src/favicon/*.{png,ico,svg,xml,webmanifest}': 'img/favicon',
+    'src/favicon/*.{png,ico,svg,xml,webmanifest}': 'favicon',
     // 'node_modules/somePackage/images/*.{png,svg,jpg,jpeg}': 'img/',
   },
   'dir': {

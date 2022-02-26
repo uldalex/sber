@@ -44,8 +44,10 @@ $('.dropdown .dropdown-menu li').on('click', function () {
 });
 $('.dropdown--lab').on('click', function(){
   $('.card').css({'display':'block'});
-  $("#autors-input").attr('placeholder' , 'Поиск по авторам');
-  $("#publication-input").attr('placeholder' , 'Поиск по публикациям');
+  $("#autors-input.search-input--ru").attr('placeholder' , 'Поиск по авторам');
+  $("#publication-input.search-input--ru").attr('placeholder' , 'Поиск по публикациям');
+  $("#autors-input.search-input--en").attr('placeholder' , 'Enter an author');
+  $("#publication-input.search-input--en").attr('placeholder' , 'Enter a title');
   $('.dropdown--publication, #publication-input,  #autors-input,#publication-close, #autors-close, .dropdown--autors').removeClass('active')
   $('.dropdown--publication .dropdown-menu , .dropdown--autors .dropdown-menu').slideUp(300);
 })
@@ -56,8 +58,10 @@ $("#publication-input").on("click", function() {
   $("#autors-input").removeClass('active');
   $("#autors-close").removeClass('active');
   $('.lab').css({'display':'block'});
-  $('.select-filter').find('span').text('Смотреть все');
-  $("#autors-input").attr('placeholder' , 'Поиск по авторам');
+  $('.select-filter--ru').find('span').text('Смотреть все');
+  $('.select-filter--en').find('span').text('View all');
+  $("#autors-input.search-input--ru").attr('placeholder' , 'Поиск по авторам');
+  $("#autors-input.search-input--en").attr('placeholder' , 'Enter an author');
   $(this).addClass('active');
   $(this).parents('.dropdown').addClass('active');
   $(this).parents('.dropdown').find('.dropdown-menu').slideDown(300); 
@@ -66,7 +70,8 @@ $("#publication-input").on("click", function() {
   $(close).on('click', function(){
     $("#publication-input").removeClass('active');
     $("#publication-input").val('');
-    $("#publication-input").attr('placeholder' , 'Поиск по публикациям');
+    $("#publication-input.search-input--ru").attr('placeholder' , 'Поиск по публикациям');
+    $("#publication-input.search-input--en").attr('placeholder' , 'Enter a title');
     $(this).parents('.dropdown').find('.dropdown-menu').slideUp(300);
     var value = $("#publication-input").val().toLowerCase();
     $(this).removeClass('active');

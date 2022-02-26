@@ -88,7 +88,7 @@ html(class='page  no-js', lang='ru')
             .row
               .col-lg-12.col-md-12  
                 +breadcrumbs()
-                  +breadcrumbs-item('Science at Sber Сбере 2021', 'index-en.html#publications')
+                  +breadcrumbs-item('Science at Sber 2021', 'index-en.html#publications')
                   +breadcrumbs-item('Academic Publications of 2021', '')
           .page-title 
             .container 
@@ -99,14 +99,14 @@ html(class='page  no-js', lang='ru')
             .container 
               .row 
                 .col-md-4.col-lg-4
-                  label(for="publication-input" aria-label="Filter by Research Groups") Filter by Research Groups
+                  label(for="publication-input" aria-label="Filter by Research Groups") Research Groups
                   .dropdown.dropdown--lab
-                    .select.select-filter 
-                      span See all
+                    .select.select-filter.select-filter--en 
+                      span View all
                     #publication-list.dropdown-menu
                       ul
                           li
-                            a.servise-form__link--all(href="#lab1" data-anchor="All research groups" aria-label="All research groups" ) See all
+                            a.servise-form__link--all(href="#lab1" data-anchor="All research groups" aria-label="All research groups" ) View all
                           li
                             a.servise-form__link--lab(href="#lab1" data-anchor="Artificial Intelligence Laboratory" aria-label="Artificial Intelligence Laboratory" ) Artificial Intelligence Laboratory
                           li 
@@ -122,15 +122,15 @@ html(class='page  no-js', lang='ru')
                           li 
                             a.servise-form__link--lab(href="#lab7" data-anchor="SBER INNOVATION AND RESEARCH" aria-label="SBER INNOVATION AND RESEARCH" ) SBER INNOVATION AND RESEARCH
                 .col-md-4.col-lg-4
-                  label(for="publication-input" aria-label="Publication search") Publication search
+                  label(for="publication-input" aria-label="Enter a title") Academic Publications
                   .dropdown.dropdown--publication
                     .select 
-                        input#publication-input.search-input(type="text" placeholder='Publication search')
+                        input#publication-input.search-input.search-input--en(type="text" placeholder='Enter a title')
                         #publication-close.dropdown__close 
                     #publication-list.dropdown-menu
                           ul
                             li
-                              a.servise-form__link(href="#publication1" data-anchor="Text Augmentation Techniques in Drug Adverse Eect Detection Task" aria-label="Text Augmentation Techniques in Drug Adverse Eect Detection Task" ) Text Augmentation Techniques in Drug Adverse Eect Detection Task
+                              a.servise-form__link(href="#publication1" data-anchor="Text Augmentation Techniques in Drug Adverse Effect Detection Task" aria-label="Text Augmentation Techniques in Drug Adverse Effect Detection Task" ) Text Augmentation Techniques in Drug Adverse Effect Detection Task
                             li 
                               a.servise-form__link(href="#publication2" data-anchor="NB-MLM" aria-label="NB-MLM: Effcient Domain Adaptation of Masked Language Models for Sentiment Analysis" ) NB-MLM: Effcient Domain Adaptation of Masked Language Models for Sentiment Analysis
                             li 
@@ -214,7 +214,7 @@ html(class='page  no-js', lang='ru')
                             li 
                               a.servise-form__link(href="#publication42" data-anchor="Methods of computational linguistics in the evaluation of artificial intelligence systems" aria-label="Methods of computational linguistics in the evaluation of artificial intelligence systems" ) Methods of computational linguistics in the evaluation of artificial intelligence systems
                             li 
-                              a.servise-form__link(href="#publication43" data-anchor="How not to Lie with a Benchmark:Rearranging NLP Leaderboards" aria-label="How not to Lie with a Benchmark:Rearranging NLP Leaderboards " ) How not to Lie with a Benchmark:Rearranging NLP Leaderboards
+                              a.servise-form__link(href="#publication43" data-anchor="How not to Lie with a Benchmark: Rearranging NLP Leaderboards" aria-label="How not to Lie with a Benchmark: Rearranging NLP Leaderboards " ) How not to Lie with a Benchmark: Rearranging NLP Leaderboards
                             li 
                               a.servise-form__link(href="#publication44" data-anchor="Text Simplification with Autoregressive Models" aria-label="Text Simplification with Autoregressive Models" ) Text Simplification with Autoregressive Models
                             li 
@@ -246,119 +246,119 @@ html(class='page  no-js', lang='ru')
                             li 
                               a.servise-form__link(href="#publication58" data-anchor="AI for Science and Science for AI " aria-label="AI for Science and Science for AI  " ) AI for Science and Science for AI 
                 .col-md-4.col-lg-4
-                  label(for="autors-input" aria-label="Фильтр по авторам") Search by authors
+                  label(for="autors-input" aria-label="Enter an author") Authors
                   .dropdown.dropdown--autors
                     .select 
-                        input#autors-input.search-input(type="text" placeholder='Search by authors')
+                        input#autors-input.search-input.search-input--en(type="text" placeholder='Enter an author')
                         #autors-close.dropdown__close 
                     #autors-list.dropdown-menu
                           ul
                             li#all.autor-all All authors
-                            li#avetisyan.autor-select Avetisian Manvel
-                            li#babayev.autor-select Babaev Dmitry
-                            li#bernadott.autor-select Bernadotte Alexandra
-                            li#blinov.autor-select Blinov Pavel 
-                            li#burenko.autor-select Burenko Ilya
-                            li#Burkov.autor-select Burkov Aleksey
-                            li#vasiliev_a.autor-select Vasilev Alexey
-                            li#vedahin.autor-select Vedyakhin Alexander
-                            li#vetushinsky.autor-select Vetushinskiy Alexander
-                            li#voronzova.autor-select Vorontsova Darya
-                            li#gamayunov.autor-select Gamayunov Aleksander
-                            li#gonnochenko.autor-select Gonnochenko Aleksei
-                            li#gusev.autor-select  Gusev Gleb
-                            li#davidova.autor-select Davydova Alexandra
-                            li#damdinov.autor-select Damdinov Rinchin
-                            li#dimitrov.autor-select Dimitrov Denis
-                            li#egorov_d.autor-select Egorov Dmitry
-                            li#egorov_k.autor-select Egorov Konstantin
-                            li#emelyanov.autor-select Emelyanov Anton
-                            li#erofeeva.autor-select Erofeeva Maria
-                            li#efimov.autor-select Efimov Albert
-                            li#zvereva.autor-select Zvereva Ekaterina
-                            li#zubov.autor-select Zubov Aleksandr
-                            li#isaeva.autor-select Isaeva Marina
-                            li#karachev.autor-select Karachev Denis
-                            li#karpushin.autor-select Karpushkin Danil
-                            li#kapushev.autor-select Kapushev Yermek
-                            li#katricheva.autor-select Katricheva Nadezhda
-                            li#kireev.autor-select Kireev Ivan
-                            li#klowait.autor-select Klowait Nils
-                            li#korbut.autor-select Korbut Andrei
-                            li#koh.autor-select Kokh Vladimir
-                            li#lanikin.autor-select Lanikin Anton
-                            li#mazurin.autor-select Mazurin Alexander
-                            li#markov.autor-select Markov Sergey
-                            li#mikhailov.autor-select Mikhailov Vladislav
-                            li#nesterov_a.autor-select Nesterov Aleksandr
-                            li#nesteruk.autor-select Nesteruk Sergey
-                            li#novopoltsev.autor-select Novopoltsev Maxim
-                            li#paison.autor-select Payson Dmitry
-                            li#pisarevskaya.autor-select Pisarevskaya Dina
-                            li#ponomarchuk.autor-select Ponomarchuk Alexander
-                            li#postnikov.autor-select Postnikov Aleksey
-                            li#porvatov.autor-select Porvatov Vadim
-                            li#potaninm.autor-select Potanin Mark
-                            li#rikunov.autor-select Rikunov Peter
-                            li#salikhov.autor-select Salikhov Dmirtiy
-                            li#seydehassen.autor-select Seyed Hassan Zabihifar
-                            li#semenova.autor-select Semenova Natalia
-                            li#semachkin.autor-select Semochkin Aleksandr
-                            li#sokolova.autor-select Sokolova Anna
-                            li#sokolovaE.autor-select Sokolova Elena
-                            li#solyanova.autor-select Solyanova Maria
-                            li#Sosedka.autor-select Sosedka Artyom
-                            li#sorensen.autor-select Sorensen Kristina
-                            li#statovoy.autor-select Statovoy Dmitrii
-                            li#stepnov_m.autor-select Stepnov Mikhail
-                            li#tamm-yan.autor-select Tamm Yan-Martin
-                            li#tikhonova.autor-select Tikhonova Maria
-                            li#Tishin.autor-select Tishin Vladislav
-                            li#tutubalina.autor-select Tutubalina Elena
-                            li#umerenkov.autor-select Umerenkov Dmitriy
-                            li#fenogenova.autor-select Fenogenova Alena
-                            li#flitman.autor-select Flitman Lev
-                            li#chertok.autor-select Chertok Andrey
-                            li#shavrina.autor-select Shavrina Tatiana
-                            li#shelmanov.autor-select Shelmanov Artem
-                            li#shevelev.autor-select Shevelev Denis
-                            li#shlyazhko.autor-select Shliazhko Oleg
-                            li#shonenkov.autor-select Shonenkov Alex
-                            li#yalunin.autor-select Yalunin Alexander
+                            li#avetisyan.autor-select Manvel Avetisian 
+                            li#babayev.autor-select Dmitry Babaev 
+                            li#bernadott.autor-select Alexandra Bernadotte 
+                            li#blinov.autor-select Pavel Blinov  
+                            li#burenko.autor-select Ilya Burenko 
+                            li#Burkov.autor-select Aleksey Burkov 
+                            li#vasiliev_a.autor-select Alexey Vasilev 
+                            li#vedahin.autor-select Alexander Vedyakhin 
+                            li#vetushinsky.autor-select Alexander Vetushinskiy 
+                            li#voronzova.autor-select Darya Vorontsova 
+                            li#gamayunov.autor-select Aleksander Gamayunov 
+                            li#gonnochenko.autor-select Aleksei Gonnochenko 
+                            li#gusev.autor-select  Gleb Gusev 
+                            li#davidova.autor-select Alexandra Davydova 
+                            li#damdinov.autor-select Rinchin Damdinov 
+                            li#dimitrov.autor-select Denis Dimitrov 
+                            li#egorov_d.autor-select Dmitry Egorov 
+                            li#egorov_k.autor-select Konstantin Egorov 
+                            li#emelyanov.autor-select Anton Emelyanov 
+                            li#erofeeva.autor-select Maria Erofeeva 
+                            li#efimov.autor-select Albert Efimov 
+                            li#zvereva.autor-select Ekaterina Zvereva
+                            li#zubov.autor-select  Aleksandr Zubov
+                            li#isaeva.autor-select Marina Isaeva 
+                            li#karachev.autor-select  Denis Karachev
+                            li#karpushin.autor-select Danil Karpushkin 
+                            li#kapushev.autor-select Yermek Kapushev 
+                            li#katricheva.autor-select Nadezhda Katricheva 
+                            li#kireev.autor-select Ivan Kireev 
+                            li#klowait.autor-select Nils Klowait 
+                            li#korbut.autor-select Andrei Korbut 
+                            li#koh.autor-select Vladimir Kokh 
+                            li#lanikin.autor-select Anton Lanikin 
+                            li#mazurin.autor-select Alexander Mazurin 
+                            li#markov.autor-select Sergey Markov 
+                            li#mikhailov.autor-select Vladislav Mikhailov 
+                            li#nesterov_a.autor-select Aleksandr Nesterov 
+                            li#nesteruk.autor-select Sergey Nesteruk 
+                            li#novopoltsev.autor-select Maxim Novopoltsev 
+                            li#paison.autor-select Dmitry Payson 
+                            li#pisarevskaya.autor-select  Dina Pisarevskaya
+                            li#ponomarchuk.autor-select Alexander Ponomarchuk 
+                            li#postnikov.autor-select Aleksey Postnikov 
+                            li#porvatov.autor-select Vadim Porvatov 
+                            li#potaninm.autor-select Mark Potanin 
+                            li#rikunov.autor-select Peter Rikunov 
+                            li#salikhov.autor-select Dmirtiy Salikhov 
+                            li#seydehassen.autor-select Zabihifar Seyed Hassan 
+                            li#semenova.autor-select Natalia Semenova 
+                            li#semachkin.autor-select Aleksandr Semochkin 
+                            li#sokolova.autor-select Anna Sokolova 
+                            li#sokolovaE.autor-select Elena Sokolova 
+                            li#solyanova.autor-select Maria Solyanova 
+                            li#Sosedka.autor-select Artyom Sosedka 
+                            li#sorensen.autor-select Kristina Sorensen 
+                            li#statovoy.autor-select Dmitrii Statovoy 
+                            li#stepnov_m.autor-select Mikhail Stepnov 
+                            li#tamm-yan.autor-select Yan-Martin Tamm 
+                            li#tikhonova.autor-select Maria Tikhonova 
+                            li#Tishin.autor-select Vladislav Tishin 
+                            li#tutubalina.autor-select Elena Tutubalina 
+                            li#umerenkov.autor-select Dmitriy Umerenkov 
+                            li#fenogenova.autor-select Alena Fenogenova
+                            li#flitman.autor-select Lev Flitman 
+                            li#chertok.autor-select Andrey Chertok 
+                            li#shavrina.autor-select Tatiana Shavrina 
+                            li#shelmanov.autor-select Artem Shelmanov 
+                            li#shevelev.autor-select Denis Shevelev 
+                            li#shlyazhko.autor-select Oleg Shliazhko 
+                            li#shonenkov.autor-select Alex Shonenkov 
+                            li#yalunin.autor-select Alexander Yalunin 
           .card-list 
             .container 
               .row
                 #lab1.lab 
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     id: 'publication1',
                     url:'https://aclanthology.org/2021.smm4h-1.17.pdf',
                     img:'Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg',
                     urlimg:'Text Augmentation Techniques in Drug Adverse Effect Detection Task.jpg',
-                    name:'Text Augmentation Techniques in Drug Adverse Eect Detection Task',
-                    descr:'Text Augmentation Techniques in Drug Adverse Effect Detection Task / Pavel Blinov // Proceedings of the ixth Social Media Mining for Health Workshop. 2021. PP. 95–97. DOI: 10.18653/v1/2021.smm4h-1.17',
+                    name:'Text Augmentation Techniques in Drug Adverse Effect Detection Task',
+                    descr:'Text Augmentation Techniques in Drug Adverse Effect Detection Task / Pavel Blinov // Proceedings of the Sixth Social Media Mining for Health Workshop. 2021. PP. 95–97. DOI: 10.18653/v1/2021.smm4h-1.17',
                     anons:'The paper studies the problem of drug adverse eect detection in the posts on social platforms. The authors describe the development of the corresponding classification system for Russian tweets, including several augmentation techniques applied to enlarge the training dataset, and then analyze the eectiveness of the proposed system eect in comparison with similar systems presented at SMM4H 2021 Workshop.',
                     autorimg1:'blinov.jpg',
-                    autor1:'Blinov Pavel',
+                    autor1:'Pavel Blinov',
                     lab:'Artificial Intelligence Laboratory',
                     autor1class:'blinov',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     id: 'publication2',
                     url:'https://aclanthology.org/2021.emnlp-main.717/',
                     img: 'NB-MLM-17.jpg',
                     urlimg: 'NB-MLM-17.jpg',
                     name: 'NB-MLM: Effcient Domain Adaptation of Masked Language Models for Sentiment Analysis',
-                    descr: 'NB-MLM: E cient Domain Adaptation of Masked Language Models for Sentiment Analysis / Nikolay Arefyev, Dmitrii Kharchev, Artem Shelmanov // Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. 2021. PP. 9114–9124.',
-                    anons: 'The authors present new approach to effcient domain adaptation of Masked Language Models (MLM). The standard MLM objective leads to ineffciency when it is used for the adaptation step because it mostly learns to predict the most frequent words, which are not necessarily related to a final task. The authors propose a technique for more effcient adaptation that focuses on predicting words with large weights of the Naive Bayes classifier trained for the task at hand, which are likely more relevant than the most frequent words. The proposed method provides faster adaptation and better final performance for sentiment analysis compared to the standard approach.',
+                    descr: 'NB-MLM: Effcient Domain Adaptation of Masked Language Models for Sentiment Analysis / Nikolay Arefyev, Dmitrii Kharchev, Artem Shelmanov // Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. 2021. PP. 9114–9124.',
+                    anons: 'The authors present new approach to Efficient domain adaptation of Masked Language Models (MLM). The standard MLM objective leads to inefficiency when it is used for the adaptation step because it mostly learns to predict the most frequent words, which are not necessarily related to a final task. The authors propose a technique for more effcient adaptation that focuses on predicting words with large weights of the Naive Bayes classifier trained for the task at hand, which are likely more relevant than the most frequent words. The proposed method provides faster adaptation and better final performance for sentiment analysis compared to the standard approach.',
                     autorimg1:'shelmanov.jpg',
-					          autor1: 'Shelmanov Artem',
+					          autor1: 'Artem Shelmanov',
 					          lab:'Artificial Intelligence Laboratory',
                     autor1class:'shelmanov',
                   }, 'mod')
                   +card({
-                     btn: 'Show More',
+                     btn: 'Read',
                     url:'https://arxiv.org/pdf/2106.08361.pdf',
                     id: 'publication3',
                     img: 'Adversarial-Attacks-on-Deep-Models-18.jpg',
@@ -369,29 +369,30 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'gusev.jpg',
                     autorimg2: 'babayev-min.jpg',
                     autorimg3: 'kireev.jpg',
-                    autor1: 'Gusev Gleb',
-                    autor2: 'Babaev Dmitry',
-                    autor3: 'Kireev Ivan',
+                    autor1: 'Gleb Gusev',
+                    autor2: 'Dmitry Babaev',
+                    autor3: 'Ivan Kireev',
 					          lab:'Artificial Intelligence Laboratory',
                     autor1class:'gusev',
                     autor2class:'babayev',
                     autor3class:'kireev',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://arxiv.org/abs/2011.00594',
                     id: 'publication4',
                     img: 'Random-Fourier-Features-based-SLAM-19.jpg',
                     urlimg: 'Random-Fourier-Features-based-SLAM-19.jpg',
-                    name: 'Random FourierFeatures based SLAM ',
+                    name: 'Random Fourier Features based SLAM ',
                     descr: 'This paper presents algorithm based on Gaussian Processes with Random Fourier Features (RFF) approximation for continuous Simultaneous Localization and Mapping (SLAM). The approach paves the way to applying broader class of kernels, as well as to maintaining computational complexity. Experimental results confirm that the method is well applicable for very noisy datasets.',
+                    anons:'Random Fourier Features based SLAM / Yermek Kapushev, Anastasia Kishkun, Gonzalo Ferrer, Evgeny Burnaev // IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). 2021.',
                     autorimg1: 'kapushev.jpg',
-                    autor1: 'Kapushev Yermek',
+                    autor1: 'Yermek Kapushev',
 					lab:'Artificial Intelligence Laboratory',
                     autor1class:'kapushev',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://arxiv.org/pdf/2110.15072.pdf',
                     id: 'publication5',
                     img: 'Leveraging-Recursive-Gumbel-Max-Trick-20.jpg',
@@ -400,12 +401,12 @@ html(class='page  no-js', lang='ru')
                     descr: 'Leveraging Recursive Gumbel-Max Trick for Approximate Inference in Combinatorial Spaces / Kirill Struminsky, Artyom Gadetsky, Denis Rakitin, Danil Karpushkin, Dmitry Vetrov // Advances in Neural Information Processing Systems 34 (NeurIPS 2021). December 6–14, 2021, virtual. 2021.',
                     anons: 'The authors study different models of structured latent variables which allow incorporating meaningful pre-knowledge into deep learning models and conclude that the surrogate puts additional constraints on the model and inevitably leads to biased gradients. These constraints can be overcome through extending the Gumbel-Max trick.',
                     autorimg1: 'karpushin.jpg',
-                    autor1: 'Karpushkin Danil',
+                    autor1: 'Danil Karpushkin',
 					          lab:'Artificial Intelligence Laboratory',
                     autor1class:'karpushin',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url: 'https://aclanthology.org/2021.findings-emnlp.15.pdf',
                     id: 'publication6',
                     img: 'Generating-Mammography-Reports-21.jpg',
@@ -418,11 +419,11 @@ html(class='page  no-js', lang='ru')
                     autorimg3: 'burenko-min.jpg',
                     autorimg4: 'ponomarchuk.jpg',
                     autorimg5: 'umerenkov.jpg',
-                    autor1: 'Yalunin Alexander',
-                    autor2: 'Sokolova Elena',
-                    autor3: 'Burenko Ilya',
-                    autor4: 'Ponomarchuk Alexander',
-                    autor5: 'Umerenkov Dmitriy',
+                    autor1: 'Alexander Yalunin',
+                    autor2: 'Elena Sokolova',
+                    autor3: 'Ilya Burenko',
+                    autor4: 'Alexander Ponomarchuk',
+                    autor5: 'Dmitriy Umerenkov',
 					          lab:'Artificial Intelligence Laboratory',
                     autor1class:'yalunin',
                     autor2class:'sokolovaE',
@@ -431,7 +432,7 @@ html(class='page  no-js', lang='ru')
                     autor5class:'umerenkov',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://dl.acm.org/doi/pdf/10.1145/3460231.3478848?casa_token=WLRNnWpDon8AAAAA:I4IMSvGl-0ojlSMwQ1ZMGoKgl2zCztt-6rZQ9uUfsoILdsWDY-vIT42pWVQaoZimOvLVcRziASTCQQ',
                     img: 'Quality-Metrics-22.jpeg',
                     id: 'publication7',
@@ -442,16 +443,16 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'tamm-yan-min.jpg',
                     autorimg2: 'damdinov-min.jpg',
                     autorimg3: 'vasiliev_a.jpg',
-                    autor1: 'Tamm Yan-Martin',
-                    autor2: 'Damdinov Rinchin',
-                    autor3: 'Vasilev Alexey',
+                    autor1: 'Yan-Martin Tamm',
+                    autor2: 'Rinchin Damdinov',
+                    autor3: 'Alexey Vasilev',
 					          lab:'Artificial Intelligence Laboratory',
                     autor1class:'tamm-yan',
                     autor2class:'damdinov',
                     autor3class:'vasiliev_a',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://arxiv.org/abs/2105.11863',
                     img: 'CoRSAI_A-System-for-Robust-23.jpg',
                     urlimg: 'CoRSAI_A-System-for-Robust-23.jpg',
@@ -467,14 +468,14 @@ html(class='page  no-js', lang='ru')
                     autorimg6: 'burenko-min.jpg',
                     autorimg7: 'egorov_k.jpg',
                     autorimg8: 'ponomarchuk.jpg',
-                    autor1: 'Avetisian Manvel',
-                    autor2: 'Umerenkov Dmitriy',
-                    autor3: 'Kokh Vladimir',
-                    autor4: 'Sokolova Elena',
-                    autor5: 'Nesterov Aleksandr',
-                    autor6: 'Burenko Ilya',
-                    autor7: 'Egorov Konstantin',
-                    autor8: 'Ponomarchuk Alexander',
+                    autor1: 'Manvel Avetisian',
+                    autor2: 'Dmitriy Umerenkov',
+                    autor3: 'Vladimir Kokh',
+                    autor4: 'Elena Sokolova',
+                    autor5: 'Aleksandr Nesterov',
+                    autor6: 'Ilya Burenko',
+                    autor7: 'Konstantin Egorov',
+                    autor8: 'Alexander Ponomarchuk',
                     lab:'Artificial Intelligence Laboratory',
                     autor1class:'avetisyan',
                     autor2class:'umerenkov',
@@ -486,7 +487,7 @@ html(class='page  no-js', lang='ru')
                     autor8class:'ponomarchuk',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://aclanthology.org/2020.smm4h-1.17.pdf',
                     id: 'publication9',
                     img: 'Transformer-Models-for-Drug-Adverse-Effects-Detection-from-Tweets-14.jpg',
@@ -496,14 +497,14 @@ html(class='page  no-js', lang='ru')
                     anons: 'The authors describe the drug adverse effects detection system developed during the SMM4H "20 workshop. The experiments with the transfer learning approach for English and Russian, BERT and RoBERTa architectures, and several strategies for regression head composition show that the model overcomes average F1 by several percent.',
                     autorimg1: 'blinov.jpg',
                     autorimg2: 'avetisyan.jpg',
-                    autor1: 'Blinov Pavel',
-                    autor2: 'Avetisian Manvel',
+                    autor1: 'Pavel Blinov',
+                    autor2: 'Manvel Avetisian',
                     lab:'Artificial Intelligence Laboratory',
                     autor1class:'blinov',
                     autor1class:'avetisyan',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://www.aclweb.org/anthology/2020.webnlg-1.17.pdf',
                     img: 'SemanticTriplesVerbalization-15.jpg',
                     id: 'publication10',
@@ -512,27 +513,27 @@ html(class='page  no-js', lang='ru')
                     descr: 'Semantic Triples Verbalization with Generative Pre-Training Model / Pavel Blinov // 3rd International Workshop on Natural Language Generation from the Semantic Web (WebNLG+). 2020. PP. 154–158.',
                     anons: 'The paper describes a new approach to the problem of automatic text generation from a set of RDF-triplets based on GPT-2 and proposes a way to convert the basic GPT-2 model to a specific classification language model. In addition, the authors investigate how text generation probability method parameters impact the end-task performance and propose possible improvement directions. ',
                     autorimg1: 'blinov.jpg',
-                    autor1: 'Blinov Pavel',
+                    autor1: 'Pavel Blinov',
 					          lab:'Artificial Intelligence Laboratory',
                     autor1class:'blinov',
                   }, 'mod')
                 #lab2.lab 
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://www.monitoringjournal.ru/index.php/monitoring/article/view/1808/1492',
                     img: 'Artificial-intelligence-24.jpg',
                     id: 'publication11',
                     urlimg: 'Artificial-intelligence-24.jpg',
                     name: 'Domestication of Artificial Intelligence: Smart Speakers and Transformation of Everyday Life ',
-                    descr: 'Domestication of Artificial Intelligence: Smart Speakers and Transformation of Everyday Life  / А.М. Корбут // Мониторинг общественного мнения: экономические и социальные перемены. 2021. Выпуск 1. С. 193–216. DOI: 10.14515/monitoring.2021.1.1808',
+                    descr: 'Domestication of Artificial Intelligence: Smart Speakers and Transformation of Everyday Life / Andrei Korbut // Monitoring of Public Opinion: Economic and Social Changes Journal. 2021. Vol. 1. PP. 193-216. DOI: 10.14515/monitoring.2021.1.1808 (in Russian)',
                     anons: 'This paper examines what kind of transformations occur in social practices due to the introduction of smart speakers to the domestic life. The article analyses two aspects of the ‘domestication’ of artificial intelligence when using smart speakers: (1) involvement of intelligent devices in everyday home culture and (2) forms and ways of interacting with smart devices. Relying on the existing research data and his own auto-ethnographic observations and analysis of parts of conversations with the smart speaker, the author shows that, despite the inventor’s desire to make the use of smart speakers ‘natural’, users do need to develop new forms of interaction and sociality to interact with AI.',
                     autorimg1: 'korbut.jpg',
-                    autor1: 'Korbut Andrei',
+                    autor1: 'Andrei Korbut',
 					          lab:'Gamification Lab',
                     autor1class:'korbut',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://www.monitoringjournal.ru/index.php/monitoring/article/view/1797/1493',
                     img: 'Disciplinary-Digital-Self-Tracking-Practices-25.jpg',
                     id: 'publication12',
@@ -543,30 +544,30 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'davidova.jpg',
                     autorimg2: 'solyanova.jpg',
                     autorimg3: 'sorensen.jpg',
-                    autor1: 'Davydova Alexandra',
-                    autor2: 'Solyanova Maria',
-                    autor3: 'Sorensen Kristina',
+                    autor1: 'Alexandra Davydova',
+                    autor2: 'Maria Solyanova',
+                    autor3: 'Kristina Sorensen',
                     lab:'Gamification Lab',
                     autor1class:'davidova',
                     autor2class:'solyanova',
                     autor3class:'sorensen',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://www.monitoringjournal.ru/index.php/monitoring/article/view/1810/1494',
                     img: 'goodbye-to-a-robot-26.jpg',
                     id: 'publication13',
                     urlimg: 'goodbye-to-a-robot-26.jpg',
                     name: 'How to Say Good-Bye to a Robot? The Matter of Conversational Closing',
-                    descr: 'How to Say Good-Bye to a Robot? The Matter of Conversational Closing / А.И. Егорова, Н. Кловайт // Мониторинг общественного мнения: экономические и социальные перемены. 2021. Выпуск 1. С. 241–270. DOI: 10.14515/monitoring.2021.1.1810 ',
+                    descr: 'How to Say Good-Bye to a Robot? The Matter of Conversational Closing / Anastasia Egorova, Nils Klowait // Monitoring of Public Opinion: Economic and Social Changes Journal. 2021. Vol. 1. PP. 241–270. DOI: 10.14515/monitoring.2021.1.1810 (in Russian)',
                     anons: 'This article is an empirical investigation of the interaction between an advanced conversational agent and human interactant. The authors focus on the features of human-computer interactions: how misunderstandings are resolved, how conversational aims are achieved. The results serve as a foundation for future studies in human-robot interaction and provide a deeper understanding of how conversational closings are achieved in liminal cases. ',
                     autorimg1: 'klowait.jpg',
-                    autor1: 'Klowait Nils',
+                    autor1: 'Nils Klowait',
 					          lab:'Gamification Lab',
                     autor1class:'klowait',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://www.monitoringjournal.ru/index.php/monitoring/article/view/1793/1485',
                     img: 'The-Rise-of-Interactional-Multimodality-27.jpg',
                     id: 'publication14',
@@ -576,29 +577,29 @@ html(class='page  no-js', lang='ru')
                     anons: 'With recent developments in both the technical-sensorial and communicative capabilities of embodied virtual agents, the field of HCI has once again returned to the question of the sequential unfolding of the interaction between users and intelligent agents, and the multimodal interactional repertoire that is deployed throughout. This review will highlight the situational orientation of high-impact research in the field, and relate it to the cotemporaneous development of ethnomethodological and conversation analytic frameworks.',
                     autorimg1: 'klowait.jpg',
                     autorimg2: 'erofeeva.jpg',
-                    autor1: 'Klowait Nils',
-                    autor2: 'Erofeeva Maria',
+                    autor1: 'Nils Klowait',
+                    autor2: 'Maria Erofeeva',
                     lab:'Gamification Lab',
                     autor1class:'klowait',
                     autor2class:'erofeeva',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://eksmo.ru/book/filosofiya-v-videoigrakh-ITD1125100/ ',
                     img: 'Igrodrom-28.JPG',
                     id: 'publication15',
                     urlimg: 'Igrodrom-28.JPG',
                     name: 'Ludodrome: Everything You Need to Know about Videogames and Gaming Culture ',
-                    descr: 'Игродром: что нужно знать о видеоиграх и игровой культуре / А.С. Ветушинский // М.: Бомбора, 2021. — 272 с. ISBN: 978-5-04-117521-4',
+                    descr: 'Ludodrome: Everything You Need to Know about Videogames and Gaming Culture / Alexander Vetushinskiy // Moscow, Bombora. 2021. — 272 p. ISBN: 978-5-04-117521-4',
                     anons: 'Phenomenon of video games and their place in the lives of humans – these are the issues studied by game studies. The book of one of the leading Russian experts in this area called "Ludodrome" (“Playground”) presents philosophical understanding of the evolution stages in the gaming industry, as well as analysis of its special language and its place in the modern cultural life.',
                     autorimg1: 'vetushinsky1-min.jpg',
-                    autor1: 'Vetushinskiy Alexander',
+                    autor1: 'Alexander Vetushinskiy',
                     lab:'Gamification Lab',
                     autor1class:'vetushinsky',
                   }, 'mod')
                 #lab3.lab 
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://link.springer.com/article/10.1007/s00521-020-05644-6',
                     img: 'Unreal_Mask-29.jpg',
                     id: 'publication16',
@@ -609,16 +610,16 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'efimov.jpg',
                     autorimg2: 'semachkin1.jpg',
                     autorimg3: 'seydehassen.jpg',
-                    autor1: 'Efimov Albert',
-                    autor2: 'Semochkin Aleksandr',
-                    autor3: 'Seyed Hassan Zabihifar',
+                    autor1: 'Albert Efimov',
+                    autor2: 'Aleksandr Semochkin',
+                    autor3: 'Zabihifar Seyed Hassan',
                     lab:'SBERROBOTICS',
                     autor1class:'efimov',
                     autor2class:'semachkin',
                     autor3class:'seydehassen',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://www.cambridge.org/core/journals/robotica/article/abs/dual-adaptive-neural-network-controller-for-underactuated-systems/D7F9A11AE353DFB3D8CB39F91B98387B',
                     img: 'dual-adaptive-30.JPG',
                     id: 'publication17',
@@ -627,12 +628,12 @@ html(class='page  no-js', lang='ru')
                     descr: 'Dual adaptive neural network controller for underactuated systems / Seyed Hassan Zabihifar, Hamed Navvabi, Arkady Yushchenko //  Robotica. 2021. 39(7). PP. 1281–1298. DOI: 10.1017/S0263574720001125',
                     anons: 'The paper presents new stable adaptive controller based on neural network for underactuated systems, with respective analysis of Furuta pendulum and the inertia wheel pendulum. The approach is aimed at solving the problem of controlling these systems in case of rocking, stabilization and suppression of disturbances. Minimization of oscillations is provided by means of two adaptive neural networks.',
                     autorimg1: 'seydehassen.jpg',
-                    autor1: 'Seyed Hassan Zabihifar',
+                    autor1: 'Zabihifar Seyed Hassan',
 					          lab:'SBERROBOTICS',
                     autor1class:'seydehassen',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://www.sciencedirect.com/science/article/abs/pii/S187551002030603X',
                     img: 'nonlinear-solver-31.JPG',
                     id: 'publication18',
@@ -641,31 +642,31 @@ html(class='page  no-js', lang='ru')
                     descr: 'A nonlinear solver based on an adaptive neural network, introduction and application to porous media flow / Mohammad Ebadi, Seyed Hassan Zabihifar, Yashar Bezyan, Dmitry Koroteev // Journal of Natural Gas Science and Engineering. 2021. Volume 87. DOI: 10.1016/j.jngse.2020.103749',
                     anons: 'The authors introduce numerical solver for second-order nonlinear partial differential equations based on an adaptive neural network. To calculate the nonlinear cases of gas flow in shale resources and the immiscible two-phase flow of water and oil in hydrocarbon reservoirs, pressure and saturation profiles corresponding to the Newtonian results are generated.',
                     autorimg1: 'seydehassen.jpg',
-                    autor1: 'Seyed Hassan Zabihifar',
+                    autor1: 'Zabihifar Seyed Hassan',
 					          lab:'SBERROBOTICS',
                     autor1class:'seydehassen',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://ieeexplore.ieee.org/abstract/document/9376455',
                     img: 'coinbot-32.JPG',
                     urlimg: 'coinbot-32.JPG',
                     id: 'publication19',
                     name: 'Coinbot: Intelligent Robotic Coin Bag Manipulation Using Artificial Brain ',
                     descr: 'Coinbot: Intelligent robotic coin bag manipulation using artificial brain / Aleksei Gonnochenko, Aleksandr Semochkin, Dmitry Egorov, Dmitrii Statovoy, Seyedhassan Zabihifar, Aleksey Postnikov, Elena Seliverstova, Ali Zaidi, Jayson Stemmler, Kevin Limkrailassiri // 7th International Conference on Automation, Robotics and Applications (ICARA). 2021. PP. 67–74. DOI: 10.1109/ICARA51699.2021.9376455',
-                    anons: 'The article presents deep reinforcement learning and machine learning methods applied to control the robot which automatically o¤oads the bags with coins from the trolley. In particular, manipulator specifically designed for this purpose and an approach to determining the configuration of the robot effector to provide proper capture are described. In real conditions, the system successfully performs the task in more than 96% of cases. ',
+                    anons: 'The article presents deep reinforcement learning and machine learning methods applied to control the robot which automatically offloads the bags with coins from the trolley. In particular, manipulator specifically designed for this purpose and an approach to determining the configuration of the robot effector to provide proper capture are described. In real conditions, the system successfully performs the task in more than 96% of cases. ',
                     autorimg1: 'gonnochenko-min.jpg',
                     autorimg2: 'egorov_d-min.jpg',
                     autorimg3: 'seydehassen.jpg',
                     autorimg4: 'semachkin1.jpg',
                     autorimg5: 'statovoy-min.jpg',
                     autorimg6: 'postnikov-min.jpg',
-                    autor1: 'Gonnochenko Aleksei',
-                    autor2: 'Egorov Dmitry',
-                    autor3: 'Seyed Hassan Zabihifar',
-                    autor4: 'Semochkin Aleksandr',
-                    autor5: 'Statovoy Dmitrii',
-                    autor6: 'Postnikov Aleksey',
+                    autor1: 'Aleksei Gonnochenko',
+                    autor2: 'Dmitry Egorov',
+                    autor3: 'Zabihifar Seyed Hassan',
+                    autor4: 'Aleksandr Semochkin',
+                    autor5: 'Dmitrii Statovoy',
+                    autor6: 'Aleksey Postnikov',
                     lab:'SBERROBOTICS',
                     autor1class:'gonnochenko',
                     autor2class:'egorov_d',
@@ -675,7 +676,7 @@ html(class='page  no-js', lang='ru')
                     autor6class:'postnikov',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://arxiv.org/abs/2108.01654',
                     id: 'publication20',
                     img: 'Comparison-of-modern-open-source-visual-SLAM-33.jpg',
@@ -685,14 +686,14 @@ html(class='page  no-js', lang='ru')
                     anons: 'The authors run comparative analysis of SLAM methods - an important area of research in the field of robotics and computer vision. The algorithms are evaluated based on accuracy, computational performance, reliability, and fault tolerance. Comparison of data sets, as well as analysis of algorithms from a practical point of view, are also presented. Number of issues related to SLAM development are identified.',
                     autorimg1: 'Burkov.jpg',
                     autorimg2: 'gonnochenko-min.jpg',
-                    autor1: 'Burkov Aleksey',
-                    autor2: 'Gonnochenko Aleksei',
+                    autor1: 'Aleksey Burkov',
+                    autor2: 'Aleksei Gonnochenko',
                     lab: 'SBERROBOTICS',
                     autor1class:'Burkov',
                     autor2class:'gonnochenko',
                   },'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url: 'https://arxiv.org/pdf/2109.02965.pdf',
                     img: 'screen_CovarianceNet.jpg',
                     id: 'publication21',
@@ -702,32 +703,32 @@ html(class='page  no-js', lang='ru')
                     anons: 'Proper estimation of uncertainty in predictions of human motions is as important as accuracy of this prediction. The paper presents new method aimed at providing accuracy for uncertainty estimations linked with the predicted distribution of future trajectories. The approach called CovariaceNet is based on conditional generative model with Gaussian latent variables for predicting parameters of the Gaussian distribution with two options.',
                     autorimg1: 'postnikov-min.jpg',
                     autorimg2: 'gamayunov.jpg',
-                    autor1: 'Postnikov Aleksey',
-                    autor2: 'Gamayunov Aleksander',
+                    autor1: 'Aleksey Postnikov',
+                    autor2: 'Aleksander Gamayunov',
                     lab:'SBERROBOTICS',
                     autor1class:'postnikov',
                     autor2class:'gamayunov',
                   },'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://files.sberdisk.ru/s/nQgRgHofXBjwFKb',
                     img: 'screen_Transformer_based_trajectory.jpg',
                     id: 'publication22',
                     urlimg: 'screen_Transformer_based_trajectory.jpg',
                     name: 'Transformer based trajectory prediction',
                     descr: 'Transformer based trajectory prediction / Alexey Postnikov, Aleksander Gamayunov, Gonzalo Ferrer // 35th Conference on Neural Information Processing Systems (NeurIPS 2021). Shift Challenge Workshop.',
-                    anons: 'Safe and effcient route planning implies proper movement prediction for the agents on the road by an autonomous driving system. This paper presents simple and solid basis for agent trajectory estimations, including uncertainty, based solely on transformer neural networks, with confirmed eectiveness even in case of changing subject areas.',
+                    anons: 'Safe and effcient route planning implies proper movement prediction for the agents on the road by an autonomous driving system. This paper presents simple and solid basis for agent trajectory estimations, including uncertainty, based solely on transformer neural networks, with confirmed effectiveness even in case of changing subject areas.',
                     autorimg1: 'postnikov-min.jpg',
                     autorimg2: 'gamayunov.jpg',
-                    autor1: 'Postnikov Aleksey',
-                    autor2: 'Gamayunov Aleksander',
+                    autor1: 'Aleksey Postnikov',
+                    autor2: 'Aleksander Gamayunov',
                     lab:'SBERROBOTICS',
                     autor1class:'postnikov',
                     autor2class:'gamayunov',
                   }, 'mod')
                 #lab4.lab 
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://arxiv.org/abs/2111.15466',
                     id: 'publication23',
                     img: 'Citation-Network-46.jpg',
@@ -738,16 +739,16 @@ html(class='page  no-js', lang='ru')
                     autorimg1: 'Sosedka.jpg',
                     autorimg2: 'Tishin.jpg',
                     autorimg3: 'porvatov-min.jpg',
-                    autor1: 'Sosedka Artyom',
-                    autor2: 'Tishin Vladislav',
-                    autor3: 'Porvatov Vadim',
+                    autor1: 'Artyom Sosedka',
+                    autor2: 'Vladislav Tishin ',
+                    autor3: 'Vadim Porvatov',
                     lab:'Sber AI',
                     autor1class:'Sosedka',
                     autor2class:'Tishin',
                     autor3class:'porvatov',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://sciforum.net/paper/view/10811',
                     id: 'publication24',
                     img: 'ComputerVisionApproachesforVolumeStockEstimation-35.jpg',
@@ -756,12 +757,12 @@ html(class='page  no-js', lang='ru')
                     descr: 'Computer Vision Approaches for Volume Stock Estimation: Northwestern Russian Boreal Forests Case Study / Svetlana Illarionova, Sergey Nesteruk, Vladimir Ignatiev, Maria Pukalchik, Ivan Oseledets // Proceedings of the 2nd International Electronic Conference on Forests — Sustainable Forests: Ecology, Management, Products and Trade. 2021. DOI: 10.3390/IECF2021–10811',
                     anons: 'The authors present forest reserve assessment method based on computer vision which involve Sentinel-2 remote sensing images. The model is trained and evaluated through field measurements from Russian boreal forests in the area of about 20K hectares. Since no additional equipment or human resources are required for data collection, the approach can be applied for assesment of distant regions. ',
                     autorimg1: 'nesteruk-min.jpg',
-                    autor1: 'Nesteruk Sergey',
+                    autor1: 'Sergey Nesteruk',
 					          lab:'Sber AI',
                     autor1class:'nesteruk',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://dl.acm.org/doi/10.1145/3476887.3476892',
                     img: 'Digital-Peter-36.jpg',
                     id: 'publication25',
@@ -775,12 +776,12 @@ html(class='page  no-js', lang='ru')
                     autorimg4: 'karachev-min.jpg',
                     autorimg5: 'novopoltsev-min.jpg',
                     autorimg6: 'chertok-min.jpg',
-                    autor1: 'Potanin Mark',
-                    autor2: 'Dimitrov Denis',
-                    autor3: 'Shonenkov Alex',
-                    autor4: 'Karachev Denis',
-                    autor5: 'Novopoltsev Maxim',
-                    autor6: 'Chertok Andrey',
+                    autor1: 'Mark Potanin',
+                    autor2: 'Denis Dimitrov',
+                    autor3: 'Alex Shonenkov',
+                    autor4: 'Denis Karachev',
+                    autor5: 'Maxim Novopoltsev',
+                    autor6: 'Andrey Chertok',
                     lab:'Sber AI',
                     autor1class:'potaninm',
                     autor2class:'dimitrov',
@@ -790,26 +791,26 @@ html(class='page  no-js', lang='ru')
                     autor6class:'chertok',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://arxiv.org/abs/2108.11667',
                     img: 'stackmix-37.jpg',
                     urlimg: 'stackmix-37.jpg',
                     id: 'publication26',
                     name: 'StackMix and Blot Augmentations for Handwritten Text Recognition',
                     descr: 'StackMix and Blot Augmentations for Handwritten Text Recognition / Alex Shonenkov, Denis Karachev, Maxim Novopoltsev, Mark Potanin, Denis Dimitrov, Andrey Chertok //14th International Conference on Machine Vision (ICMV 2021).',
-                    anons: 'The article describes architecture of the neural network applied for handwritten text decryption with accuracy higher than in the modern models. The authors describe the approach used to increase training data volume through identification of text with marks, as well as a new text generation method called StackMix, which turned out to be very eective in the handwritten text decryption tasks.',
+                    anons: 'The article describes architecture of the neural network applied for handwritten text decryption with accuracy higher than in the modern models. The authors describe the approach used to increase training data volume through identification of text with marks, as well as a new text generation method called StackMix, which turned out to be very effective in the handwritten text decryption tasks.',
                     autorimg1: 'shonenkov.jpg',
                     autorimg2: 'karachev-min.jpg',
                     autorimg3: 'novopoltsev-min.jpg',
                     autorimg4: 'potaninm-min.jpg',
                     autorimg5: 'dimitrov-min.jpg',
                     autorimg6: 'chertok-min.jpg',
-                    autor1: 'Shonenkov Alex',                   
-                    autor2: 'Karachev Denis',					
-                    autor3: 'Novopoltsev Maxim',					
-                    autor4: 'Potanin Mark',
-                    autor5: 'Dimitrov Denis',
-                    autor6: 'Chertok Andrey',
+                    autor1: 'Alex Shonenkov',                   
+                    autor2: 'Denis Karachev',					
+                    autor3: 'Maxim Novopoltsev',					
+                    autor4: 'Mark Potanin',
+                    autor5: 'Denis Dimitrov',
+                    autor6: 'Andrey Chertok',
                     lab:'Sber AI',
                     autor1class:'shonenkov',
                     autor2class:'karachev',
@@ -819,7 +820,7 @@ html(class='page  no-js', lang='ru')
                     autor6class:'chertok',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://openaccess.thecvf.com/content/ICCV2021W/ILDAV/html/Illarionova_Object-Based_Augmentation_for_Building_Semantic_Segmentation_Ventura_and_Santa_Rosa_ICCVW_2021_paper.html',
                     img: 'Object-Based-Augmentation-for-Building-Semantic-Segmentation-38.jpg',
                     id: 'publication27',
@@ -828,13 +829,13 @@ html(class='page  no-js', lang='ru')
                     descr: 'Object-Based Augmentation for Building Semantic Segmentation: Ventura and Santa Rosa Case Study / Svetlana Illarionova, Sergey Nesteruk, Dmitrii Shadrin, Vladimir Ignatiev, Mariia Pukalchik, Ivan Oseledets // Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops. 2021. PP. 1659–1668.',
                     anons: 'The paper proposes an object-oriented approach to improving the quality of space images using deep convolutional neural networks (CNN). The method can be used to process remote sensing even if the data set for training is limited. The authors demonstrate promising capabilities of CNN models in determining object image improvement parameters under various external conditions. ',
                     autorimg1: 'nesteruk-min.jpg',
-                    autor1: 'Nesteruk Sergey',
+                    autor1: 'Sergey Nesteruk',
 					          lab:'Sber AI',
                     autor1class:'nesteruk',
                   }, 'mod')
                 #lab5.lab 
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://alpinabook.ru/catalog/book-silnyy-iskusstvennyy-intellekt/',
                     img: 'strongAI-47.jpg',
                     id: 'publication28',
@@ -845,13 +846,13 @@ html(class='page  no-js', lang='ru')
 					          lab:'Sber AI / AIRI',
                     autorimg1: 'efimov.jpg',
                     autorimg2: 'vedahin.jpg',
-                    autor1: 'Efimov Albert',
-                    autor2: 'Vedyakhin Alexander',
+                    autor1: 'Albert Efimov',
+                    autor2: 'Alexander Vedyakhin',
                     autor1class:'efimov',
                     autor2class:'vedahin',
 				          }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://ieeexplore.ieee.org/abstract/document/9316732?casa_token=6Z8_zSItwwoAAAAA:m6gtEqPQ-iKO5BIPNCs1yKMGvVnd90e-x4NbrGYMbxAP7om6t4yUN8U6l5GYxChKmeXY5OBsNKo-FQ',
                     img: 'Image Compression and Plants Classification-7.jpg',
                     id: 'publication29',
@@ -860,12 +861,12 @@ html(class='page  no-js', lang='ru')
                     descr: 'Image Compression and Plants Classification Using Machine Learning in Controlled-Environment Agriculture: Antarctic Station Use Case / Sergey Nesteruk, Dmitrii Shadrin, Mariia Pukalchik, Andrey Somov, Conrad Zeidler, Paul Zabel, Daniel Schubert // IEEE Sensors Journal. Volume 21. Issue 16. PP. 17564–17572. DOI: 10.1109/JSEN.2021.3050084',
                     anons: 'The authors share their experience in the field of classification of plants on the basis of the data obtained from the automated Antarctic EDEN ISS greenhouse. In the experiment, sizes of the images are reduced by 7 times for transmission purposes, but machine learning method allows to achieve accuracy of 92.6% for 18 classes of plants. The approach is promising for further application in agriculture.',
                     autorimg1: 'nesteruk-min.jpg',
-                    autor1: 'Nesteruk Sergey',
+                    autor1: 'Sergey Nesteruk',
 					          lab:'Sber AI',
                     autor1class:'nesteruk',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://www.mdpi.com/2072-4292/13/11/2181',
                     img: 'MixChannel-41.jpg',
                     id: 'publication30',
@@ -874,12 +875,12 @@ html(class='page  no-js', lang='ru')
                     descr: 'MixChannel: Advanced Augmentation for Multispectral Satellite Images / Svetlana Illarionova, Sergey Nesteruk, Dmitrii Shadrin, Vladimir Ignatiev, Maria Pukalchik, Ivan Oseledets // Remote Sensing. 2021. 13(11):2181. DOI: 10.3390/rs13112181',
                     anons: 'The article describes MixChannel, new method of remote sensing image processing, as a solution for the problem of limiting the amount of training data for the corresponding models. The approach also improves accuracy for segmentation and classification of multispectral satellite images. The authors demonstrate MixChannel capabilities on practical example for forest types.',
                     autorimg1: 'nesteruk-min.jpg',
-                    autor1: 'Nesteruk Sergey',
+                    autor1: 'Sergey Nesteruk',
 					          lab:'Sber AI',
                     autor1class:'nesteruk',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://www.mdpi.com/2227-7390/9/5/544',
                     id: 'publication31 ',
                     img: 'Statistical-Estimation-of-the-Kullback–Leibler-Divergence-42.jpg',
@@ -888,12 +889,12 @@ html(class='page  no-js', lang='ru')
                     descr: 'Statistical Estimation of the Kullback–Leibler Divergence / Alexander Bulinski, Denis Dimitrov // Mathematics. 2021. 9(5):544. DOI: 10.3390/math9050544',
                     anons: 'The authors establish asymptotic unbiasedness and L2-consistency under mild conditions in order to estimate the Kullback–Leibler divergence between two probability measures in Rd, absolutely continuous with respect to the Lebesgue measure. The novelty of the study also covers treatment of mixture models. In particular, mixtures of nondegenerate Gaussian measures are examined. ',
                     autorimg1: 'dimitrov-min.jpg',
-                    autor1: 'Dimitrov Denis',
+                    autor1: 'Denis Dimitrov',
 					          lab:'Sber AI',
                     autor1class:'dimitrov',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://arxiv.org/abs/2111.12956',
                     img: 'Near-Zero-43.jpg',
                     id: 'publication32',
@@ -902,26 +903,26 @@ html(class='page  no-js', lang='ru')
                     descr: 'Near-Zero-Shot Suggestion Mining with a Little Help from WordNet / Anton Alekseev, Elena Tutubalina, Sejeong Kwon, Sergey Nikolenko // Analysis of Images, Social Networks and Texts. AIST 2021. Lecture Notes in Computer Science. ISSN 1611-3349',
                     anons: 'The authors explore constructive side of online reviews: advice, tips, requests, and suggestions that users provide about goods, venues, services, etc. To reduce training costs and annotation eorts they propose to build a classifier for specific label set, which significantly improves prediction quality. The results are confirmed experimentally, both quantitatively and qualitatively.',
                     autorimg1: 'tutubalina-min.jpg',
-                    autor1: 'Tutubalina Elena',
+                    autor1: 'Elena Tutubalina',
 					          lab:'Sber AI',
                     autor1class:'tutubalina',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://arxiv.org/abs/2111.12477',
                     id: 'publication33',
                     img: 'Selection-of-pseudo-annotated-data-44.jpg',
                     urlimg: 'Selection-of-pseudo-annotated-data-44.jpg',
                     name: 'Selection of Pseudo-Annotated Data for Adverse Drug Reaction Classification across Drug Groups',
                     descr: 'Selection of pseudo-annotated data for adverse drug reaction classification across drug groups / Ilseyar Alimova, Elena Tutubalina // Analysis of Images, Social Networks and Texts. AIST 2021. Lecture Notes in Computer Science. ISSN 1611-3349',
-                    anons: 'Neural models today show impressive performance for automatic text classification aimed at adverse drug event detection. The authors assess robustness of state-of-the-art neural architectures across dierent drug groups and investigate problematic issues linked with the process. They also demonstrate that additional pseudo-labeled data improve overall results regardless of text selection strategy.',
+                    anons: 'Neural models today show impressive performance for automatic text classification aimed at adverse drug event detection. The authors assess robustness of state-of-the-art neural architectures across different drug groups and investigate problematic issues linked with the process. They also demonstrate that additional pseudo-labeled data improve overall results regardless of text selection strategy.',
                     autorimg1: 'tutubalina-min.jpg',
-                    autor1: 'Tutubalina Elena',
+                    autor1: 'Elena Tutubalina',
 					          lab:'Sber AI',
                     autor1class:'tutubalina',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://arxiv.org/abs/2108.13112',
                     id: 'publication34',
                     img: 'nerel-45.jpg',
@@ -930,27 +931,27 @@ html(class='page  no-js', lang='ru')
                     descr: 'NEREL: A Russian Dataset with Nested Named Entities, Relations and Events / Natalia Loukachevitch, Ekaterina Artemova, Tatiana Batura, Pavel Braslavski, Ilia Denisov, Vladimir Ivanov, Suresh Manandhar, Alexander Pugachev, Elena Tutubalina // Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2021). 2021. PP. 876–885.',
                     anons: 'The authors present NEREL, Russian dataset for named entity recognition and relation extraction. NEREL is significantly larger than existing Russian datasets: to date, it contains 56K annotated named entities and 39K annotated relations. Its important difference from previous datasets lies in annotation of nested named entities, as well as relations within nested entities and at the discourse level. ',
                     autorimg1: 'tutubalina-min.jpg',
-                    autor1: 'Tutubalina Elena',
+                    autor1: 'Elena Tutubalina',
 					          lab:'Sber AI',
                     autor1class:'tutubalina',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://drive.google.com/file/d/1uN_HiNFswn4ZL-uox9l7HdPhBhhLZbKH/view',
                     img: 'DetIE.jpg',
                     id: 'publication35',
                     urlimg: 'DetIE.jpg',
                     name: 'DetIE: Multilingual Open Information Extraction Inspired by Object Detection',
-                    descr: 'DetIE: Multilingual Open Information Extraction Inspired by Object Detection / Michael Vasilkovsky, Anton Alekseev, Valentin Malykh, Ilya Shenbin, Elena Tutubalina, Dmirtiy Salikhov, Mikhail Stepanov, Andrey Chertok, Sergey Nikolenko // AAAI 2022. ISSN 2169-3536 (на момент подготовки сборника работа принята к публикации)',
+                    descr: 'DetIE: Multilingual Open Information Extraction Inspired by Object Detection / Michael Vasilkovsky, Anton Alekseev, Valentin Malykh, Ilya Shenbin, Elena Tutubalina, Dmirtiy Salikhov, Mikhail Stepanov, Andrey Chertok, Sergey Nikolenko // AAAI 2022. ISSN 2169-3536',
                     anons: 'The authors propose new single-pass method of Open Information Extraction (OpenIE) based on methods of object detection in computer vision. Benchmarks are used to show that the approach has similar or improved performance compare to existing models in both quality metrics and output time. The authors also evaluate multilingual version of the model and demonstrate synthetic multilingual data generation strategy for fine tuning for different languages. 15% performance increase is shown for Re-OIE2016 multilingual dataset with 75% value of F1 for Portuguese and Spanish.',
                     autorimg1: 'tutubalina-min.jpg',
                     autorimg2: 'chertok-min.jpg',
                     autorimg3: 'salikhov-min.jpg',
                     autorimg4: 'stepnov_m-min.jpg',
-                    autor1: 'Tutubalina Elena',
-                    autor2: 'Chertok Andrey',
-                    autor3: 'Salikhov Dmirtiy',
-                    autor4: 'Stepnov Mikhail',
+                    autor1: 'Elena Tutubalina',
+                    autor2: 'Andrey Chertok',
+                    autor3: 'Dmirtiy Salikhov',
+                    autor4: 'Mikhail Stepnov',
                     autor1class:'tutubalina',
                     autor2class:'chertok',
                     autor3class:'salikhov',
@@ -958,34 +959,34 @@ html(class='page  no-js', lang='ru')
                     lab:'Sber AI',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://drive.google.com/file/d/1amYc-bOb432g-YZ-H6v4Xn3B8dXBtjtT/view',
                     img: 'Cross-Domain_Limitations.jpg',
                     id: 'publication36',
                     urlimg: 'Cross-Domain_Limitations.jpg',
                     name: 'Cross-Domain Limitations of Neural Models on Biomedical Relation Classification',
-                    descr: 'Cross-Domain Limitations of Neural Models on Biomedical Relation Classification / Ilseyar Alimova, Elena Tutubalina, Sergey Nikolenko // IEEE Access. 2021. ISSN 2169-3536 (на момент подготовки сборника работа принята к публикации)',
+                    descr: 'Cross-Domain Limitations of Neural Models on Biomedical Relation Classification / Ilseyar Alimova, Elena Tutubalina, Sergey Nikolenko // IEEE Access. 2021. ISSN 2169-3536',
                     anons: 'The paper revises extracting information about the relationships between two entities within the same biomedical text. The authors run comparative analysis of four biomedical English benchmarks and assess effectiveness of modern neural network architectures based on Long Short-Term Memory Network (LSTM) with cross-attention and BERT architecture in order to determine links between the entities in scientific abstracts and electronic medical records. Presented results of comparative evaluation of the models reveal significant discrepancy in the quality of classification when models are trained and tested within the same domain and between domains.',
                     autorimg1: 'tutubalina-min.jpg',
-                    autor1: 'Tutubalina Elena',
+                    autor1: 'Elena Tutubalina',
 					          lab:'Sber AI',
                     autor1class:'tutubalina',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://arxiv.org/abs/2110.04228',
                     id: 'publication37',
                     img: 'Hybrid-Graph-Embedding-Techniques-34.jpg',
                     urlimg: 'Hybrid-Graph-Embedding-Techniques-34.jpg',
                     name: 'Hybrid Graph Embedding Techniques in Estimated Time of Arrival Task',
-                    descr: 'Hybrid Graph Embedding Techniques in Estimated Time of Arrival Task / Vadim Porvatov, Natalia Semenova, Andrey Chertok // The 10th International Conference on Complex Networks and their Applications. Lecture Notes in Computer Science. Springer, Cham (на момент подготовки сборника статья принята к публикации)',
+                    descr: 'Hybrid Graph Embedding Techniques in Estimated Time of Arrival Task / Vadim Porvatov, Natalia Semenova, Andrey Chertok // The 10th International Conference on Complex Networks and their Applications. Lecture Notes in Computer Science. Springer, Cham',
                     anons: 'The authors investigate application of deep learning for estimations of the travel timing. This function is widely used in intelligent taxi services or automobile navigation systems. External conditions often complicate this task. The authors explore graph model ability to summarize different types of input data and propose dedicated two-step solution.',
                     autorimg1: 'chertok-min.jpg',
                     autorimg2: 'semenova-min.jpg',
                     autorimg3: 'porvatov-min.jpg',
-                    autor1: 'Chertok Andrey',
-                    autor2: 'Semenova Natalia',
-                    autor3: 'Porvatov Vadim',
+                    autor1: 'Andrey Chertok',
+                    autor2: 'Natalia Semenova',
+                    autor3: 'Vadim Porvatov',
                     lab:'Sber AI',
                     autor1class:'chertok',
                     autor2class:'semenova',
@@ -993,21 +994,21 @@ html(class='page  no-js', lang='ru')
                   }, 'mod')
                 #lab6.lab 
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'http://www.mathnet.ru/php/archive.phtml?wshow=paper&jrnid=ia&paperid=697&option_lang=rus',
                     img: 'Optimizing-the-structure-of-deep-learning-networks-39.jpg',
                     id: 'publication38',
                     urlimg: 'Optimizing-the-structure-of-deep-learning-networks-39.jpg',
                     name: 'Deep Learing Network Structure Optimization ',
-                    descr: 'Deep Learing Network Structure Optimization / М.С. Потанин, К.О. Вайсер, В.А. Жолобов, В.В. Стрижов // Информатика и её применения. 2020. Том 14. Выпуск 4. С. 55–62. DOI: 10.14357/19922264200408',
+                    descr: 'Deep Learing Network Structure Optimization / Mark Potanin, Kirill Vayser, Vladmiri Zholobov, Vadim Strijov // Informatics and Applications. 2020. Vol. 14. Issue 4. PP. 55–62.DOI: 10.14357/19922264200408 (in Russian)',
                     anons: 'The authors investigate the problem of model optimal structure selection and describe results of computational experiment which involves real and synthetic data. The results confirm significant reduction of the model structural complexity, while the accuracy of approximation is still maintained. Dedicated neural network optimal structure selection algorithm is also presented in the paper.',
                     autorimg1: 'potaninm-min.jpg',
-                    autor1: 'Potanin Mark',
+                    autor1: 'Mark Potanin',
 					          lab:'SBERDEVICES',
                     autor1class:'potaninm',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'http://webcache.googleusercontent.com/search?q=cache:luWfZLU5NeoJ:www.dialog-21.ru/media/5507/fenogenovaaplusetal053.pdf+&cd=2&hl=ru&ct=clnk&gl=ru',
                     id: 'publication39',
                     img: 'Russian SuperGLUE-1.png',
@@ -1021,12 +1022,12 @@ html(class='page  no-js', lang='ru')
                     autorimg4: 'tikhonova.jpg',
                     autorimg5: 'shavrina.jpg',
                     autorimg6: 'shevelev.jpg',
-                    autor1: 'Fenogenova Alena',
-                    autor2: 'Mikhailov Vladislav',
-                    autor3: 'Emelyanov Anton',
-                    autor4: 'Tikhonova Maria',
-                    autor5: 'Shavrina Tatiana',
-                    autor6: 'Shevelev Denis',
+                    autor1: 'Alena Fenogenova',
+                    autor2: 'Vladislav Mikhailov',
+                    autor3: 'Anton Emelyanov',
+                    autor4: 'Maria Tikhonova',
+                    autor5: 'Tatiana Shavrina',
+                    autor6: 'Denis Shevelev',
                     autor1class:'fenogenova',
                     autor2class:'mikhailov',
                     autor3class:'emelyanov',
@@ -1036,7 +1037,7 @@ html(class='page  no-js', lang='ru')
                     lab:'SBERDEVICES',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://arxiv.org/abs/2109.04825',
                     img: 'ArtificialText-2.jpg',
                     id: 'publication40',
@@ -1045,12 +1046,12 @@ html(class='page  no-js', lang='ru')
                     descr: 'Artificial Text Detection via Examining the Topology of Attention Maps / Laida Kushnareva, Daniil Cherniavskii, Vladislav Mikhailov, Ekaterina Artemova, Serguei Barannikov, Alexander Bernstein, Irina Piontkovskaya, Dmitri Piontkovski, Evgeny Burnaev // [сайт] [2021] URL: https://arxiv.org/abs/2109.04825',
                     anons: 'The article describes 3 new types of interpreted topological functions for identifying texts generated by AI based on the analysis of topological data. The authors empirically show that functions based on the BERT model exceed baselines grounded on counting and neural communication by up to 10% on 3 shared datasets and appear to be the most resistant to invisible GPT-style generation models.',
                     autorimg1: 'mikhailov.jpg',
-                    autor1: 'Mikhailov Vladislav',
+                    autor1: 'Vladislav Mikhailov',
                     lab:'SBERDEVICES',
                     autor1class:'mikhailov',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://arxiv.org/abs/2109.14017',
                     img: 'ShakingSyntacticTrees-3.jpg',
                     id: 'publication41',
@@ -1059,40 +1060,40 @@ html(class='page  no-js', lang='ru')
                     descr: 'Shaking Syntactic Trees on the Sesame Street: Multilingual Probing with Controllable Perturbations / Ekaterina Taktasheva, Vladislav Mikhailov, Ekaterina Artemova // [сайт] [2021] URL: https://arxiv.org/abs/2109.14017',
                     anons: 'The paper proposes nine probing datasets organized by the type of text perturbation for three Indo-European languages with varying degree of word order flexibility: English, Swedish and Russian. Based on the probing analysis of M-BERT and M-BART models, the authors report that syntactic sensitivity depends on the language and model pre-training objectives.',
                     autorimg1: 'mikhailov.jpg',
-                    autor1: 'Mikhailov Vladislav',
+                    autor1: 'Vladislav Mikhailov',
 					          lab:'SBERDEVICES',
                     autor1class:'mikhailov',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://vja.ruslang.ru/ru/archive/2021-6/117-138',
                     img: 'computational- linguistics-4.jpg',
                     id: 'publication42',
                     urlimg: 'computational- linguistics-4.jpg',
                     name: 'Methods of computational linguistics in the evaluation of artificial intelligence systems',
-                    descr: 'Methods of computational linguistics in the evaluation of artificial intelligence systems / Шаврина Т.О. // Вопросы языкознания. 2021. Выпуск 6. С. 117–138. DOI: 10.31857/0373-658X.2021.6.117-138',
+                    descr: 'Methods of computational linguistics in the evaluation of artificial intelligence systems / Tatiana Shavrina // Topics in the Study of Language. 2020. Vol. 6. P. 117-138. DOI: 10.31857/0373-658X.2021.6.117-138 (in Russian)',
                     anons: 'The article presents current research in the field of applied linguistics devoted to AI evaluation. The authors provide an overview of the current methodology of intelligent system training and testing and review gold standards of textual tasks (benchmarks) in the General Language Understanding Evaluation (GLUE) methodology. They also reveal results of the Russian SuperGLUE intellectual ability test.',
                     autorimg1: 'shavrina.jpg',
-                    autor1: 'Shavrina Tatiana',
+                    autor1: 'Tatiana Shavrina',
 					          lab:'SBERDEVICES',
                     autor1class:'shavrina',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://arxiv.org/abs/2112.01342',
                     id: 'publication43',
                     img: 'How not to Lie with a Benchmark-48.jpg',
                     urlimg: 'How not to Lie with a Benchmark-48.jpg',
-                    name: 'How not to Lie with a Benchmark:Rearranging NLP Leaderboards',
-                    descr: 'How not to Lie with a Benchmark: Rearranging NLP Leaderboards / Tatiana Shavrina, Valentin Malykh // ICBINB workshop: Thirty-fifth Conference on Neural Information Processing Systems 2021 (на момент подготовки сборника принята к докладу на конференции)',
+                    name: 'How not to Lie with a Benchmark: Rearranging NLP Leaderboards',
+                    descr: 'How not to Lie with a Benchmark: Rearranging NLP Leaderboards / Tatiana Shavrina, Valentin Malykh // ICBINB workshop: Thirty-fifth Conference on Neural Information Processing Systems 2021',
                     anons: 'The paper is devoted to investigation of popular NLP benchmarks’ overall scoring methods. The authors analyze several popular benchmarks including GLUE, SuperGLUE, XGLUE, and XTREME. The analysis shows that, for example, human level still can’t be reached by SuperGLUE, and, so far, there is room for improvement for the existing models.',
                     autorimg1: 'shavrina.jpg',
-                    autor1: 'Shavrina Tatiana',
+                    autor1: 'Tatiana Shavrina',
 					          lab:'SBERDEVICES',
                     autor1class:'shavrina',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'http://www.dialog-21.ru/media/5383/fenogenova-alena.pdf',
                     img: 'Text-Simplification.JPG',
                     id: 'publication44',
@@ -1101,29 +1102,29 @@ html(class='page  no-js', lang='ru')
                     descr: 'Text Simplification with Autoregressive Models / Alena Fenogenova // Computational Linguistics and Intellectual Technologies: Papers from the Annual International Conference «Dialogue». 2021. Issue 20. [сайт] URL: http://www.dialog-21.ru/media/5383/fenogenova-alena.pdf',
                     anons: 'The authors explore capabilities of autoregressive models, such as RuGPT3 (Generative Pre-trained Transformer 3 for Russian), as applied to compilation of simple sentences. The proposed method provides quality equal to those achieved in similar modern approaches. Performance is also analyzed and RuGPT disadvantages are discussed.',
                     autorimg1: 'fenogenova.jpg',
-                    autor1: 'Fenogenova Alena',
+                    autor1: 'Alena Fenogenova',
 					          lab:'SBERDEVICES',
                     autor1class:'fenogenova',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://drive.google.com/file/d/1z_hUIDX339ERtqJrSfFPeQQAKdQaTTho/view?usp=sharing',
                     img: 'Clustering Quality Criterion-50.jpg',
                     id: 'publication45',
                     urlimg: 'Clustering Quality Criterion-50.jpg',
                     name: 'Clustering quality criterion based on the features extraction of a tagged sample with an application in the field of brain-computer interface development',
-                    descr: 'Clustering quality criterion based on the features extraction of a tagged sample with an application in the field of brain-computer interface development / А.Д. Мазурин, А.К. Бернадотт // Интеллектуальные системы. Теория и приложения. 2021. Том 25. ISSN 2411–4448 (на момент подготовки сборника материал принят к публикации)',
+                    descr: 'Clustering quality criterion based on the features extraction of a tagged sample with an application in the field of brain-computer interface development / Alexander Mazurin, Alexandra Bernadotte // Intellectual Systems. Theory and Applications.  021. Vol. 25. ISSN 2411–4448 (in Russian)',
                     anons: 'The article presents new method used to assess operation of clustering algorithm with low computational needs, which is capable of identifying groups similar in appearance. The authors show areas of practical application of the algorithm, including classification of brain electrical activity data. The results of the study are important for further BCI development.',
                     autorimg1: 'mazurin.jpg',
                     autorimg2: 'bernadott.jpg',
-                    autor1: 'Mazurin Alexander',
-                    autor2: 'Bernadotte Alexandra',
+                    autor1: 'Alexander Mazurin',
+                    autor2: 'Alexandra Bernadotte',
                     lab:'SBERDEVICES',
                     autor1class:'mazurin',
                     autor2class:'bernadott',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://aclanthology.org/2021.bsnlp-1.2/',
                     img: 'Russian Paraphrasers-30.jpg',
                     id: 'publication46',
@@ -1132,39 +1133,39 @@ html(class='page  no-js', lang='ru')
                     descr: 'Russian Paraphrasers: Paraphrase with Transformers / Alena Fenogenova // Proceedings of the 8th Workshop on Balto-Slavic Natural Language Processing. 2021. PP. 11–19.',
                     anons: 'This paper studies generation methods for paraphrasing in the Russian language. The author compares dierent transformer-based models, both Russian and multilingual, trained with the set of paraphrases, and presents combined paraphrasing dataset, fine-tuned generated models for Russian paraphrasing task and dedicated open source tool.',
                     autorimg1: 'fenogenova.jpg',
-                    autor1: 'Fenogenova Alena',
+                    autor1: 'Alena Fenogenova',
 					          lab:'SBERDEVICES',
                     autor1class:'fenogenova',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://drive.google.com/file/d/117l5Rl1SgM-bQBlvfpQIXZredTYnRhqc/view?usp=drivesdk',
                     img: 'neural-network-classifier-9.jpg',
                     id: 'publication47',
                     urlimg: 'neural-network-classifier-9.jpg',
                     name: 'Neural network classifier for EEG data from people who have undergone COVID-19 and have not',
-                    descr: 'Neural network classifier for EEG data from people who have undergone COVID-19 and have not / А.И. Зубов, М.В. Исаева, А.К. Бернадотт // Интеллектуальные системы. Теория и приложения. 2021. Том 25. ISSN 2411–4448 (на момент подготовки сборника материал принят к публикации)',
+                    descr: 'Neural network classifier for EEG data from people who have undergone COVID-19 and have not / Aleksandr Zubov, Marina Isaeva, Alexandra Bernadotte // Intellectual Systems.Theory and Applications. 2021. Vol. 25. ISSN 2411–4448 (in Russian)',
                     anons: 'The paper presents binary classifier based on convolutional and recurrent neural network which displays average accuracy of 60%, with a maximum value of 78.9% while classifying EEG data from people who have had SARS-CoV-2 (COVID-19) and people who have not had this diagnosis. The findings support the hypothesis that there are certain patterns of brain electrical activity for those who have had SARS-CoV-2 (COVID-19).',
                     autorimg1: 'zubov.jpg',
                     autorimg2: 'isaeva.jpg',
                     autorimg3: 'bernadott.jpg',
-                    autor1: 'Zubov Aleksandr',
-                    autor2: 'Isaeva Marina',
-                    autor3: 'Bernadotte Alexandra',
+                    autor1: 'Aleksandr Zubov',
+                    autor2: 'Marina Isaeva',
+                    autor3: 'Alexandra Bernadotte',
                     lab:'SBERDEVICES',
                     autor1class:'zubov',
                     autor2class:'isaeva',
                     autor3class:'bernadott',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://www.mdpi.com/1424-8220/21/20/6744',
                     img: 'Silent-EEG-Speech-Recognition-10.jpg',
                     id: 'publication48',
                     urlimg: 'Silent-EEG-Speech-Recognition-10.jpg',
                     name: 'Silent EEG-Speech Recognition Using Convolutional and Recurrent Neural Network with 85% Accuracy of 9 Words Classification ',
                     descr: 'Silent EEG-Speech Recognition Using Convolutional and Recurrent Neural Network with 85% Accuracy of 9 Words Classification / Darya Vorontsova, Ivan Menshikov, Aleksandr Zubov, Kirill Orlov, Peter Rikunov, Ekaterina Zvereva, Lev Flitman, Anton Lanikin, Anna Sokolova, Sergey Markov, Alexandra Bernadotte // Sensors. 2021. 21(20):6744. DOI: 10.3390/s21206744',
-                    anons: 'This study is aimed at BCI development. In the tests, the authors use EEG data from 270 healthy people to recognize words they don"t utter. In an individual case, for 9 words, accuracy of 85% was achieved; for the group on average it was 88% on binary classification. The results are important for development of EEG-based speech recognition devices for disabled patients.',
+                    anons: 'This study is aimed at BCI development. In the tests, the authors use EEG data from 270 healthy people to recognize words they don t utter. In an individual case, for 9 words, accuracy of 85% was achieved; for the group on average it was 88% on binary classification. The results are important for development of EEG-based speech recognition devices for disabled patients.',
                     autorimg1: 'voronzova.jpg',
                     autorimg2: 'zubov.jpg',
                     autorimg3: 'rikunov.png',
@@ -1174,15 +1175,15 @@ html(class='page  no-js', lang='ru')
                     autorimg7: 'sokolova.jpg',
                     autorimg8: 'markov2.jpg',
                     autorimg9: 'bernadott.jpg',
-                    autor1: 'Vorontsova Darya',
-                    autor2: 'Zubov Aleksandr',
-                    autor3: 'Rikunov Peter',
-                    autor4: 'Zvereva Ekaterina',
-                    autor5: 'Flitman Lev',
-                    autor6: 'Lanikin Anton',
-                    autor7: 'Sokolova Anna',
-                    autor8: 'Markov Sergey',
-                    autor9: 'Bernadotte Alexandra',
+                    autor1: 'Darya Vorontsova',
+                    autor2: 'Aleksandr Zubov',
+                    autor3: 'Peter Rikunov',
+                    autor4: 'Ekaterina Zvereva',
+                    autor5: 'Lev Flitman',
+                    autor6: 'Anton Lanikin',
+                    autor7: 'Anna Sokolova',
+                    autor8: 'Sergey Markov',
+                    autor9: 'Alexandra Bernadotte',
                     autor1class:'voronzova',
                     autor2class:'zubov',
                     autor3class:'rikunov',
@@ -1195,7 +1196,7 @@ html(class='page  no-js', lang='ru')
                     lab:'SBERDEVICES',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://arxiv.org/abs/2104.12847',
                     img: 'Morph-Call-11.jpg',
                     id: 'publication49',
@@ -1204,12 +1205,12 @@ html(class='page  no-js', lang='ru')
                     descr: 'Morph Call: Probing Morphosyntactic Content of Multilingual Transformers / Vladislav Mikhailov, Oleg Serikov, Ekaterina Artemova // [сайт] [2021] URL: https://arxiv.org/abs/2104.12847',
                     anons: 'The paper presents Morph Call, a set of 46 test tasks for four Indo-European languages of dierent morphology: English, French, German and Russian. The authors demonstrate that fine tuning can improve and decrease probing performance and change the way morphosyntactic knowledge is distributed across the model. The code and data are made publicly available with the aim to fill the gaps in the less studied aspects related to transformers.',
                     autorimg1: 'mikhailov.jpg',
-                    autor1: 'Mikhailov Vladislav',
+                    autor1: 'Vladislav Mikhailov',
 					          lab:'SBERDEVICES',
                     autor1class:'mikhailov',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://arxiv.org/abs/2103.00573',
                     img: 'RuSentEval-12.jpg',
                     id: 'publication50',
@@ -1218,12 +1219,12 @@ html(class='page  no-js', lang='ru')
                     descr: 'RuSentEval: Linguistic Source, Encoder Force! / Vladislav Mikhailov, Ekaterina Taktasheva, Elina Sigdel, Ekaterina Artemova // RuSentEval: Linguistic Source, Encoder Force! [сайт] [2021] URL: https://arxiv.org/abs/2103.00573',
                     anons: 'The paper presents RuSentEval, an enhanced set of 14 test tasks for Russian. The authors apply combination of complementary probing methods to explore distribution of various linguistic properties in five multilingual transformers for two typologically contrasting languages - Russian and English. The results demonstrate that some properties are learned in a similar manner despite the language differences. ',
                     autorimg1: 'mikhailov.jpg',
-                    autor1: 'Mikhailov Vladislav',
+                    autor1: 'Vladislav Mikhailov',
 					          lab:'SBERDEVICES',
                     autor1class:'mikhailov',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'http://www.dialog-21.ru/media/5505/emelyanovaplusetal148.pdf',
                     id: 'publication51',
                     img: 'Using-RuGPT3-XL-Model-for-RuNormAS-competition-13.jpg',
@@ -1235,10 +1236,10 @@ html(class='page  no-js', lang='ru')
                     autorimg2: 'shlyazhko.jpg',
                     autorimg3: 'shavrina.jpg',
                     autorimg4: 'katricheva.jpg',
-                    autor1: 'Emelyanov Anton',
-                    autor2: 'Shliazhko Oleg',
-                    autor3: 'Shavrina Tatiana',
-                    autor4: 'Katricheva Nadezhda',
+                    autor1: 'Anton Emelyanov',
+                    autor2: 'Oleg Shliazhko',
+                    autor3: 'Tatiana Shavrina',
+                    autor4: 'Nadezhda Katricheva',
                     lab:'SBERDEVICES',
                     autor1class:'emelyanov',
                     autor2class:'shlyazhko',
@@ -1246,7 +1247,7 @@ html(class='page  no-js', lang='ru')
                     autor4class:'katricheva',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://files.sberdisk.ru/s/LLHNjNgpPCYwAaY2',
                     id: 'publication52',
                     img: 'Screen_Building_a_Bilingual _A-system.jpg',
@@ -1256,14 +1257,14 @@ html(class='page  no-js', lang='ru')
                     anons: 'The authors present approach which implies cross-language transfer of knowledge for English and Russian languages within the framework of the question-answer system. The underlying generative model is trained with Wikipedia texts. It is also demonstrated that ruGPT-3 XL model successfully initiates answers to questions in English based on Russian paragraphs, and vice versa.',
                     autorimg1: 'shavrina.jpg',
                     autorimg2: 'pisarevskaya-min.jpg',
-                    autor1: 'Shavrina Tatiana',
+                    autor1: 'Tatiana Shavrina',
                     autor2: 'Pisarevskaya Dina',
                     lab:'SBERDEVICES',
                     autor1class:'shavrina',
                     autor2class:'pisarevskaya',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'http://www.dialog-21.ru/media/5581/tikhonovamplusetal138.pdf ',
                     id: 'publication53',
                     img: 'Using-RuGPT3-XL-Model-for-RuNormAS-competition-13.jpg',
@@ -1275,10 +1276,10 @@ html(class='page  no-js', lang='ru')
                     autorimg2: 'pisarevskaya-min.jpg',
                     autorimg3: 'shavrina.jpg',
                     autorimg4: 'shlyazhko.jpg',
-                    autor1: 'Tikhonova Maria',
-                    autor2: 'Pisarevskaya Dina',
-                    autor3: 'Shavrina Tatiana',
-                    autor4: 'Shliazhko Oleg',
+                    autor1: 'Maria Tikhonova',
+                    autor2: 'Dina Pisarevskaya',
+                    autor3: 'Tatiana Shavrina',
+                    autor4: 'Oleg Shliazhko',
                     lab:'SBERDEVICES',
                     autor1class:'tikhonova',
                     autor2class:'pisarevskaya',
@@ -1287,35 +1288,35 @@ html(class='page  no-js', lang='ru')
                   }, 'mod')
                 #lab7.lab 
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://files.sberdisk.ru/s/746sJq5yg6rQ8SK',
                     img: 'Genplan_Article-81.jpg',
                     id: 'publication54',
                     urlimg: 'Genplan_Article-81.jpg',
                     name: 'The Way to Predict Tech Future for Next 30 Years in order to Make These Forecasts Useful Today',
-                    descr: 'The Way to Predict Tech Future for Next 30 Years in order to Make These Forecasts Useful Today / А.Р. Ефимов // Москва. Форсайт. Гипотезы. М.: Институт генплана Москвы. 2021. С. 61–67. ISBN 978-5-906347-11-4',
-                    anons: 'The paper was published in the collection of articles of the most prominent Russian scientists, dedicated to the future of the capital of Russia.The author discusses the factors that need to be taken into account when generating technological forecasts. At the same time, the author admits that any prediction is erroneous: the future may appear not in the way we expect it to be. Nevertheless, it is possible and necessary to make predictions. Some forecasts can be useful now, while others become self-fulfilling, moving the world towards some predictable future.',
+                    descr: 'The Way to Predict Tech Future for Next 30 Years in order to Make These Forecasts Useful Today / Albert Efimov // Moscow. Foresight. Hypothesis. Moscow, Research and Project Institute of General Planning for the city of Moscow. 2021. PP. 61-67 ISBN 978-5-906347-11-4 (in Russian)',
+                    anons: 'The paper was published in the collection of articles of the most prominent Russian scientists, dedicated to the future of the capital of Russia. The author discusses the factors that need to be taken into account when generating technological forecasts. At the same time, the author admits that any prediction is erroneous: the future may appear not in the way we expect it to be. Nevertheless, it is possible and necessary to make predictions. Some forecasts can be useful now, while others become self-fulfilling, moving the world towards some predictable future.',
                     autorimg1: 'efimov.jpg',
-                    autor1: 'Efimov Albert',
+                    autor1: 'Albert Efimov',
 					          lab:'SBER INNOVATION AND RESEARCH',
                     autor1class:'efimov',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://www.phisci.info/jour/article/view/3330',
                     img: 'Science-and-art-48.jpg',
                     id: 'publication55',
                     urlimg: 'Science-and-art-48.jpg',
                     name: 'Science and Art in the Digital Age: A Synergy Problem',
-                    descr: 'Science and Art in the Digital Age: A Synergy Problem / В.Г. Буданов, А.Р. Ефимов // Философские науки. 2021. Выпуск 64(1). С. 116–133. DOI: 10.30727/0235-1188-2021-64-1-116-133',
-                    anons: 'Digital transformation era implies that AI and robots may soon replace humans in a number of professions. Consequently, appropriate eciency of human-AI interaction can be achieved through cultural synthesis. The authors propose to achieve this through promotion of new concepts, such as Science-Art, post-Turing methodology, introduction of new ideas about theatrical and engineering creativity, which is not yet available for AI, etc.',
+                    descr: 'Science and Art in the Digital Age: A Synergy Problem / Vladimir Budanov, Albert Efimov // Russian Journal of Philosophical Sciences. 2021. Issue 64 (1). PP. 116-133. DOI: 10.30727/0235-1188-2021-64-1-116-133 (in Russian)',
+                    anons: 'Digital transformation era implies that AI and robots may soon replace humans in a number of professions. Consequently, appropriate efficiency of human-AI interaction can be achieved through cultural synthesis. The authors propose to achieve this through promotion of new concepts, such as Science-Art, post-Turing methodology, introduction of new ideas about theatrical and engineering creativity, which is not yet available for AI, etc.',
                     autorimg1: 'efimov.jpg',
-                    autor1: 'Efimov Albert',
+                    autor1: 'Albert Efimov',
 					          lab:'SBER INNOVATION AND RESEARCH',
                     autor1class:'efimov',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://www.boomdenhaag.nl/en/webshop/outer-space-future-for-humankind',
                     img: 'New-Space-and-Newest-Space-49.jpg',
                     id: 'publication56',
@@ -1324,12 +1325,12 @@ html(class='page  no-js', lang='ru')
                     descr: 'New Space and Newest Space / Dmitry Payson // Outer Space Future for Humankind: Issues of Law and Policy. Volume 26 in Essential Air and Space Law series. 2021. PP. 31–50. ISBN 9789462362253',
                     anons: 'The paper is devoted to the problems of institutional development in space activities. The author reviews prospects for new, unique areas of business that use capabilities of space assets, features of interaction between public and private actors, as well as future development of the public good category as applied to the space exploration.',
                     autorimg1: 'paison.jpg',
-                    autor1: 'Payson Dmitry',
+                    autor1: 'Dmitry Payson',
 					          lab:'SBER INNOVATION AND RESEARCH',
                     autor1class:'paison',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://www.sciencedirect.com/science/article/pii/S2405896321018851',
                     img: 'Walking-Through-the-Turing-Wall-50.jpg',
                     id: 'publication57',
@@ -1338,21 +1339,21 @@ html(class='page  no-js', lang='ru')
                     descr: 'Walking Through the Turing Wall / Albert Efimov, David Dubrovsky, Philipp Matveev // IFAC-PapersOnLine. 2021. Volume 54. Issue 13. PP. 215–220. ISSN 2405-8963 DOI: 10.1016/j.ifacol.2021.10.448.',
                     anons: 'The article presents 2 new ways for General AI design and development. In the first one, during Turing test, its participants — a judge, a robot, a human, and surveillance devices — can see each other. The second way implies design of General AI so that machines can move around in different environments. 4 areas of interaction of robots with General AI and the idea of a technoworld that combines AI with biology in a new way are described.',
                     autorimg1: 'efimov.jpg',
-                    autor1: 'Efimov Albert',
+                    autor1: 'Albert Efimov',
                     lab:'SBER INNOVATION AND RESEARCH',
                     autor1class:'efimov',
                   }, 'mod')
                   +card({
-                    btn: 'Show More',
+                    btn: 'Read',
                     url:'https://files.sberdisk.ru/s/JtxJaTjmbKX7tpS',
                     img: 'AI_Science-81.jpg',
                     id: 'publication58',
                     urlimg: 'AI_Science-81.jpg',
                     name: 'AI for Science and Science for AI ',
-                    descr: 'AI for Science and Science for AI  / К.В. Анохин, С.К. Смирнов, К.С. Новосёлов, А.Р. Ефимов, Ф.М. Матвеев // Вопросы философии. 2022. № 3 (на момент подготовки сборника материал принят к публикации)',
+                    descr: 'AI for Science and Science for AI / K. Anokhin, S. Smirnov, K. Novoselov, A. Efimov, F. Matveev // Problems of philosophy. 2025. 3 (accepted by the journal; in Russian)',
                     anons: 'The authors criticize the role of AI technologies in natural science research: how useful they can be for fundamental science, what are potential ways or, conversely, fundamental limitations of AI use in natural and exact sciences. Part of the paper is devoted to the counter question: how science can contribute to future AI research.  ',
                     autorimg1: 'efimov.jpg',
-                    autor1: 'Efimov Albert',
+                    autor1: 'Albert Efimov',
                     lab:'SBER INNOVATION AND RESEARCH',
                     autor1class:'efimov',
                   }, 'mod')
