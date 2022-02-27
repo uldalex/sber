@@ -89,7 +89,8 @@ $("#autors-input").on("click", function() {
   $('.lab').css({'display':'block'});
   $("#publication-input.search-input--ru").attr('placeholder' , 'Поиск по публикациям');
   $("#publication-input.search-input--en").attr('placeholder' , 'Enter a title');
-  $('.select-filter').find('span').text('Смотреть все');
+  $('.select-filter--ru').find('span').text('Смотреть все');
+  $('.select-filter--en').find('span').text('View all');
   $(this).addClass('active');
   $(this).parents('.dropdown').addClass('active');
   $(this).parents('.dropdown').find('.dropdown-menu').slideDown(300); 
