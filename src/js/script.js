@@ -87,7 +87,8 @@ $("#autors-input").on("click", function() {
   $("#publication-input").removeClass('active');
   $("#publication-close").removeClass('active');
   $('.lab').css({'display':'block'});
-  $("#publication-input").attr('placeholder' , 'Поиск по публикациям');
+  $("#publication-input.search-input--ru").attr('placeholder' , 'Поиск по публикациям');
+  $("#publication-input.search-input--en").attr('placeholder' , 'Enter a title');
   $('.select-filter').find('span').text('Смотреть все');
   $(this).addClass('active');
   $(this).parents('.dropdown').addClass('active');
