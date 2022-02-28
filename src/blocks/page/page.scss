@@ -1105,7 +1105,7 @@ pre {
     -webkit-text-fill-color: transparent;
     color: #333f48;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     @media(max-width:768px) and(min-width:600px){
       font-size: 52px;
     }
@@ -1280,7 +1280,7 @@ pre {
   @media(max-width:820px){
     padding:90px 0 0 0;
   }
-  .row {
+  .circles {
       justify-content:center;
   }
   &__row {
@@ -1732,7 +1732,7 @@ pre {
     font-size:72px;
     line-height:76px;
     
-    @media(max-width:1180px){
+    @media(max-width:1180px) and (min-width:600px){
       max-width:60%;
     }
     @media(max-width:600px){
@@ -1766,12 +1766,12 @@ pre {
     position:absolute;
     right:0;
     top:-100px;
-    @media(max-width:768px)and(min-width:600px){
+    @media(max-width:820px)and(min-width:600px){
       top: 0;
     width: 200px;
     }
     @media(max-width:600px){
-    top: 150px;
+    top: 220px;
     left: 0;
     right: 0;
     width: 200px;
