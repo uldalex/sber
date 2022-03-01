@@ -250,6 +250,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
     breakpoints: {
 		640: {
 			perPage: 2,
+      perMove: 2,
 		},
   }
   }); 
