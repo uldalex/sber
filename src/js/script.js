@@ -6,8 +6,10 @@
 
  const $ = require('jquery');
  $( document ).ready(function() {
-
-
+  if ($(window).width() > 820) {
+  var circleWidth = $('.eleven-screen__card-wrapper').width();
+  $('.eleven-screen__card-wrapper').height(circleWidth);
+  }
 $('.dropdown').on('click', function () {
   
   if ($(this).hasClass("active")) {
