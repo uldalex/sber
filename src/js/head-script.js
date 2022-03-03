@@ -1,3 +1,4 @@
+
 document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 function cth(c){document.documentElement.classList.add(c)}
 'ontouchstart' in window?cth('touch'):cth('no-touch');
