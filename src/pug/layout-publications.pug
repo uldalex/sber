@@ -15,21 +15,29 @@ html(class='page  no-js', lang='ru')
     meta(name='format-detection', content='email=no')
     meta(content='notranslate', name='google')
     //- Фавиконки (https://realfavicongenerator.net)
-    //- link(rel='apple-touch-icon', sizes='180x180', href='/img/favicon/apple-touch-icon.png')
-    //- link(rel='icon', type='image/png', sizes='32x32', href='/img/favicon/favicon-32x32.png')
-    //- link(rel='icon', type='image/png', sizes='16x16', href='/img/favicon/favicon-16x16.png')
-    //- link(rel='manifest', href='/img/favicon/site.webmanifest')
-    //- link(rel='mask-icon', href='/img/favicon/safari-pinned-tab.svg', color='#5bbad5')
-    //- meta(name='msapplication-TileColor', content='#5bbad5')
-    //- meta(name='theme-color', content='#000')
-    //- meta(name='msapplication-navbutton-color', content='#000')
-    //- meta(name='apple-mobile-web-app-status-bar-style', content='#000')
+    link(rel='apple-touch-icon', sizes='180x180', href='/favicon/apple-touch-icon.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='/favicon/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='/favicon/favicon-16x16.png')
+    link(rel='manifest', href='/favicon/site.webmanifest')
+    link(rel='mask-icon', href='/favicon/safari-pinned-tab.svg', color='#5bbad5')
+    meta(name='msapplication-TileColor', content='#5bbad5')
+    meta(name='theme-color', content='#000')
+    meta(name='msapplication-navbutton-color', content='#000')
+    meta(name='apple-mobile-web-app-status-bar-style', content='#000')
     meta(property="og:title" content="Научные_публикации-2021")
     meta(property="og:description" content="Научные_публикации-2021")
-    meta(property="og:image" content="img/preview.jpg")
+    meta(property="og:image" content="img/scientific_prize.png")
+    meta(property="og:title" content="Научные_публикации-2021")
+    meta(property="og:description" content="Научные_публикации-2021")
+    meta(property="og:image" content="img/scientific_prize.png")
     script(async src="https://www.googletagmanager.com/gtag/js?id=G-SFT1LJFGC7")
     script
       include ../js/google.js
+    script 
+      include ../js/yandex.js
+    noscript
+      div
+        img(src="https://mc.yandex.ru/watch/87720054" style="position:absolute; left:-9999px;" alt="")
     block meta
       title Наука в Сбере
 
